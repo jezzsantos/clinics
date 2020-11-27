@@ -62,18 +62,18 @@
           </e>
         </e>
         <e p="ServiceOperations" t="Include">
-          <e p="CreateCarRequest.cs" t="Include" />
-          <e p="CreateCarResponse.cs" t="Include" />
+          <e p="CreateClinicRequest.cs" t="Include" />
+          <e p="CreateClinicResponse.cs" t="Include" />
           <e p="CreatePersonRequest.cs" t="Include" />
           <e p="CreatePersonResponse.cs" t="Include" />
           <e p="GetOperation.cs" t="Include" />
           <e p="GetPersonRequest.cs" t="Include" />
-          <e p="OfflineCarRequest.cs" t="Include" />
-          <e p="OfflineCarResponse.cs" t="Include" />
-          <e p="RegisterCarRequest.cs" t="Include" />
-          <e p="RegisterCarResponse.cs" t="Include" />
-          <e p="SearchAvailableCarsRequest.cs" t="Include" />
-          <e p="SearchAvailableCarsResponse.cs" t="Include" />
+          <e p="OfflineDoctorRequest.cs" t="Include" />
+          <e p="OfflineDoctorResponse.cs" t="Include" />
+          <e p="RegisterClinicRequest.cs" t="Include" />
+          <e p="RegisterClinicResponse.cs" t="Include" />
+          <e p="SearchAvailableDoctorsRequest.cs" t="Include" />
+          <e p="SearchAvailableDoctorsResponse.cs" t="Include" />
           <e p="SearchOperation.cs" t="Include" />
         </e>
       </e>
@@ -105,7 +105,8 @@
           </e>
         </e>
         <e p="Resources" t="Include">
-          <e p="Car.cs" t="Include" />
+          <e p="Clinic.cs" t="Include" />
+          <e p="Doctor.cs" t="Include" />
           <e p="IIdentifiableResource.cs" t="Include" />
           <e p="Person.cs" t="Include" />
         </e>
@@ -142,15 +143,16 @@
           </e>
         </e>
       </e>
-      <e p="CarsApi" t="IncludeRecursive">
+      <e p="clinics.sln" t="IncludeFlat" />
+      <e p="ClinicsApi" t="IncludeRecursive">
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
-        <e p="CarsApi.csproj" t="IncludeRecursive" />
+        <e p="ClinicsApi.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
-              <e p="CarsApi.AssemblyInfo.cs" t="Include" />
+              <e p="ClinicsApi.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
@@ -162,98 +164,101 @@
         </e>
         <e p="ServiceHost.cs" t="Include" />
         <e p="Services" t="Include">
-          <e p="Cars" t="Include">
-            <e p="CarsService.cs" t="Include" />
-            <e p="CreateCarRequestValidator.cs" t="Include" />
-            <e p="OfflineCarRequestValidator.cs" t="Include" />
-            <e p="RegisterCarRequestValidator.cs" t="Include" />
-            <e p="SearchAvailableCarsRequestValidator.cs" t="Include" />
+          <e p="clinics" t="Include">
+            <e p="ClinicsService.cs" t="Include" />
+            <e p="CreateClinicRequestValidator.cs" t="Include" />
+            <e p="OfflineDoctorRequestValidator.cs" t="Include" />
+            <e p="RegisterClinicRequestValidator.cs" t="Include" />
+            <e p="SearchAvailableDoctorsRequestValidator.cs" t="Include" />
           </e>
         </e>
         <e p="Startup.cs" t="Include" />
         <e p="wwwroot" t="Include" />
       </e>
-      <e p="CarsApi.IntegrationTests" t="IncludeRecursive">
+      <e p="ClinicsApi.IntegrationTests" t="IncludeRecursive">
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
-        <e p="CarsApi.IntegrationTests.csproj" t="IncludeRecursive" />
-        <e p="CarsApiSpec.cs" t="Include" />
+        <e p="ClinicsApi.IntegrationTests.csproj" t="IncludeRecursive" />
+        <e p="ClinicsApiSpec.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
-              <e p="CarsApi.IntegrationTests.AssemblyInfo.cs" t="Include" />
+              <e p="ClinicsApi.IntegrationTests.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
         <e p="StubPersonsService.cs" t="Include" />
       </e>
-      <e p="CarsApi.UnitTests" t="IncludeRecursive">
+      <e p="ClinicsApi.UnitTests" t="IncludeRecursive">
         <e p="AllDomainTypesSpec.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
-        <e p="CarsApi.UnitTests.csproj" t="IncludeRecursive" />
+        <e p="ClinicsApi.UnitTests.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
-              <e p="CarsApi.UnitTests.AssemblyInfo.cs" t="Include" />
+              <e p="ClinicsApi.UnitTests.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
         <e p="Services" t="Include">
-          <e p="Cars" t="Include">
-            <e p="CreateCarRequestValidatorSpec.cs" t="Include" />
-            <e p="OfflineCarRequestValidatorSpec.cs" t="Include" />
-            <e p="RegisterCarRequestValidatorSpec.cs" t="Include" />
-            <e p="SearchAvailableCarsRequestValidatorSpec.cs" t="Include" />
+          <e p="clinics" t="Include">
+            <e p="CreateClinicRequestValidatorSpec.cs" t="Include" />
+            <e p="OfflineDoctorRequestValidatorSpec.cs" t="Include" />
+            <e p="RegisterClinicRequestValidatorSpec.cs" t="Include" />
+            <e p="SearchAvailableDoctorsRequestValidatorSpec.cs" t="Include" />
           </e>
         </e>
       </e>
-      <e p="CarsApplication" t="IncludeRecursive">
+      <e p="ClinicsApplication" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="CarIdentifierFactory.cs" t="Include" />
-        <e p="CarsApplication.cs" t="Include" />
-        <e p="CarsApplication.csproj" t="IncludeRecursive" />
-        <e p="ICarsApplication.cs" t="Include" />
+        <e p="ClinicIdentifierFactory.cs" t="Include" />
+        <e p="ClinicsApplication.cs" t="Include" />
+        <e p="ClinicsApplication.csproj" t="IncludeRecursive" />
+        <e p="IClinicsApplication.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
-              <e p="CarsApplication.AssemblyInfo.cs" t="Include" />
+              <e p="ClinicsApplication.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
         <e p="ReadModels" t="Include">
-          <e p="Car.cs" t="Include" />
+          <e p="Clinic.cs" t="Include" />
+          <e p="Doctor.cs" t="Include" />
           <e p="Unavailability.cs" t="Include" />
         </e>
         <e p="Storage" t="Include">
-          <e p="ICarStorage.cs" t="Include" />
+          <e p="IClinicStorage.cs" t="Include" />
         </e>
       </e>
-      <e p="CarsApplication.UnitTests" t="IncludeRecursive">
+      <e p="ClinicsApplication.UnitTests" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="CarsApplication.UnitTests.csproj" t="IncludeRecursive" />
-        <e p="CarsApplicationSpec.cs" t="Include" />
+        <e p="ClinicsApplication.UnitTests.csproj" t="IncludeRecursive" />
+        <e p="ClinicsApplicationSpec.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
-              <e p="CarsApplication.UnitTests.AssemblyInfo.cs" t="Include" />
+              <e p="ClinicsApplication.UnitTests.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
       </e>
-      <e p="CarsDomain" t="IncludeRecursive">
+      <e p="ClinicsDomain" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="CarEntity.cs" t="Include" />
-        <e p="CarsDomain.csproj" t="IncludeRecursive" />
+        <e p="ClinicEntity.cs" t="Include" />
+        <e p="ClinicLicense.cs" t="Include" />
+        <e p="ClinicOwner.cs" t="Include" />
+        <e p="ClinicsDomain.csproj" t="IncludeRecursive" />
         <e p="Events.cs" t="Include" />
-        <e p="LicensePlate.cs" t="Include" />
-        <e p="Manufacturer.cs" t="Include" />
+        <e p="Location.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netstandard2.0" t="Include">
-              <e p="CarsDomain.AssemblyInfo.cs" t="Include" />
+              <e p="ClinicsDomain.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
+        <e p="PracticeManagers.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="Resources.Designer.cs" t="Include" />
           <e p="Resources.resx" t="Include" />
@@ -262,40 +267,37 @@
         <e p="Unavailabilities.cs" t="Include" />
         <e p="UnavailabilityCausedBy.cs" t="Include" />
         <e p="UnavailabilityEntity.cs" t="Include" />
-        <e p="VehicleManagers.cs" t="Include" />
-        <e p="VehicleOwner.cs" t="Include" />
       </e>
-      <e p="CarsDomain.UnitTests" t="IncludeRecursive">
+      <e p="ClinicsDomain.UnitTests" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="CarEntitySpec.cs" t="Include" />
-        <e p="CarsDomain.UnitTests.csproj" t="IncludeRecursive" />
-        <e p="LicensePlateSpec.cs" t="Include" />
-        <e p="ManufacturerSpec.cs" t="Include" />
+        <e p="ClinicEntitySpec.cs" t="Include" />
+        <e p="ClinicLicenseSpec.cs" t="Include" />
+        <e p="ClinicOwnerSpec.cs" t="Include" />
+        <e p="ClinicsDomain.UnitTests.csproj" t="IncludeRecursive" />
+        <e p="LocationSpec.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
-              <e p="CarsDomain.UnitTests.AssemblyInfo.cs" t="Include" />
+              <e p="ClinicsDomain.UnitTests.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
+        <e p="PracticeManagersSpec.cs" t="Include" />
         <e p="TimeSlotSpec.cs" t="Include" />
-        <e p="VehicleManagersSpec.cs" t="Include" />
-        <e p="VehicleOwnerSpec.cs" t="Include" />
       </e>
-      <e p="CarsStorage" t="IncludeRecursive">
+      <e p="ClinicsStorage" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="CarEntityReadModelProjection.cs" t="Include" />
-        <e p="CarsStorage.csproj" t="IncludeRecursive" />
-        <e p="CarStorage.cs" t="Include" />
+        <e p="ClinicEntityReadModelProjection.cs" t="Include" />
+        <e p="ClinicsStorage.csproj" t="IncludeRecursive" />
+        <e p="ClinicStorage.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
-              <e p="CarsStorage.AssemblyInfo.cs" t="Include" />
+              <e p="ClinicsStorage.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
       </e>
-      <e p="clinics.sln" t="IncludeFlat" />
       <e p="Common\FluentAssertionExtensions.cs" t="Include" />
       <e p="Common\FluentAssertionValidationExtensions.cs" t="Include" />
       <e p="Directory.Build.props" t="Include" />
@@ -413,7 +415,7 @@
           <e p="EventStreamExtensions.cs" t="Include" />
           <e p="EventStreamHandlerBase.cs" t="Include" />
           <e p="Notifications" t="Include">
-            <e p="CarManagerEventSubscriber.cs" t="Include" />
+            <e p="ClinicManagerEventSubscriber.cs" t="Include" />
             <e p="DomainEventNotificationProducer.cs" t="Include" />
             <e p="IChangeEventNotificationSubscription.cs" t="Include" />
             <e p="InProcessChangeEventNotificationSubscription.cs" t="Include" />

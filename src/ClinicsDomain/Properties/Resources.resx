@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="ClinicEntity_NotRegistered" xml:space="preserve">
+        <value>The registration for the clinic is not yet been defined</value>
+    </data>
+    <data name="ClinicEntity_NotOwned" xml:space="preserve">
+        <value>The ownership of the clinic is not yet been defined</value>
+    </data>
+    <data name="ClinicEntity_NotLocated" xml:space="preserve">
+        <value>The location details for the clinic have not yet been defined</value>
+    </data>
+    <data name="TimeSlot_FromDateBeforeToDate" xml:space="preserve">
+        <value>The To date must be after the From date</value>
+    </data>
+    <data name="ClinicLicense_UnknownJurisdiction" xml:space="preserve">
+        <value>The jurisdiction is not known</value>
+    </data>
+    <data name="Location_InvalidCountry" xml:space="preserve">
+        <value>The Country of location must be between {0} and {1}</value>
+    </data>
+    <data name="Location_UnknownCity" xml:space="preserve">
+        <value>The City of the location is unknown</value>
+    </data>
+    <data name="Location_UnknownStreet" xml:space="preserve">
+        <value>The Street of the location is unknown</value>
+    </data>
+    <data name="Unavailability_OverlappingSlot" xml:space="preserve">
+        <value>The slot overlaps and existing slot with a different cause or reference</value>
+    </data>
+    <data name="Unavailability_ReservationWithoutReference" xml:space="preserve">
+        <value>The slot is reserved without a reservation reference</value>
+    </data>
+</root>

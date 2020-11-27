@@ -9,25 +9,25 @@ ProjectSection(SolutionItems) = preProject
 	Directory.Build.props = Directory.Build.props
 EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarsDomain", "CarsDomain\CarsDomain.csproj", "{976E2F12-0A56-4A6D-A2D0-44E6C59FAB91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClinicsDomain", "ClinicsDomain\ClinicsDomain.csproj", "{976E2F12-0A56-4A6D-A2D0-44E6C59FAB91}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Storage.Interfaces", "Storage.Interfaces\Storage.Interfaces.csproj", "{5D40AABA-D31A-4D9F-B997-5FB8772D69EF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.Interfaces", "Domain.Interfaces\Domain.Interfaces.csproj", "{562FA530-3242-49B8-BA06-A66E5CD4ED63}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarsApi", "CarsApi\CarsApi.csproj", "{8583CDF9-BE01-4C0F-995D-81C2C82CBB0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClinicsApi", "ClinicsApi\ClinicsApi.csproj", "{8583CDF9-BE01-4C0F-995D-81C2C82CBB0A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Storage", "Storage\Storage.csproj", "{C7E52D4B-0163-49D9-BF0F-549DBCBA25F1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Storage.UnitTests", "Storage.UnitTests\Storage.UnitTests.csproj", "{CA91C5A2-AB58-44DE-A72D-8E985717FCC5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarsApi.IntegrationTests", "CarsApi.IntegrationTests\CarsApi.IntegrationTests.csproj", "{B0069B0D-5233-420E-963F-AEB119186387}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClinicsApi.IntegrationTests", "ClinicsApi.IntegrationTests\ClinicsApi.IntegrationTests.csproj", "{B0069B0D-5233-420E-963F-AEB119186387}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{D3EDC65E-B76F-40B0-9EEC-CCA172D0B165}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.Interfaces.UnitTests", "Domain.Interfaces.UnitTests\Domain.Interfaces.UnitTests.csproj", "{11F7A98D-31B4-45BC-9149-2AA630624871}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarsApi.UnitTests", "CarsApi.UnitTests\CarsApi.UnitTests.csproj", "{FF2C1DD8-2EFD-4B9A-8E99-AB8CCA2C9231}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicsApi.UnitTests", "ClinicsApi.UnitTests\ClinicsApi.UnitTests.csproj", "{FF2C1DD8-2EFD-4B9A-8E99-AB8CCA2C9231}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Storage.IntegrationTests", "Storage.IntegrationTests\Storage.IntegrationTests.csproj", "{E5C8214A-52F1-4F1C-BFEB-FCAF03113FA1}"
 EndProject
@@ -41,9 +41,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{08E8B6
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B9AFDC89-A403-402E-807C-22C4138FDAF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarsDomain.UnitTests", "CarsDomain.UnitTests\CarsDomain.UnitTests.csproj", "{3029E4C1-2634-46F2-B834-D19BECA690AA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicsDomain.UnitTests", "ClinicsDomain.UnitTests\ClinicsDomain.UnitTests.csproj", "{3029E4C1-2634-46F2-B834-D19BECA690AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarsStorage", "CarsStorage\CarsStorage.csproj", "{736FAD9F-34D6-40FC-B96A-421DAC4AA8E0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicsStorage", "ClinicsStorage\ClinicsStorage.csproj", "{736FAD9F-34D6-40FC-B96A-421DAC4AA8E0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Interfaces", "Api.Interfaces\Api.Interfaces.csproj", "{36B00FBC-4B3F-441C-97F2-CF2B7F9AEF78}"
 EndProject
@@ -53,9 +53,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{D560B414-B996-4B5B-AFE4-82194FD9BFA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarsApplication", "CarsApplication\CarsApplication.csproj", "{1C1997E3-49C7-43BE-97B3-C222C06599DB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicsApplication", "ClinicsApplication\ClinicsApplication.csproj", "{1C1997E3-49C7-43BE-97B3-C222C06599DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarsApplication.UnitTests", "CarsApplication.UnitTests\CarsApplication.UnitTests.csproj", "{EB299A47-A777-4B8F-A930-CEBA71B8598E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicsApplication.UnitTests", "ClinicsApplication.UnitTests\ClinicsApplication.UnitTests.csproj", "{EB299A47-A777-4B8F-A930-CEBA71B8598E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Storage.Sql", "Storage.Sql\Storage.Sql.csproj", "{77E408DB-2BDA-4F4F-9814-C756C32236C8}"
 EndProject

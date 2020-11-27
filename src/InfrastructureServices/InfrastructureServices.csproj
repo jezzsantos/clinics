@@ -9,10 +9,10 @@
     <ItemGroup>
       <ProjectReference Include="..\Api.Interfaces\Api.Interfaces.csproj" />
       <ProjectReference Include="..\ApplicationServices\ApplicationServices.csproj" />
-      <ProjectReference Include="..\CarsApplication\CarsApplication.csproj" />
+      <ProjectReference Include="..\ClinicsApplication\ClinicsApplication.csproj" />
       <ProjectReference Include="..\PersonsDomain\PersonsDomain.csproj" />
       <ProjectReference Include="..\Storage.Interfaces\Storage.Interfaces.csproj" />
-      <ProjectReference Include="..\CarsApplication\CarsApplication.csproj" />
+      <ProjectReference Include="..\ClinicsApplication\ClinicsApplication.csproj" />
     </ItemGroup>
 
     <ItemGroup>

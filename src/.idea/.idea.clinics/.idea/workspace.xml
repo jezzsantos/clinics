@@ -4,6 +4,9 @@
     <projectFile>CarsApi/CarsApi.csproj</projectFile>
     <projectFile>PersonsApi/PersonsApi.csproj</projectFile>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -15,340 +18,81 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb4eb635-542b-4676-970d-9407f66c71dc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CONTRIBUTING.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../appveyor.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ci/set-version-from-globalassemblyinfo-assemblyinformationalversion.ps1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.clinics/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.clinics/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.clinics/.idea/contentModel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.clinics/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.clinics/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.clinics/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.clinics/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.clinics/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.clinics/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.clinics/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.clinics/riderModule.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Common.UnitTests/Api.Common.UnitTests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Common.UnitTests/DomainFactorySpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Common.UnitTests/TestEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Common.UnitTests/TestValueObject.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Common.UnitTests/Validators/HasGetOptionsValidatorSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Common.UnitTests/Validators/HasSearchOptionsValidatorSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Common/Api.Common.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Common/DomainFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Common/FuncDependencyContainer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Common/Properties/Resources.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Common/Properties/Resources.resx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Common/RequestExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Common/ResponseExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Common/ServiceHostExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Common/Validators/HasGetOptionsValidator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Common/Validators/HasSearchOptionsValidator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Common/Validators/ValidationRuleExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Interfaces.UnitTests/Api.Interfaces.UnitTests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Interfaces.UnitTests/HasGetOptionsSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Interfaces.UnitTests/HasSearchOptionsSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Interfaces/Api.Interfaces.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Interfaces/HasGetOptions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Interfaces/HasGetOptionsExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Interfaces/HasSearchOptions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Interfaces/HasSearchOptionsExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Interfaces/IHasGetOptions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Interfaces/IHasSearchOptions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/CreateCarRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/CreateCarResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/CreatePersonRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/CreatePersonResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/GetOperation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/GetPersonRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/OfflineCarRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/OfflineCarResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/RegisterCarRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/RegisterCarResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/SearchAvailableCarsRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/SearchAvailableCarsResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/SearchOperation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application.Common/Application.Common.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application.Common/ApplicationBase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application.Common/Resources/Car.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application.Common/Resources/IIdentifiableResource.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application.Common/Resources/Person.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApplicationServices.UnitTests/ApplicationServices.UnitTests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApplicationServices/ApplicationServices.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApplicationServices/DomainEventPublisherSubscriberPair.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApplicationServices/IDomainEventNotificationProducer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApplicationServices/IDomainEventPublisher.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApplicationServices/IDomainEventPublisherSubscriberPair.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApplicationServices/IDomainEventSubscriber.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApplicationServices/IPersonsService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApplicationServices/Properties/Resources.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApplicationServices/Properties/Resources.resx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsApi.IntegrationTests/CarsApi.IntegrationTests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsApi.IntegrationTests/CarsApiSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsApi.IntegrationTests/StubPersonsService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsApi.IntegrationTests/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsApi.UnitTests/AllDomainTypesSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsApi.UnitTests/CarsApi.UnitTests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsApi.UnitTests/Services/Cars/CreateCarRequestValidatorSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsApi.UnitTests/Services/Cars/OfflineCarRequestValidatorSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsApi.UnitTests/Services/Cars/RegisterCarRequestValidatorSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsApi.UnitTests/Services/Cars/SearchAvailableCarsRequestValidatorSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsApi/CarsApi.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsApi/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsApi/Properties/Resources.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsApi/Properties/Resources.resx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsApi/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsApi/ServiceHost.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsApi/Services/Cars/CarsService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsApi/Services/Cars/CreateCarRequestValidator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsApi/Services/Cars/OfflineCarRequestValidator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsApi/Services/Cars/RegisterCarRequestValidator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsApi/Services/Cars/SearchAvailableCarsRequestValidator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsApi/Startup.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsApi/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsApi/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsApplication.UnitTests/CarsApplication.UnitTests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsApplication.UnitTests/CarsApplicationSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsApplication/CarIdentifierFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsApplication/CarsApplication.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsApplication/CarsApplication.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsApplication/ICarsApplication.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsApplication/ReadModels/Car.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsApplication/ReadModels/Unavailability.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsApplication/Storage/ICarStorage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsDomain.UnitTests/CarEntitySpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsDomain.UnitTests/CarsDomain.UnitTests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsDomain.UnitTests/LicensePlateSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsDomain.UnitTests/ManufacturerSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsDomain.UnitTests/TimeSlotSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsDomain.UnitTests/VehicleManagersSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsDomain.UnitTests/VehicleOwnerSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsDomain/CarEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsDomain/CarsDomain.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsDomain/Events.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsDomain/LicensePlate.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsDomain/Manufacturer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsDomain/Properties/Resources.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsDomain/Properties/Resources.resx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsDomain/TimeSlot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsDomain/Unavailabilities.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsDomain/UnavailabilityCausedBy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsDomain/UnavailabilityEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsDomain/VehicleManagers.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsDomain/VehicleOwner.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsStorage/CarEntityReadModelProjection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsStorage/CarStorage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarsStorage/CarsStorage.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Directory.Build.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces.UnitTests/AggregateRootBaseSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces.UnitTests/ChangeEventTypeMigratorSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces.UnitTests/Domain.Interfaces.UnitTests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces.UnitTests/EntityBaseSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces.UnitTests/EntityPrefixIdentifierFactorySpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces.UnitTests/FixedIdentifierFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces.UnitTests/QueryAnyExtensionsSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces.UnitTests/SingleValueObjectSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces.UnitTests/TestAggregateRoot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces.UnitTests/TestEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces.UnitTests/TestEvent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces.UnitTests/ValueObjectSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/CollectionExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/Domain.Interfaces.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/Entities/AggregateRootBase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/Entities/ChangeEventTypeMigrator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/Entities/EntityBase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/Entities/EntityEvent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/Entities/EntityExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/Entities/EntityFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/Entities/EntityPrefixIdentifierFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/Entities/EventMetadata.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/Entities/IAggregateRoot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/Entities/IChangeEvent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/Entities/IChangeEventMigrator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/Entities/IDomainFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/Entities/IEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/Entities/IIdentifiableEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/Entities/IIdentifierFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/Entities/IPersistableAggregateRoot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/Entities/IPersistableEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/Entities/IPersistableValueObject.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/Entities/IPublishedEntityEventHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/Entities/IPublishingEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/Entities/Identifier.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/Entities/SingleValueObjectBase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/Entities/ValueObjectBase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/ForbiddenException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/GetOptions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/GetOptionsExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/GuardExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/ICurrentCaller.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/IDependencyContainer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/MethodNotAllowedException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/Properties/Resources.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/Properties/Resources.resx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/QueryAnyExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/ResourceConflictException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/ResourceNotFoundException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/RoleViolationException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/RuleViolationException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/SearchMetadata.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/SearchOptionExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/SearchOptions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/SearchResults.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/StringExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain.Interfaces/Validations.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DomainServices/DomainServices.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DomainServices/IEmailService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GlobalAssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InfrastructureServices.UnitTests/DomainEventNotificationProducerSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InfrastructureServices.UnitTests/EventHandlerBaseSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InfrastructureServices.UnitTests/InfrastructureServices.UnitTests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InfrastructureServices.UnitTests/TestAggregateRoot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InfrastructureServices.UnitTests/TestChangeEvent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InfrastructureServices/ApplicationServices/PersonsServiceClient.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InfrastructureServices/Eventing/EventStreamExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InfrastructureServices/Eventing/EventStreamHandlerBase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InfrastructureServices/Eventing/Notifications/CarManagerEventSubscriber.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InfrastructureServices/Eventing/Notifications/DomainEventNotificationProducer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InfrastructureServices/Eventing/Notifications/IChangeEventNotificationSubscription.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InfrastructureServices/Eventing/Notifications/InProcessChangeEventNotificationSubscription.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InfrastructureServices/Eventing/Notifications/PersonDomainEventPublisher.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InfrastructureServices/Eventing/ReadModels/IReadModelProjectionSubscription.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InfrastructureServices/Eventing/ReadModels/InProcessReadModelProjectionSubscription.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InfrastructureServices/Identity/AnonymousCaller.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InfrastructureServices/InfrastructureServices.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InfrastructureServices/Properties/Resources.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InfrastructureServices/Properties/Resources.resx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsApi.IntegrationTests/PersonsApi.IntegrationTests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsApi.IntegrationTests/PersonsApiSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsApi.IntegrationTests/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsApi.UnitTests/AllDomainTypesSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsApi.UnitTests/PersonsApi.UnitTests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsApi.UnitTests/Services/Persons/CreatePersonRequestValidatorSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsApi.UnitTests/Services/Persons/GetPersonRequestValidatorSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsApi/PersonsApi.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsApi/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsApi/Properties/Resources.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsApi/Properties/Resources.resx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsApi/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsApi/ServiceHost.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsApi/Services/Persons/CreatePersonRequestValidator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsApi/Services/Persons/GetPersonRequestValidator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsApi/Services/Persons/PersonsService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsApi/Startup.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsApi/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsApi/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsApplication.UnitTests/EmailServiceSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsApplication.UnitTests/PersonsApplication.UnitTests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsApplication.UnitTests/PersonsApplicationSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsApplication/EmailService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsApplication/IPersonsApplication.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsApplication/PersonIdentifierFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsApplication/PersonsApplication.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsApplication/PersonsApplication.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsApplication/ReadModels/Person.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsApplication/Storage/IPersonStorage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsDomain.UnitTests/PersonEntitySpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsDomain.UnitTests/PersonsDomain.UnitTests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsDomain/Email.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsDomain/Events.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsDomain/PersonDisplayName.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsDomain/PersonEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsDomain/PersonName.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsDomain/PersonsDomain.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsDomain/PhoneNumber.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsDomain/Properties/Resources.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsDomain/Properties/Resources.resx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsStorage/PersonEntityReadModelProjection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsStorage/PersonStorage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonsStorage/PersonsStorage.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.Azure/AzureCosmosSqlApiRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.Azure/AzureCosmosTableApiRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.Azure/AzureTableStorageRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.Azure/CosmosJsonDotNetSerializer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.Azure/Storage.Azure.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.IntegrationTests/AnyRepositoryBaseSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.IntegrationTests/Azure/AzureCosmosSqlApiRepositorySpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.IntegrationTests/Azure/AzureCosmosStorageBase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.IntegrationTests/Azure/AzureCosmosTableApiRepositorySpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.IntegrationTests/Azure/AzureStorageAccountBase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.IntegrationTests/Azure/AzureTableRepositorySpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.IntegrationTests/GuidIdentifierFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.IntegrationTests/InProcessInMemRepositorySpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.IntegrationTests/LocalMachineFileRepositorySpec .cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.IntegrationTests/NullIdentifierFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.IntegrationTests/Redis/RedisInMemRepositorySpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.IntegrationTests/Redis/RedisInMemStorageBase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.IntegrationTests/Repeat.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.IntegrationTests/Storage.IntegrationTests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.IntegrationTests/TestRepositoryEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.IntegrationTests/appsettings.CI.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.IntegrationTests/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.Interfaces/EventStreamStateChangeEvent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.Interfaces/ICommandStorage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.Interfaces/IEventNotifyingStorage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.Interfaces/IEventStreamStorage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.Interfaces/IHasIdentity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.Interfaces/IQueryStorage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.Interfaces/QueryResults.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.Interfaces/ReadModels/Checkpoint.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.Interfaces/ReadModels/IReadModelCheckpointStore.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.Interfaces/ReadModels/IReadModelEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.Interfaces/ReadModels/IReadModelProjection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.Interfaces/ReadModels/IReadModelProjector.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.Interfaces/ReadModels/IReadModelStorage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.Interfaces/Storage.Interfaces.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.ReadModels/Properties/Resources.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.ReadModels/Properties/Resources.resx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.ReadModels/ReadModelCheckpointStore.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.ReadModels/ReadModelProjector.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.ReadModels/Storage.ReadModels.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.Redis/RedisInMemRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.Redis/Storage.Redis.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.Sql/SqlServerRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.Sql/Storage.Sql.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.UnitTests/Azure/AzureCosmosSqlApiQueryExtensionsSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.UnitTests/Azure/AzureTableStorageWhereExtensionsSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.UnitTests/DynamicLinqWhereExtensionsSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.UnitTests/FixedIdentifierFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.UnitTests/GeneralCommandStorageSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.UnitTests/GeneralEventStreamStorageSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.UnitTests/GeneralQueryStorageSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.UnitTests/GeneralReadModelStorageSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.UnitTests/ReadModels/ReadModelCheckpointStoreSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.UnitTests/ReadModels/ReadModelProjectorSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.UnitTests/RepositoryExtensionsSpec.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.UnitTests/Storage.UnitTests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.UnitTests/TestAggregateRoot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.UnitTests/TestDomainEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.UnitTests/TestDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.UnitTests/TestQueryEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage.UnitTests/TestReadModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage/CommandEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage/DynamicLinqWhereExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage/GeneralCommandStorage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage/GeneralEventStreamStorage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage/GeneralQueryStorage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage/GeneralReadModelStorage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage/IRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage/InProcessInMemRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage/LocalMachineFileRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage/Properties/Resources.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage/Properties/Resources.resx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage/QueryEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage/RepositoryEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage/RepositoryEntityExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage/RepositoryEntityMetadata.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage/RepositoryExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage/Storage.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Storage/TypeExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clinics.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clinics.sln.DotSettings" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application.Common/Resources/Doctor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClinicsApplication/ReadModels/Doctor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.clinics/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.clinics/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.clinics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.clinics/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/CreateCarRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/CreateClinicRequest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/CreateCarResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/CreateClinicResponse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/OfflineCarRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/OfflineDoctorRequest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/OfflineCarResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/OfflineDoctorResponse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/RegisterCarRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/RegisterClinicRequest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/RegisterCarResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/RegisterClinicResponse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/SearchAvailableCarsRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/SearchAvailableDoctorsRequest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/SearchAvailableCarsResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/SearchAvailableDoctorsResponse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application.Common/Resources/Car.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application.Common/Resources/Clinic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApi.IntegrationTests/CarsApi.IntegrationTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApi.IntegrationTests/ClinicsApi.IntegrationTests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApi.IntegrationTests/CarsApiSpec.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApi.IntegrationTests/ClinicsApiSpec.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApi.IntegrationTests/StubPersonsService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApi.IntegrationTests/StubPersonsService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApi.IntegrationTests/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApi.IntegrationTests/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApi.UnitTests/AllDomainTypesSpec.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApi.UnitTests/AllDomainTypesSpec.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApi.UnitTests/CarsApi.UnitTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApi.UnitTests/ClinicsApi.UnitTests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApi.UnitTests/Services/Cars/CreateCarRequestValidatorSpec.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApi.UnitTests/Services/Clinics/CreateClinicRequestValidatorSpec.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApi.UnitTests/Services/Cars/OfflineCarRequestValidatorSpec.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApi.UnitTests/Services/Clinics/OfflineDoctorRequestValidatorSpec.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApi.UnitTests/Services/Cars/RegisterCarRequestValidatorSpec.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApi.UnitTests/Services/Clinics/RegisterClinicRequestValidatorSpec.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApi.UnitTests/Services/Cars/SearchAvailableCarsRequestValidatorSpec.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApi.UnitTests/Services/Clinics/SearchAvailableDoctorsRequestValidatorSpec.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApi/CarsApi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApi/ClinicsApi.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApi/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApi/Properties/Resources.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApi/Properties/Resources.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApi/Properties/Resources.resx" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApi/Properties/Resources.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApi/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApi/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApi/ServiceHost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApi/ServiceHost.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApi/Services/Cars/CarsService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApi/Services/Clinics/ClinicsService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApi/Services/Cars/CreateCarRequestValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApi/Services/Clinics/CreateClinicRequestValidator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApi/Services/Cars/OfflineCarRequestValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApi/Services/Clinics/OfflineDoctorRequestValidator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApi/Services/Cars/RegisterCarRequestValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApi/Services/Clinics/RegisterClinicRequestValidator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApi/Services/Cars/SearchAvailableCarsRequestValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApi/Services/Clinics/SearchAvailableDoctorsRequestValidator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApi/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApi/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApi/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApi/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApi/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApi/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApplication.UnitTests/CarsApplication.UnitTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApplication.UnitTests/ClinicsApplication.UnitTests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApplication.UnitTests/CarsApplicationSpec.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApplication.UnitTests/ClinicsApplicationSpec.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApplication/CarIdentifierFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApplication/ClinicIdentifierFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApplication/CarsApplication.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApplication/ClinicsApplication.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApplication/CarsApplication.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApplication/ClinicsApplication.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApplication/ICarsApplication.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApplication/IClinicsApplication.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApplication/ReadModels/Car.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApplication/ReadModels/Clinic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApplication/ReadModels/Unavailability.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApplication/ReadModels/Unavailability.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsApplication/Storage/ICarStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApplication/Storage/IClinicStorage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsDomain.UnitTests/CarEntitySpec.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsDomain.UnitTests/ClinicEntitySpec.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsDomain.UnitTests/CarsDomain.UnitTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsDomain.UnitTests/ClinicsDomain.UnitTests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsDomain.UnitTests/LicensePlateSpec.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsDomain.UnitTests/ClinicLicenseSpec.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsDomain.UnitTests/ManufacturerSpec.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsDomain.UnitTests/LocationSpec.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsDomain.UnitTests/TimeSlotSpec.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsDomain.UnitTests/TimeSlotSpec.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsDomain.UnitTests/VehicleManagersSpec.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsDomain.UnitTests/PracticeManagersSpec.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsDomain.UnitTests/VehicleOwnerSpec.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsDomain.UnitTests/ClinicOwnerSpec.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsDomain/CarEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsDomain/ClinicEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsDomain/CarsDomain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsDomain/ClinicsDomain.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsDomain/Events.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsDomain/Events.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsDomain/LicensePlate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsDomain/ClinicLicense.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsDomain/Manufacturer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsDomain/Location.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsDomain/Properties/Resources.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsDomain/Properties/Resources.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsDomain/Properties/Resources.resx" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsDomain/Properties/Resources.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsDomain/TimeSlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsDomain/TimeSlot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsDomain/Unavailabilities.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsDomain/Unavailabilities.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsDomain/UnavailabilityCausedBy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsDomain/UnavailabilityCausedBy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsDomain/UnavailabilityEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsDomain/UnavailabilityEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsDomain/VehicleManagers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsDomain/PracticeManagers.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsDomain/VehicleOwner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsDomain/ClinicOwner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsStorage/CarEntityReadModelProjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsStorage/ClinicEntityReadModelProjection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsStorage/CarStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsStorage/ClinicStorage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsStorage/CarsStorage.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsStorage/ClinicsStorage.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain.Interfaces/Validations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain.Interfaces/Validations.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InfrastructureServices/Eventing/Notifications/CarManagerEventSubscriber.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InfrastructureServices/Eventing/Notifications/ClinicManagerEventSubscriber.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InfrastructureServices/InfrastructureServices.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/InfrastructureServices/InfrastructureServices.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonsApplication.UnitTests/PersonsApplicationSpec.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PersonsApplication.UnitTests/PersonsApplicationSpec.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonsApplication/Storage/IPersonStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PersonsApplication/Storage/IPersonStorage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clinics.sln" beforeDir="false" afterPath="$PROJECT_DIR$/clinics.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -358,20 +102,71 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/ClinicsApi/Properties/Resources.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ClinicsDomain/Properties/Resources.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CarsDomain.UnitTests/CarsDomain.UnitTests.csproj" />
-        <option value="$PROJECT_DIR$/Domain.Interfaces/Domain.Interfaces.csproj" />
-        <option value="$PROJECT_DIR$/Storage.Interfaces/Storage.Interfaces.csproj" />
-        <option value="$PROJECT_DIR$/Directory.Build.props" />
-        <option value="$PROJECT_DIR$/PersonsApi.UnitTests/PersonsApi.UnitTests.csproj" />
-        <option value="$PROJECT_DIR$/CarsApi.UnitTests/CarsApi.UnitTests.csproj" />
+        <option value="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/OfflineCarRequest.cs" />
+        <option value="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/OfflineDoctorRequest.cs" />
+        <option value="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/RegisterCarRequest.cs" />
+        <option value="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/RegisterDoctorRequest.cs" />
+        <option value="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/SearchAvailableCarsRequest.cs" />
+        <option value="$PROJECT_DIR$/Application.Common/Resources/Clinic.cs" />
+        <option value="$PROJECT_DIR$/Application.Common/Resources/Doctor.cs" />
+        <option value="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/SearchAvailableDoctorsResponse.cs" />
+        <option value="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/RegisterDoctorResponse.cs" />
+        <option value="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/CreateClinicRequest.cs" />
+        <option value="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/RegisterClinicResponse.cs" />
+        <option value="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/RegisterClinicRequest.cs" />
+        <option value="$PROJECT_DIR$/ClinicsApi.UnitTests/Services/Cars/RegisterClinicRequestValidatorSpec.cs" />
+        <option value="$PROJECT_DIR$/ClinicsApi/Services/Clinics/RegisterClinicRequestValidator.cs" />
+        <option value="$PROJECT_DIR$/ClinicsDomain/PracticeManagers.cs" />
+        <option value="$PROJECT_DIR$/ClinicsDomain/ClinicOwner.cs" />
+        <option value="$PROJECT_DIR$/ClinicsDomain.UnitTests/ClinicLicenseSpec.cs" />
+        <option value="$PROJECT_DIR$/ClinicsDomain.UnitTests/PracticeManagersSpec.cs" />
+        <option value="$PROJECT_DIR$/ClinicsDomain.UnitTests/ClinicOwnerSpec.cs" />
+        <option value="$PROJECT_DIR$/ClinicsApplication/ReadModels/Clinic.cs" />
+        <option value="$PROJECT_DIR$/ClinicsApplication/ReadModels/Unavailability.cs" />
+        <option value="$PROJECT_DIR$/ClinicsApplication/ReadModels/Doctor.cs" />
+        <option value="$PROJECT_DIR$/ClinicsApplication/Storage/IClinicStorage.cs" />
+        <option value="$PROJECT_DIR$/ClinicsApplication/IClinicsApplication.cs" />
+        <option value="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/OfflineDoctorResponse.cs" />
+        <option value="$PROJECT_DIR$/ClinicsApi/ServiceHost.cs" />
+        <option value="$PROJECT_DIR$/InfrastructureServices/InfrastructureServices.csproj" />
+        <option value="$PROJECT_DIR$/ClinicsApi.IntegrationTests/ClinicsApi.IntegrationTests.csproj" />
+        <option value="$PROJECT_DIR$/ClinicsDomain/Location.cs" />
+        <option value="$PROJECT_DIR$/ClinicsApi.UnitTests/Services/Clinics/CreateClinicRequestValidatorSpec.cs" />
+        <option value="$PROJECT_DIR$/ClinicsDomain.UnitTests/LocationSpec.cs" />
+        <option value="$PROJECT_DIR$/ClinicsDomain/ClinicsDomain.csproj" />
+        <option value="$PROJECT_DIR$/ClinicsApi.UnitTests/ClinicsApi.UnitTests.csproj" />
+        <option value="$PROJECT_DIR$/ClinicsApi/ClinicsApi.csproj" />
+        <option value="$PROJECT_DIR$/ClinicsApplication.UnitTests/ClinicsApplication.UnitTests.csproj" />
+        <option value="$PROJECT_DIR$/ClinicsApplication/ClinicsApplication.csproj" />
+        <option value="$PROJECT_DIR$/ClinicsDomain.UnitTests/ClinicsDomain.UnitTests.csproj" />
+        <option value="$PROJECT_DIR$/ClinicsStorage/ClinicsStorage.csproj" />
+        <option value="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/SearchAvailableDoctorsRequest.cs" />
+        <option value="$PROJECT_DIR$/ClinicsApi/Services/Clinics/ClinicsService.cs" />
+        <option value="$PROJECT_DIR$/ClinicsApplication.UnitTests/ClinicsApplicationSpec.cs" />
+        <option value="$PROJECT_DIR$/ClinicsApi.IntegrationTests/ClinicsApiSpec.cs" />
+        <option value="$PROJECT_DIR$/ClinicsApi/Properties/launchSettings.json" />
+        <option value="$PROJECT_DIR$/ClinicsDomain/Properties/Resources.Designer.cs" />
+        <option value="$PROJECT_DIR$/ClinicsDomain/Properties/Resources.resx" />
+        <option value="$PROJECT_DIR$/ClinicsStorage/ClinicStorage.cs" />
+        <option value="$PROJECT_DIR$/ClinicsApi/Properties/Resources.resx" />
+        <option value="$PROJECT_DIR$/ClinicsDomain/ClinicLicense.cs" />
+        <option value="$PROJECT_DIR$/ClinicsDomain/Events.cs" />
+        <option value="$PROJECT_DIR$/ClinicsDomain/ClinicEntity.cs" />
+        <option value="$PROJECT_DIR$/ClinicsApplication/ClinicsApplication.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1kso9PS0KGhXgD3hRDm0HYWpRbY" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -379,6 +174,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30010834" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
@@ -386,7 +183,7 @@
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.CarsApi">
     <configuration name="CarsApi" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/CarsApi/CarsApi.csproj" />
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ClinicsApi/ClinicsApi.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
       <option name="LAUNCH_PROFILE_NAME" value="CarsApi" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
@@ -401,7 +198,7 @@
       </method>
     </configuration>
     <configuration name="CarsApi: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/CarsApi/CarsApi.csproj" />
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ClinicsApi/ClinicsApi.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
       <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
@@ -454,7 +251,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606498508987</updated>
-      <workItem from="1606498515772" duration="588000" />
+      <workItem from="1606498515772" duration="6928000" />
     </task>
     <servers />
   </component>
@@ -476,9 +273,101 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="593" y="214" width="734" height="622" key="find.popup" timestamp="1606498881532">
+    <state x="703" y="387" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1606505413474">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="593" y="214" width="734" height="622" key="find.popup/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606498881532" />
+    <state x="703" y="387" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505413474" />
+    <state width="411" height="464" key="DebuggerActiveHint" timestamp="1606505038692">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="411" height="464" key="DebuggerActiveHint/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505038692" />
+    <state width="1877" height="378" key="GridCell.Tab.0.bottom" timestamp="1606505052921">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="378" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
+    <state width="1877" height="378" key="GridCell.Tab.0.center" timestamp="1606505052921">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="378" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
+    <state width="1877" height="378" key="GridCell.Tab.0.left" timestamp="1606505052921">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="378" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
+    <state width="1877" height="378" key="GridCell.Tab.0.right" timestamp="1606505052921">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="378" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
+    <state width="1877" height="378" key="GridCell.Tab.1.bottom" timestamp="1606505052921">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="378" key="GridCell.Tab.1.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
+    <state width="1877" height="378" key="GridCell.Tab.1.center" timestamp="1606505052921">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="378" key="GridCell.Tab.1.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
+    <state width="1877" height="378" key="GridCell.Tab.1.left" timestamp="1606505052921">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="378" key="GridCell.Tab.1.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
+    <state width="1877" height="378" key="GridCell.Tab.1.right" timestamp="1606505052921">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="378" key="GridCell.Tab.1.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
+    <state width="1877" height="378" key="GridCell.Tab.2.bottom" timestamp="1606505052921">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="378" key="GridCell.Tab.2.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
+    <state width="1877" height="378" key="GridCell.Tab.2.center" timestamp="1606505052921">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="378" key="GridCell.Tab.2.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
+    <state width="1877" height="378" key="GridCell.Tab.2.left" timestamp="1606505052921">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="378" key="GridCell.Tab.2.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
+    <state width="1877" height="378" key="GridCell.Tab.2.right" timestamp="1606505052921">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="378" key="GridCell.Tab.2.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
+    <state width="1877" height="378" key="GridCell.Tab.3.bottom" timestamp="1606505052921">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="378" key="GridCell.Tab.3.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
+    <state width="1877" height="378" key="GridCell.Tab.3.center" timestamp="1606505052921">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="378" key="GridCell.Tab.3.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
+    <state width="1877" height="378" key="GridCell.Tab.3.left" timestamp="1606505052921">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="378" key="GridCell.Tab.3.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
+    <state width="1877" height="378" key="GridCell.Tab.3.right" timestamp="1606505052921">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="378" key="GridCell.Tab.3.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
+    <state width="1877" height="378" key="GridCell.Tab.4.bottom" timestamp="1606505052921">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="378" key="GridCell.Tab.4.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
+    <state width="1877" height="378" key="GridCell.Tab.4.center" timestamp="1606505052921">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="378" key="GridCell.Tab.4.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
+    <state width="1877" height="378" key="GridCell.Tab.4.left" timestamp="1606505052921">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="378" key="GridCell.Tab.4.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
+    <state width="1877" height="378" key="GridCell.Tab.4.right" timestamp="1606505052921">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="378" key="GridCell.Tab.4.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
+    <state x="593" y="212" width="734" height="622" key="find.popup" timestamp="1606504620816">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="593" y="212" width="734" height="622" key="find.popup/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606504620816" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1606505061288">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505061288" />
   </component>
 </project>
