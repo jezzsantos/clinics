@@ -45,4 +45,10 @@
     <data name="Unavailability_ReservationWithoutReference" xml:space="preserve">
         <value>The slot is reserved without a reservation reference</value>
     </data>
+    <data name="ClinicDoctors_DuplicateDoctors" xml:space="preserve">
+        <value>There are multiple instances of the same doctor in this clinic</value>
+    </data>
+    <data name="PracticeManagers_DuplicateManagers" xml:space="preserve">
+        <value>There are multiple instances of the same practice manager in this clinic</value>
+    </data>
 </root>

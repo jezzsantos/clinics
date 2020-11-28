@@ -7,7 +7,11 @@ namespace ClinicsApplication.ReadModels
     [EntityName("Doctor")]
     public class Doctor : IReadModelEntity, IHasIdentity
     {
-        public string Name { get; set; }
+        public string FirstName { get; set; }
+
+        public string LastName { get; set; }
+
+        public string ClinicId { get; set; }
 
         public string Id { get; set; }
     }

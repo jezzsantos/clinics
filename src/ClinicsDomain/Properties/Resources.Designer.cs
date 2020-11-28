@@ -61,6 +61,15 @@ namespace ClinicsDomain.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to There are multiple instances of the same doctor in this clinic.
+        /// </summary>
+        internal static string ClinicDoctors_DuplicateDoctors {
+            get {
+                return ResourceManager.GetString("ClinicDoctors_DuplicateDoctors", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The location details for the clinic have not yet been defined.
         /// </summary>
         internal static string ClinicEntity_NotLocated {
@@ -120,6 +129,15 @@ namespace ClinicsDomain.Properties {
         internal static string Location_UnknownStreet {
             get {
                 return ResourceManager.GetString("Location_UnknownStreet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to There are multiple instances of the same practice manager in this clinic.
+        /// </summary>
+        internal static string PracticeManagers_DuplicateManagers {
+            get {
+                return ResourceManager.GetString("PracticeManagers_DuplicateManagers", resourceCulture);
             }
         }
         

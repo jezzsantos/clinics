@@ -72,6 +72,31 @@ namespace ClinicsDomain
                 }
             }
 
+            public class DoctorAddedToClinic : IChangeEvent
+            {
+                public string DoctorId { get; set; }
+
+                public string FirstName { get; set; }
+
+                public string LastName { get; set; }
+
+                public string EntityId { get; set; }
+
+                public DateTime ModifiedUtc { get; set; }
+
+                public static DoctorAddedToClinic Create(Identifier id, ClinicDoctor doctor)
+                {
+                    return new DoctorAddedToClinic
+                    {
+                        EntityId = id,
+                        DoctorId = doctor.Id,
+                        FirstName = doctor.FirstName,
+                        LastName = doctor.LastName,
+                        ModifiedUtc = DateTime.UtcNow
+                    };
+                }
+            }
+
             public class RegistrationChanged : IChangeEvent
             {
                 public string Jurisdiction { get; set; }

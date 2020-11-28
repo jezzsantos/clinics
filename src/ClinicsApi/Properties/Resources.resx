@@ -162,13 +162,19 @@
   <data name="SearchAvailableDoctorsRequestValidator_FromAfterTo" xml:space="preserve">
     <value>The From date must be before the To date</value>
   </data>
-  <data name="SearchAvailableDoctorsRequestValidator_InvalidFrom" xml:space="preserve">
+    <data name="SearchAvailableDoctorsRequestValidator_InvalidFrom" xml:space="preserve">
     <value>The From date must be a valid date and time</value>
   </data>
-  <data name="CreateAppointmentRequestValidator_StartNotFuture" xml:space="preserve">
+    <data name="CreateAppointmentRequestValidator_StartNotFuture" xml:space="preserve">
       <value>The StartUtc date cannot be in the past</value>
   </data>
-  <data name="CreateAppointmentRequestValidator_EndBeforeStart" xml:space="preserve">
+    <data name="CreateAppointmentRequestValidator_EndBeforeStart" xml:space="preserve">
       <value>The EndUtc cannot before the StartUtc</value>
+  </data>
+    <data name="CreateDoctorRequestValidator_InvalidFirstName" xml:space="preserve">
+      <value>The FirstName is missing or is not a valid name</value>
+  </data>
+    <data name="CreateDoctorRequestValidator_InvalidLastName" xml:space="preserve">
+      <value>The LastName is missing or is not a valid name</value>
   </data>
 </root>

@@ -2,7 +2,6 @@
 using Api.Interfaces.ServiceOperations;
 using ClinicsApi.Properties;
 using ClinicsDomain;
-using Domain.Interfaces;
 using Domain.Interfaces.Entities;
 using QueryAny.Primitives;
 using ServiceStack.FluentValidation;

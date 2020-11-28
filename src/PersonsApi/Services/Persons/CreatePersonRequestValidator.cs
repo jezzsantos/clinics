@@ -1,6 +1,6 @@
 ﻿using Api.Interfaces.ServiceOperations;
-using Domain.Interfaces;
 using PersonsApi.Properties;
+using PersonsDomain;
 using QueryAny.Primitives;
 using ServiceStack.FluentValidation;
 

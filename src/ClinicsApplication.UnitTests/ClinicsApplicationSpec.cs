@@ -92,7 +92,7 @@ namespace ClinicsApplication.UnitTests
         }
 
         [TestMethod]
-        public void WhenReserve_ThenReservesClinic()
+        public void WhenOffline_ThenOfflinesClinic()
         {
             var fromUtc = DateTime.UtcNow.AddMinutes(1);
             var toUtc = fromUtc.AddMinutes(1);
@@ -108,6 +108,27 @@ namespace ClinicsApplication.UnitTests
             var result = this.clinicsApplication.OfflineDoctor(this.caller.Object, "aclinicid", fromUtc, toUtc);
 
             result.Should().NotBeNull();
+        }
+
+        [TestMethod]
+        public void WhenAddDoctor_ThenAddsDoctorToClinic()
+        {
+            var doctor = new ClinicDoctor("adoctorid", "afirstname", "alastname");
+            var entity = new ClinicEntity(this.logger.Object, this.idFactory.Object);
+            entity.AddDoctor(doctor);
+
+            this.personService.Setup(ps => ps.Create(It.IsAny<string>(), It.IsAny<string>()))
+                .Returns(new Person
+                    {Id = "apersonid", Name = new PersonName {FirstName = "afirstname", LastName = "alastname"}});
+            this.storage.Setup(s => s.Load(It.Is<Identifier>(i => i == "aclinicid")))
+                .Returns(entity);
+            this.storage.Setup(s => s.Save(It.Is<ClinicEntity>(e => e.Unavailabilities.Count == 1)))
+                .Returns(entity);
+
+            var result = this.clinicsApplication.AddDoctor(this.caller.Object, "aclinicid", "afirstname", "alastname");
+
+            result.Should().NotBeNull();
+            this.personService.Verify(ps => ps.Create("afirstname", "alastname"));
         }
 
         [TestMethod]

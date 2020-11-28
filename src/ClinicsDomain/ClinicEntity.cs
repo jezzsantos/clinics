@@ -26,7 +26,9 @@ namespace ClinicsDomain
 
         public ClinicOwner Owner { get; private set; }
 
-        public PracticeManagers Managers { get; private set; }
+        public PracticeManagers Managers { get; } = new PracticeManagers();
+
+        public ClinicDoctors Doctors { get; } = new ClinicDoctors();
 
         public ClinicLicense License { get; private set; }
 
@@ -47,7 +49,6 @@ namespace ClinicsDomain
 
                 case Events.Clinic.OwnershipChanged changed:
                     Owner = new ClinicOwner(changed.Owner);
-                    Managers = new PracticeManagers();
                     Managers.Add(changed.Owner.ToIdentifier());
 
                     Logger.LogDebug("Clinic {Id} changed ownership to {Owner}", Id, Owner);
@@ -66,8 +67,15 @@ namespace ClinicsDomain
                     unavailability.SetAggregateEventHandler(RaiseChangeEvent);
                     RaiseToEntity(unavailability, @event);
                     Unavailabilities.Add(unavailability);
+
                     Logger.LogDebug("Doctor {Id} had been made unavailable from {From} until {To}", Id, added.From,
                         added.To);
+                    break;
+
+                case Events.Clinic.DoctorAddedToClinic added:
+                    Doctors.Add(added.DoctorId.ToIdentifier());
+
+                    Logger.LogDebug("Doctor {Id} had been added to clinic {Clinic}", added.DoctorId, Id);
                     break;
 
                 default:
@@ -90,6 +98,11 @@ namespace ClinicsDomain
             RaiseChangeEvent(ClinicsDomain.Events.Clinic.RegistrationChanged.Create(Id, plate));
         }
 
+        public void AddDoctor(ClinicDoctor doctor)
+        {
+            RaiseChangeEvent(ClinicsDomain.Events.Clinic.DoctorAddedToClinic.Create(Id, doctor));
+        }
+
         public void OfflineDoctor(TimeSlot slot)
         {
             RaiseChangeEvent(ClinicsDomain.Events.Clinic.DoctorUnavailabilitySlotAdded.Create(Id, slot,
@@ -107,8 +120,10 @@ namespace ClinicsDomain
         {
             var isValid = base.EnsureValidState();
 
-            Unavailabilities.EnsureValidState();
+            Doctors.EnsureValidState();
+            Managers.EnsureValidState();
 
+            Unavailabilities.EnsureValidState();
             if (Unavailabilities.Count > 0)
             {
                 if (!Location.HasValue())

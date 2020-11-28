@@ -22,5 +22,16 @@ namespace InfrastructureServices.ApplicationServices
 
             return client.Get(new GetPersonRequest {Id = id}).Person;
         }
+
+        public Person Create(string firstName, string lastName)
+        {
+            var client = new JsonServiceClient(this.baseUrl);
+
+            return client.Post(new CreatePersonRequest
+            {
+                FirstName = firstName,
+                LastName = lastName
+            }).Person;
+        }
     }
 }

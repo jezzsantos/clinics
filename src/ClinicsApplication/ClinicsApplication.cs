@@ -61,7 +61,7 @@ namespace ClinicsApplication
             id.GuardAgainstNullOrEmpty(nameof(id));
 
             var clinic = this.storage.Load(id.ToIdentifier());
-            if (id == null)
+            if (clinic == null)
             {
                 throw new ResourceNotFoundException();
             }
@@ -84,7 +84,7 @@ namespace ClinicsApplication
             toUtc.GuardAgainstMinValue(nameof(toUtc));
 
             var clinic = this.storage.Load(id.ToIdentifier());
-            if (id == null)
+            if (clinic == null)
             {
                 throw new ResourceNotFoundException();
             }
@@ -110,6 +110,30 @@ namespace ClinicsApplication
 
             return searchOptions.ApplyWithMetadata(doctors
                 .ConvertAll(doc => WithGetOptions(doc.ToDoctor(), getOptions)));
+        }
+
+        public Doctor AddDoctor(ICurrentCaller caller, string id, string firstName, string lastName)
+        {
+            caller.GuardAgainstNull(nameof(caller));
+            id.GuardAgainstNullOrEmpty(nameof(id));
+
+            var doctor = this.personsService.Create(firstName, lastName)
+                .ToClinicDoctor();
+
+            var clinic = this.storage.Load(id.ToIdentifier());
+            if (clinic == null)
+            {
+                throw new ResourceNotFoundException();
+            }
+
+            clinic.AddDoctor(doctor);
+
+            this.storage.Save(clinic);
+
+            this.logger.LogInformation("Doctor {Doctor} was added to clinic {Clinic}, by {Caller}", doctor.Id,
+                clinic.Id, caller.Id);
+
+            return doctor.ToDoctor();
         }
 
         public Doctor GetDoctor(ICurrentCaller caller, string doctorId)
@@ -140,6 +164,7 @@ namespace ClinicsApplication
         public static Doctor ToDoctor(this ReadModels.Doctor readModel)
         {
             var dto = readModel.ConvertTo<Doctor>();
+            dto.Name = new PersonName {FirstName = readModel.FirstName, LastName = readModel.LastName};
             return dto;
         }
 
@@ -173,6 +198,16 @@ namespace ClinicsApplication
             var owner = person.ConvertTo<ClinicOwner>();
 
             return owner;
+        }
+
+        public static ClinicDoctor ToClinicDoctor(this Person person)
+        {
+            return new ClinicDoctor(person.Id, person.Name.FirstName, person.Name.LastName);
+        }
+
+        public static Doctor ToDoctor(this ClinicDoctor doctor)
+        {
+            return doctor.ConvertTo<Doctor>();
         }
     }
 }

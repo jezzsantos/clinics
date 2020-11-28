@@ -143,6 +143,27 @@ namespace ClinicsApi.IntegrationTests
             clinics.Doctors[0].Id.Should().Be(clinic2.Id);
         }
 
+        [TestMethod]
+        public void WhenGetDoctorAfterAddingToClinic_ThenReturnsDoctor()
+        {
+            var client = new JsonServiceClient(ServiceUrl);
+
+            var clinic = RegisterClinic(client);
+
+            var doctor = client.Post(new CreateDoctorRequest
+            {
+                ClinicId = clinic.Id,
+                FirstName = "afirstname",
+                LastName = "alastname"
+            }).Doctor;
+
+            var doctors = client.Get(new SearchAvailableDoctorsRequest()).Doctors;
+
+            doctors.First().Id.Should().Be(doctor.Id);
+            doctors.First().Name.FirstName.Should().Be("afirstname");
+            doctors.First().Name.LastName.Should().Be("alastname");
+        }
+
         private static Clinic RegisterClinic(IRestClient client)
         {
             var clinic1 = client.Post(new CreateClinicRequest

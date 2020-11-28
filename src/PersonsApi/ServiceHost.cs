@@ -19,7 +19,6 @@ using ServiceStack;
 using ServiceStack.Configuration;
 using ServiceStack.Validation;
 using Storage;
-using Storage.Azure;
 using Storage.Interfaces;
 using Storage.ReadModels;
 using IRepository = Storage.IRepository;
@@ -64,6 +63,7 @@ namespace PersonsApi
             container.AddSingleton<IChangeEventMigrator>(c => new ChangeEventTypeMigrator());
             container.AddSingleton<IDomainFactory>(c =>
                 DomainFactory.CreateRegistered(c.Resolve<IDependencyContainer>(), AssembliesContainingDomainEntities));
+
             container.AddSingleton<IEventStreamStorage<PersonEntity>>(c =>
                 new GeneralEventStreamStorage<PersonEntity>(c.Resolve<ILogger>(), c.Resolve<IDomainFactory>(),
                     c.Resolve<IChangeEventMigrator>(),
@@ -73,6 +73,7 @@ namespace PersonsApi
                     ResolveRepository(c)));
             container.AddSingleton<IPersonsApplication, PersonsApplication.PersonsApplication>();
             container.AddSingleton<IEmailService, EmailService>();
+
             container.AddSingleton<IReadModelProjectionSubscription>(c => new InProcessReadModelProjectionSubscription(
                 c.Resolve<ILogger>(),
                 new ReadModelProjector(c.Resolve<ILogger>(),
@@ -82,6 +83,7 @@ namespace PersonsApi
                     c.Resolve<IChangeEventMigrator>(),
                     new PersonEntityReadModelProjection(c.Resolve<ILogger>(), ResolveRepository(c))),
                 c.Resolve<IEventStreamStorage<PersonEntity>>()));
+
             container.AddSingleton<IChangeEventNotificationSubscription>(c =>
                 new InProcessChangeEventNotificationSubscription(
                     c.Resolve<ILogger>(),

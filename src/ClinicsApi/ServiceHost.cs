@@ -35,7 +35,8 @@ namespace ClinicsApi
         public static readonly Assembly[] AssembliesContainingDomainEntities =
         {
             typeof(EntityEvent).Assembly,
-            typeof(ClinicEntity).Assembly
+            typeof(ClinicEntity).Assembly,
+            typeof(AppointmentEntity).Assembly
         };
         private static IRepository repository;
         private IReadModelProjectionSubscription readModelProjectionSubscription;
@@ -67,6 +68,7 @@ namespace ClinicsApi
             container.AddSingleton<IChangeEventMigrator>(c => new ChangeEventTypeMigrator());
             container.AddSingleton<IDomainFactory>(c => DomainFactory.CreateRegistered(
                 c.Resolve<IDependencyContainer>(), AssembliesContainingDomainEntities));
+
             container.AddSingleton<IEventStreamStorage<ClinicEntity>>(c =>
                 new GeneralEventStreamStorage<ClinicEntity>(c.Resolve<ILogger>(), c.Resolve<IDomainFactory>(),
                     c.Resolve<IChangeEventMigrator>(),
@@ -77,6 +79,11 @@ namespace ClinicsApi
             container.AddSingleton<IClinicsApplication, ClinicsApplication.ClinicsApplication>();
             container.AddSingleton<IPersonsService>(c =>
                 new PersonsServiceClient(c.Resolve<IAppSettings>().GetString("PersonsApiBaseUrl")));
+
+            container.AddSingleton<IEventStreamStorage<AppointmentEntity>>(c =>
+                new GeneralEventStreamStorage<AppointmentEntity>(c.Resolve<ILogger>(), c.Resolve<IDomainFactory>(),
+                    c.Resolve<IChangeEventMigrator>(),
+                    ResolveRepository(c)));
             container.AddSingleton<IAppointmentStorage>(c =>
                 new AppointmentStorage(c.Resolve<ILogger>(), c.Resolve<IDomainFactory>(),
                     c.Resolve<IEventStreamStorage<AppointmentEntity>>(), ResolveRepository(c)));
@@ -92,7 +99,8 @@ namespace ClinicsApi
                         ResolveRepository(c)),
                     c.Resolve<IChangeEventMigrator>(),
                     new ClinicEntityReadModelProjection(c.Resolve<ILogger>(), ResolveRepository(c))),
-                c.Resolve<IEventStreamStorage<ClinicEntity>>()));
+                c.Resolve<IEventStreamStorage<ClinicEntity>>(), c.Resolve<IEventStreamStorage<AppointmentEntity>>()));
+
             container.AddSingleton<IChangeEventNotificationSubscription>(c =>
                 new InProcessChangeEventNotificationSubscription(
                     c.Resolve<ILogger>(),

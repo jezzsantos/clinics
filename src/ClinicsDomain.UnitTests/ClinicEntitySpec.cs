@@ -37,7 +37,7 @@ namespace ClinicsDomain.UnitTests
         }
 
         [TestMethod]
-        public void WhenSetManufacturer_ThenManufactured()
+        public void WhenSetLocation_ThenManufactured()
         {
             var manufacturer =
                 new Location(Location.MinCountry + 1, Location.Cities[0], Location.Streets[0]);
@@ -57,6 +57,16 @@ namespace ClinicsDomain.UnitTests
             this.entity.Owner.Should().Be(new ClinicOwner(owner.OwnerId));
             this.entity.Managers.Managers.Single().Should().Be("anownerid".ToIdentifier());
             this.entity.Events[1].Should().BeOfType<Events.Clinic.OwnershipChanged>();
+        }
+
+        [TestMethod]
+        public void WhenAddDoctor_ThenDoctorAdded()
+        {
+            var doctor = new ClinicDoctor("adoctorid", "afirstname", "alastname");
+            this.entity.AddDoctor(doctor);
+
+            this.entity.Doctors.Doctors.Single().Should().Be("adoctorid".ToIdentifier());
+            this.entity.Events[1].Should().BeOfType<Events.Clinic.DoctorAddedToClinic>();
         }
 
         [TestMethod]

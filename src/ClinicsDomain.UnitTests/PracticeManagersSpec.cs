@@ -31,7 +31,7 @@ namespace ClinicsDomain.UnitTests
         }
 
         [TestMethod]
-        public void WhenAddAndManagerAndExist_ThenDoesNotManager()
+        public void WhenAddAndManagerAndExist_ThenOnlySingleManager()
         {
             this.managers.Add("amanagerid".ToIdentifier());
             this.managers.Add("amanagerid".ToIdentifier());

@@ -7,30 +7,30 @@ using QueryAny.Primitives;
 
 namespace ClinicsDomain
 {
-    public class PracticeManagers : ValueObjectBase<PracticeManagers>
+    public class ClinicDoctors : ValueObjectBase<ClinicDoctors>
     {
-        private List<Identifier> managers;
+        private List<Identifier> doctors;
 
-        public PracticeManagers()
+        public ClinicDoctors()
         {
-            this.managers = new List<Identifier>();
+            this.doctors = new List<Identifier>();
         }
 
-        public IReadOnlyList<Identifier> Managers => this.managers;
+        public IReadOnlyList<Identifier> Doctors => this.doctors;
 
         public void Add(Identifier id)
         {
             id.GuardAgainstNull(nameof(id));
 
-            if (!this.managers.Contains(id))
+            if (!this.doctors.Contains(id))
             {
-                this.managers.Add(id);
+                this.doctors.Add(id);
             }
         }
 
         public override string Dehydrate()
         {
-            return this.managers
+            return this.doctors
                 .Select(man => man)
                 .Join(";");
         }
@@ -39,7 +39,7 @@ namespace ClinicsDomain
         {
             if (value.HasValue())
             {
-                this.managers = value.SafeSplit(";")
+                this.doctors = value.SafeSplit(";")
                     .Select(Identifier.Create)
                     .ToList();
             }
@@ -52,21 +52,21 @@ namespace ClinicsDomain
 
         protected override IEnumerable<object> GetAtomicValues()
         {
-            return new[] {Managers};
+            return new[] {Doctors};
         }
 
         public void EnsureValidState()
         {
             if (HasDuplicates())
             {
-                throw new RuleViolationException(Resources.PracticeManagers_DuplicateManagers);
+                throw new RuleViolationException(Resources.ClinicDoctors_DuplicateDoctors);
             }
         }
 
         private bool HasDuplicates()
         {
-            var doctorsSet = new HashSet<Identifier>(Managers);
-            return Managers.Count > doctorsSet.Count();
+            var doctorsSet = new HashSet<Identifier>(Doctors);
+            return Doctors.Count > doctorsSet.Count();
         }
     }
 }

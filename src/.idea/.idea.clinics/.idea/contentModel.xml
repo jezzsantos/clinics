@@ -24,7 +24,7 @@
         <e p="Validators" t="Include">
           <e p="HasGetOptionsValidator.cs" t="Include" />
           <e p="HasSearchOptionsValidator.cs" t="Include" />
-          <e p="ValidationRuleExtensions.cs" t="Include" />
+          <e p="ValidationExtensions.cs" t="Include" />
         </e>
       </e>
       <e p="Api.Common.UnitTests" t="IncludeRecursive">
@@ -66,6 +66,8 @@
           <e p="CreateAppointmentResponse.cs" t="Include" />
           <e p="CreateClinicRequest.cs" t="Include" />
           <e p="CreateClinicResponse.cs" t="Include" />
+          <e p="CreateDoctorRequest.cs" t="Include" />
+          <e p="CreateDoctorResponse.cs" t="Include" />
           <e p="CreatePersonRequest.cs" t="Include" />
           <e p="CreatePersonResponse.cs" t="Include" />
           <e p="GetOperation.cs" t="Include" />
@@ -236,6 +238,7 @@
           <e p="clinics" t="Include">
             <e p="ClinicsService.cs" t="Include" />
             <e p="CreateClinicRequestValidator.cs" t="Include" />
+            <e p="CreateDoctorRequestValidator.cs" t="Include" />
             <e p="OfflineDoctorRequestValidator.cs" t="Include" />
             <e p="RegisterClinicRequestValidator.cs" t="Include" />
             <e p="SearchAvailableDoctorsRequestValidator.cs" t="Include" />
@@ -275,6 +278,7 @@
           </e>
           <e p="clinics" t="Include">
             <e p="CreateClinicRequestValidatorSpec.cs" t="Include" />
+            <e p="CreateDoctorRequestValidatorSpec.cs" t="Include" />
             <e p="OfflineDoctorRequestValidatorSpec.cs" t="Include" />
             <e p="RegisterClinicRequestValidatorSpec.cs" t="Include" />
             <e p="SearchAvailableDoctorsRequestValidatorSpec.cs" t="Include" />
@@ -317,6 +321,8 @@
       </e>
       <e p="ClinicsDomain" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="ClinicDoctor.cs" t="Include" />
+        <e p="ClinicDoctors.cs" t="Include" />
         <e p="ClinicEntity.cs" t="Include" />
         <e p="ClinicLicense.cs" t="Include" />
         <e p="ClinicOwner.cs" t="Include" />
@@ -338,9 +344,11 @@
         <e p="Unavailabilities.cs" t="Include" />
         <e p="UnavailabilityCausedBy.cs" t="Include" />
         <e p="UnavailabilityEntity.cs" t="Include" />
+        <e p="Validations.cs" t="Include" />
       </e>
       <e p="ClinicsDomain.UnitTests" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="ClinicDoctorsSpec.cs" t="Include" />
         <e p="ClinicEntitySpec.cs" t="Include" />
         <e p="ClinicLicenseSpec.cs" t="Include" />
         <e p="ClinicOwnerSpec.cs" t="Include" />
@@ -672,6 +680,7 @@
           <e p="Resources.Designer.cs" t="Include" />
           <e p="Resources.resx" t="Include" />
         </e>
+        <e p="Validations.cs" t="Include" />
       </e>
       <e p="PersonsDomain.UnitTests" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />

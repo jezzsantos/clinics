@@ -13,6 +13,7 @@ namespace ClinicsStorage
     public class ClinicEntityReadModelProjection : IReadModelProjection
     {
         private readonly IReadModelStorage<Clinic> clinicStorage;
+        private readonly IReadModelStorage<Doctor> doctorStorage;
         private readonly ILogger logger;
         private readonly IReadModelStorage<Unavailability> unavailabilityStorage;
 
@@ -23,6 +24,7 @@ namespace ClinicsStorage
 
             this.logger = logger;
             this.clinicStorage = new GeneralReadModelStorage<Clinic>(logger, repository);
+            this.doctorStorage = new GeneralReadModelStorage<Doctor>(logger, repository);
             this.unavailabilityStorage = new GeneralReadModelStorage<Unavailability>(logger, repository);
         }
 
@@ -58,6 +60,16 @@ namespace ClinicsStorage
                     {
                         dto.LicenseJurisdiction = e.Jurisdiction;
                         dto.LicenseCertificateNumber = e.Number;
+                    });
+                    break;
+
+                case Events.Clinic.DoctorAddedToClinic e:
+                    this.doctorStorage.Create(e.EntityId, dto =>
+                    {
+                        dto.Id = e.DoctorId;
+                        dto.ClinicId = e.EntityId;
+                        dto.FirstName = e.FirstName;
+                        dto.LastName = e.LastName;
                     });
                     break;
 

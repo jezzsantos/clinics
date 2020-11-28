@@ -115,6 +115,24 @@ namespace ClinicsApi.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The FirstName is missing or is not a valid name.
+        /// </summary>
+        internal static string CreateDoctorRequestValidator_InvalidFirstName {
+            get {
+                return ResourceManager.GetString("CreateDoctorRequestValidator_InvalidFirstName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The LastName is missing or is not a valid name.
+        /// </summary>
+        internal static string CreateDoctorRequestValidator_InvalidLastName {
+            get {
+                return ResourceManager.GetString("CreateDoctorRequestValidator_InvalidLastName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The From date must be before the To date.
         /// </summary>
         internal static string OfflineDoctorRequestValidator_FromAfterTo {

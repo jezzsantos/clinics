@@ -19,18 +19,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb4eb635-542b-4676-970d-9407f66c71dc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/AppointmentsStorage/AppointmentStorage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AppointmentsStorage/AppointmentsStorage.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InfrastructureServices/ApplicationServices/ClinicsInProcessService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicsApi/ClinicsApi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApi/ClinicsApi.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicsApi/ServiceHost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApi/ServiceHost.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.clinics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.clinics/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application.Common/Resources/Doctor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application.Common/Resources/Doctor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClinicsApi.IntegrationTests/ClinicsApi.IntegrationTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApi.IntegrationTests/ClinicsApi.IntegrationTests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClinicsApi.IntegrationTests/ClinicsApiSpec.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApi.IntegrationTests/ClinicsApiSpec.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClinicsApi.IntegrationTests/StubPersonsService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApi.IntegrationTests/StubPersonsService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClinicsApi.IntegrationTests/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApi.IntegrationTests/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClinicsApi/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApi/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ClinicsApplication/ClinicsApplication.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApplication/ClinicsApplication.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicsApplication/IClinicsApplication.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApplication/IClinicsApplication.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicsApplication/ReadModels/Doctor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApplication/ReadModels/Doctor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicsApplication/Storage/IClinicStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApplication/Storage/IClinicStorage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClinicsStorage/ClinicStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsStorage/ClinicStorage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonsApi/ServiceHost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PersonsApi/ServiceHost.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinics.sln" beforeDir="false" afterPath="$PROJECT_DIR$/clinics.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonsApi.IntegrationTests/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/PersonsApi.IntegrationTests/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonsApi/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/PersonsApi/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Storage.IntegrationTests/appsettings.CI.json" beforeDir="false" afterPath="$PROJECT_DIR$/Storage.IntegrationTests/appsettings.CI.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Storage.IntegrationTests/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Storage.IntegrationTests/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,62 +48,61 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/ClinicsApi/Properties/Resources.Designer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ClinicsDomain/Properties/Resources.Designer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Projects/github/jezzsantos/clinics/src/AppointmentsApplication/AppointmentsApplication.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ClinicsApplication/IAppointmentsApplication.cs" />
-        <option value="$PROJECT_DIR$/ClinicsApplication/AppointmentsApplication.cs" />
-        <option value="$PROJECT_DIR$/AppointmentsDomain/AppointmentsDomain.csproj" />
-        <option value="$PROJECT_DIR$/AppointmentsDomain/Class1.cs" />
-        <option value="$PROJECT_DIR$/ClinicsApplication.UnitTests/AppointmentsApplicationSpec.cs" />
-        <option value="$PROJECT_DIR$/ClinicsApplication/Storage/IAppointmentStorage.cs" />
-        <option value="$PROJECT_DIR$/AppointmentsApplication/Class1.cs" />
-        <option value="$PROJECT_DIR$/AppointmentsApplication/AppointmentsApplication.csproj" />
-        <option value="$PROJECT_DIR$/AppointmentsApplication/ReadModels/Appointment.cs" />
-        <option value="$PROJECT_DIR$/AppointmentsApplication/Storage/IAppointmentStorage.cs" />
-        <option value="$PROJECT_DIR$/AppointmentsApplication.UnitTests/UnitTest1.cs" />
-        <option value="$PROJECT_DIR$/AppointmentsApplication/IAppointmentsApplication.cs" />
-        <option value="$PROJECT_DIR$/ClinicsApi/Services/Appointments/AppointmentsService.cs" />
-        <option value="$PROJECT_DIR$/ApplicationServices/IClinicsService.cs" />
-        <option value="$PROJECT_DIR$/Domain.Common/Class1.cs" />
-        <option value="$PROJECT_DIR$/ClinicsDomain/Properties/Resources.resx" />
-        <option value="$PROJECT_DIR$/Domain.Common/Properties/Resources.resx" />
-        <option value="$PROJECT_DIR$/Domain.Common/TimeSlot.cs" />
-        <option value="$PROJECT_DIR$/ClinicsDomain/ClinicsDomain.csproj" />
-        <option value="$PROJECT_DIR$/AppointmentsDomain/AppointmentDoctor.cs" />
-        <option value="$PROJECT_DIR$/AppointmentsDomain/Events.cs" />
-        <option value="$PROJECT_DIR$/AppointmentsApplication.UnitTests/AppointmentsApplicationSpec.cs" />
-        <option value="$PROJECT_DIR$/AppointmentsDomain/Properties/Resources.resx" />
-        <option value="$PROJECT_DIR$/Domain.Common/DateTimeExtensions.cs" />
-        <option value="$PROJECT_DIR$/ClinicsDomain/UnavailabilityEntity.cs" />
-        <option value="$PROJECT_DIR$/ClinicsDomain/Events.cs" />
-        <option value="$PROJECT_DIR$/ClinicsDomain/ClinicEntity.cs" />
-        <option value="$PROJECT_DIR$/ClinicsDomain/Unavailabilities.cs" />
         <option value="$PROJECT_DIR$/ClinicsDomain.UnitTests/TimeSlotSpec.cs" />
         <option value="$PROJECT_DIR$/Domain.Common.UnitTests/UnitTest1.cs" />
         <option value="$PROJECT_DIR$/Domain.Common.UnitTests/Domain.Common.UnitTests.csproj" />
         <option value="$PROJECT_DIR$/Domain.Common/Domain.Common.csproj" />
         <option value="$PROJECT_DIR$/Domain.Common.UnitTests/TimeSlotSpec.cs" />
-        <option value="$PROJECT_DIR$/ClinicsDomain.UnitTests/ClinicEntitySpec.cs" />
         <option value="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/CreateAppointmentRequest.cs" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.txt" />
         <option value="$PROJECT_DIR$/ClinicsApi/Services/Appointments/CreateAppointmentRequestValidator.cs" />
         <option value="$PROJECT_DIR$/ClinicsApi.UnitTests/Services/Appointments/CreateClinicRequestValidatorSpec.cs" />
         <option value="$PROJECT_DIR$/AppointmentsDomain/AppointmentEntity.cs" />
         <option value="$PROJECT_DIR$/AppointmentsApplication/AppointmentsApplication.cs" />
-        <option value="$PROJECT_DIR$/PersonsApi/ServiceHost.cs" />
-        <option value="$PROJECT_DIR$/ClinicsApplication/IClinicsApplication.cs" />
         <option value="$PROJECT_DIR$/InfrastructureServices/ApplicationServices/ClinicsInProcessService.cs" />
         <option value="$PROJECT_DIR$/AppointmentsStorage/Class1.cs" />
         <option value="$PROJECT_DIR$/AppointmentsStorage/AppointmentsStorage.csproj" />
         <option value="$PROJECT_DIR$/AppointmentsStorage/AppointmentStorage.cs" />
-        <option value="$PROJECT_DIR$/ClinicsApi/ServiceHost.cs" />
         <option value="$PROJECT_DIR$/ClinicsStorage/ClinicStorage.cs" />
         <option value="$PROJECT_DIR$/ClinicsApplication/Storage/IClinicStorage.cs" />
+        <option value="$PROJECT_DIR$/ClinicsApi/Services/Clinics/ClinicsService.cs" />
+        <option value="$PROJECT_DIR$/Api.Interfaces/ServiceOperations/CreateDoctorRequest.cs" />
+        <option value="$PROJECT_DIR$/PersonsDomain/Validations.cs" />
+        <option value="$PROJECT_DIR$/ClinicsDomain/Validations.cs" />
+        <option value="$PROJECT_DIR$/Api.Common/ValidationExtensions.cs" />
+        <option value="$PROJECT_DIR$/Api.Common/Properties/Resources.resx" />
+        <option value="$PROJECT_DIR$/Domain.Interfaces/Validations.cs" />
+        <option value="$PROJECT_DIR$/Api.Common/Validators/ValidationExtensions.cs" />
+        <option value="$PROJECT_DIR$/ClinicsApi/Services/Clinics/CreateDoctorRequestValidator.cs" />
+        <option value="$PROJECT_DIR$/ClinicsApi/Services/Clinics/RegisterClinicRequestValidator.cs" />
+        <option value="$PROJECT_DIR$/ClinicsApi/Properties/Resources.resx" />
+        <option value="$PROJECT_DIR$/ClinicsApi.UnitTests/Services/Clinics/CreateDoctorRequestValidatorSpec.cs" />
+        <option value="$PROJECT_DIR$/PersonsApi/Services/Persons/CreatePersonRequestValidator.cs" />
+        <option value="$PROJECT_DIR$/ClinicsDomain/Properties/Resources.resx" />
+        <option value="$PROJECT_DIR$/ClinicsDomain/ClinicDoctors.cs" />
+        <option value="$PROJECT_DIR$/ClinicsDomain/PracticeManagers.cs" />
+        <option value="$PROJECT_DIR$/ClinicsDomain.UnitTests/PracticeManagersSpec.cs" />
+        <option value="$PROJECT_DIR$/ClinicsDomain.UnitTests/ClinicDoctorsSpec.cs" />
+        <option value="$PROJECT_DIR$/ClinicsStorage/ClinicEntityReadModelProjection.cs" />
         <option value="$PROJECT_DIR$/ClinicsApplication/ReadModels/Doctor.cs" />
+        <option value="$PROJECT_DIR$/ClinicsDomain/ClinicEntity.cs" />
+        <option value="$PROJECT_DIR$/ClinicsDomain/ClinicDoctor.cs" />
+        <option value="$PROJECT_DIR$/ClinicsDomain/Events.cs" />
+        <option value="$PROJECT_DIR$/ClinicsDomain.UnitTests/ClinicEntitySpec.cs" />
+        <option value="$PROJECT_DIR$/ClinicsApi.UnitTests/Services/Clinics/SearchAvailableDoctorsRequestValidatorSpec.cs" />
+        <option value="$PROJECT_DIR$/ClinicsApplication.UnitTests/ClinicsApplicationSpec.cs" />
+        <option value="$PROJECT_DIR$/ClinicsApplication/IClinicsApplication.cs" />
+        <option value="$PROJECT_DIR$/PersonsApi/ServiceHost.cs" />
+        <option value="$PROJECT_DIR$/ClinicsApi/ServiceHost.cs" />
+        <option value="$PROJECT_DIR$/Application.Common/Resources/Doctor.cs" />
         <option value="$PROJECT_DIR$/ClinicsApplication/ClinicsApplication.cs" />
+        <option value="$PROJECT_DIR$/ClinicsApi.IntegrationTests/StubPersonsService.cs" />
+        <option value="$PROJECT_DIR$/ClinicsApi.IntegrationTests/ClinicsApiSpec.cs" />
+        <option value="$PROJECT_DIR$/ClinicsApi.IntegrationTests/appsettings.json" />
       </list>
     </option>
   </component>
@@ -123,7 +122,6 @@
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30010834" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="XThreadsFramesViewSplitterKey" value="0.41731265" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -215,6 +213,7 @@
       <updated>1606498508987</updated>
       <workItem from="1606498515772" duration="20964000" />
       <workItem from="1606546460169" duration="2659000" />
+      <workItem from="1606591564970" duration="5240000" />
     </task>
     <task id="LOCAL-00001" summary="Added Sql files">
       <created>1606522230245</created>
@@ -237,11 +236,348 @@
       <option name="project" value="LOCAL" />
       <updated>1606548239553</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added Doctors to Clinic">
+      <created>1606595817187</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606595817187</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Hosting" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Diagnostics" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Web.HttpUtility" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Mvc.Formatters.Json" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Runtime.InteropServices" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Web" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Routing.Abstractions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Localization.Routing" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Security.Cryptography.Encoding" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.IdentityModel.JsonWebTokens" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Net.Requests" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Mvc.Formatters.Xml" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.ComponentModel.Composition" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Data.Common" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.IdentityModel.Logging" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.IO.FileSystem.Primitives" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.VisualStudio.CodeCoverage.Shim" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.Logging.EventLog" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.SignalR.Common" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Security.Principal" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Globalization.Extensions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.AppContext" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.IO.IsolatedStorage" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.Configuration.EnvironmentVariables" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Net.WebProxy" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Mvc.ApiExplorer" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.HttpOverrides" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.ObjectModel" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Windows.Extensions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="QueryAny" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.IO.Pipes" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Rewrite" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Reflection.Metadata" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Net.Http" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.CookiePolicy" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Threading.Overlapped" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Security.Claims" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Globalization" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.IdentityModel.Tokens" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Server.Kestrel.Core" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.Logging.Abstractions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Diagnostics.FileVersionInfo" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.TestPlatform.Utilities" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Castle.Core" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Security.Cryptography.X509Certificates" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Xml.Serialization" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.IO.FileSystem" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.FileProviders.Embedded" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Collections.Concurrent" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.IO.Compression.ZipFile" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Mvc" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.IO.UnmanagedMemoryStream" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Net.WebClient" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Text.Encoding.CodePages" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Drawing.Primitives" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Net" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.ObjectPool" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Drawing.Common" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Drawing" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Runtime.Handles" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Cryptography.Internal" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Memory" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.Logging.Debug" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Dynamic.Runtime" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Components.Web" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.Identity.Core" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="PhoneNumbers" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.VisualStudio.TestPlatform.ObjectModel" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="ServiceStack" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Xml.XmlSerializer" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Mvc.RazorPages" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Threading" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Collections.NonGeneric" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Security.Cryptography.Algorithms" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Threading.ThreadPool" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.Configuration.Abstractions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Reflection.DispatchProxy" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.Logging.TraceSource" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Antiforgery" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Diagnostics.HealthChecks" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Runtime" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Runtime.Serialization.Formatters" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Threading.Tasks.Parallel" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.IO.Compression" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Configuration" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="ServiceStack.Redis" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.ServiceModel.Web" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.WebUtilities" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.DependencyInjection.Abstractions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.ComponentModel.Primitives" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Diagnostics.Tools" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Cors" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.DataProtection" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Mvc.Razor" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Net.Security" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.Localization.Abstractions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.Options.DataAnnotations" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Runtime.CompilerServices.VisualC" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Threading.Tasks.Dataflow" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Security.SecureString" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Routing" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.FileSystemGlobbing" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.ValueTuple" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.Configuration" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.VisualBasic.Core" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Xml.XmlDocument" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Session" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.Diagnostics.HealthChecks" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Http.Connections" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.SignalR" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Mvc.DataAnnotations" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.TestPlatform.CoreUtilities" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Components.Forms" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Authentication.Core" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.FileProviders.Physical" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Mvc.Abstractions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.Primitives" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Threading.Timer" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="WindowsBase" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Xml.ReaderWriter" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.IO" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Runtime.InteropServices.WindowsRuntime" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.IO.FileSystem.Watcher" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Server.HttpSys" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Reflection.Emit" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.Configuration.UserSecrets" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.HostFiltering" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Diagnostics.Process" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.VisualStudio.TestPlatform.Common" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Diagnostics.TextWriterTraceListener" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="ServiceStack.Text" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Azure.Cosmos.Table" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.DependencyInjection" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Azure.Cosmos.Client" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Collections" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Data.SqlClient" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Authentication.Cookies" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.Options.ConfigurationExtensions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Reflection.Emit.ILGeneration" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Http.Connections.Common" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Runtime.Serialization.Json" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Diagnostics.Debug" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.Logging.EventSource" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Security.Cryptography.Primitives" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Threading.Thread" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Buffers" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Resources.Writer" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.IdentityModel.Tokens.Jwt" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.OData.Core" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.IO.Compression.Brotli" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.TestPlatform.CommunicationUtilities" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.Configuration.Binder" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Net.NetworkInformation" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Threading.Tasks" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.TestPlatform.PlatformAbstractions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Xml.XPath.XDocument" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Security.Cryptography.Csp" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.ServiceProcess" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.ResponseCompression" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Runtime.Serialization.Xml" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.ComponentModel.TypeConverter" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Text.Encodings.Web" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.Logging" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Server.IIS" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Net.Ping" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Moq" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Runtime.Loader" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.Configuration.Ini" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Xml.Linq" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.Configuration.FileExtensions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Diagnostics.EventLog" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.DataProtection.Abstractions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Text.Encoding.Extensions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Threading.Tasks.Extensions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.IO.FileSystem.DriveInfo" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Mvc.TagHelpers" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Transactions.Local" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Security.Cryptography.Cng" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Security.Principal.Windows" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="FluentAssertions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Components.Server" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Net.Http.Headers" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Authorization" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Net.Sockets" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.Hosting.Abstractions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.TestPlatform.CrossPlatEngine" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Reflection.TypeExtensions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.FileProviders.Abstractions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.Configuration.Xml" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="netstandard" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Diagnostics.Contracts" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="mscorlib" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.ComponentModel.Annotations" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Connections.Abstractions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.IO.Pipelines" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Resources.ResourceManager" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Linq.Queryable" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Text.RegularExpressions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.ResponseCaching" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.FileProviders.Composite" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Runtime.InteropServices.RuntimeInformation" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Console" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Runtime.CompilerServices.Unsafe" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.Caching.Abstractions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.CSharp" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.ComponentModel.DataAnnotations" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Diagnostics.Tracing" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Linq" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Net.Mail" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Security.AccessControl" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.Logging.Console" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Runtime.Serialization.Primitives" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Razor" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.IdentityModel.Protocols.OpenIdConnect" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.IdentityModel.Protocols" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Mvc.Localization" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.SignalR.Protocols.Json" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Hosting.Server.Abstractions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="ServiceStack.Interfaces" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Security.Permissions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Razor.Runtime" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.Configuration.Json" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Html.Abstractions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Xml.XPath" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Diagnostics.TraceSource" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.Configuration.CommandLine" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.VisualBasic" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Diagnostics.DiagnosticSource" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Security" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Linq.Parallel" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.Options" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Reflection.Emit.Lightweight" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Runtime.Extensions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.ResponseCaching.Abstractions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Numerics" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Authentication.OAuth" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Cryptography.KeyDerivation" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Text.Json" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.IO.Compression.FileSystem" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Data.DataSetExtensions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.VisualStudio.TestPlatform.TestFramework" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Authentication" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Diagnostics.StackTrace" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Text.Encoding" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Threading.Channels" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Mvc.Cors" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Net.WebSockets.Client" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Identity" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Hosting.Abstractions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Numerics.Vectors" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Reflection.Primitives" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.JSInterop" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.ComponentModel" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.ServiceModel" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.Http" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.StaticFiles" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.WebSockets" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.DataProtection.Extensions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Http" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Net.NameResolution" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Net.WebHeaderCollection" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Runtime.Numerics" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.Caching.Memory" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Net.Primitives" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Xml.XDocument" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Mvc.ViewFeatures" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="testhost" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.Localization" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Mvc.Core" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.Logging.Configuration" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Http.Features" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Http.Abstractions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="ServiceStack.Client" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Azure.DocumentDB.Core" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Server.Kestrel" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.Hosting" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Runtime.Intrinsics" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Collections.Specialized" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.Configuration.KeyPerFile" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Linq.Expressions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Authentication.Abstractions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Globalization.Calendars" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Diagnostics.Abstractions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Xml" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Collections.Immutable" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Metadata" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Components.Authorization" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Linq.Dynamic.Core" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Server.Kestrel.Https" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.SignalR.Core" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.ServiceModel.Primitives" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.ComponentModel.EventBasedAsync" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Runtime.Serialization" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Http.Extensions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Win32.Primitives" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="NuGet.Frameworks" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Reflection.Extensions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Localization" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="ServiceStack.Kestrel" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Components" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Windows" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Configuration.ConfigurationManager" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Core" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="ServiceStack.Common" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.IO.MemoryMappedFiles" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Net.WebSockets" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Net.ServicePoint" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Resources.Reader" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="QueryAny.Primitives" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Newtonsoft.Json" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.OData.Edm" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Reflection" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Net.HttpListener" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.ServiceProcess.ServiceController" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Server.IISIntegration" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Transactions" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="System.Data" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.Identity.Stores" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.Authorization.Policy" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Extensions.WebEncoders" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.AspNetCore.HttpsPolicy" />
+    <option featureType="com.jetbrains.rider.solution.reference" implementationName="Microsoft.Spatial" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -261,7 +597,9 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Added Sql files" />
     <MESSAGE value="Added the Appointments API" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the Appointments API" />
+    <MESSAGE value="Added Doctors to Clinic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Doctors to Clinic" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="703" y="387" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1606548000315">
@@ -269,119 +607,120 @@
     </state>
     <state x="703" y="387" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505413474" />
     <state x="703" y="387" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606548000315" />
-    <state x="740" y="451" width="440" height="149" key="AddNewResourceElement" timestamp="1606547135258">
+    <state x="740" y="451" width="440" height="149" key="AddNewResourceElement" timestamp="1606592206262">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
+    <state x="740" y="451" width="440" height="149" key="AddNewResourceElement/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606592206262" />
     <state x="740" y="451" width="440" height="149" key="AddNewResourceElement/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606547135258" />
-    <state width="427" height="464" key="DebuggerActiveHint" timestamp="1606547871981">
+    <state width="494" height="464" key="DebuggerActiveHint" timestamp="1606596437737">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="411" height="464" key="DebuggerActiveHint/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505038692" />
+    <state width="494" height="464" key="DebuggerActiveHint/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606596437737" />
     <state width="427" height="464" key="DebuggerActiveHint/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606547871981" />
     <state x="490" y="184" key="EditorConfigExporter" timestamp="1606519589542">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="490" y="184" key="EditorConfigExporter/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606519589542" />
-    <state width="1877" height="378" key="GridCell.Tab.0.bottom" timestamp="1606547902619">
+    <state width="1877" height="377" key="GridCell.Tab.0.bottom" timestamp="1606596439687">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="378" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
-    <state width="1877" height="378" key="GridCell.Tab.0.bottom/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606547902619" />
-    <state width="1877" height="378" key="GridCell.Tab.0.center" timestamp="1606547902619">
+    <state width="1877" height="377" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606596439687" />
+    <state width="1877" height="378" key="GridCell.Tab.0.bottom/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606591471453" />
+    <state width="1877" height="377" key="GridCell.Tab.0.center" timestamp="1606596439687">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="378" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
-    <state width="1877" height="378" key="GridCell.Tab.0.center/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606547902619" />
-    <state width="1877" height="378" key="GridCell.Tab.0.left" timestamp="1606547902619">
+    <state width="1877" height="377" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606596439687" />
+    <state width="1877" height="378" key="GridCell.Tab.0.center/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606591471453" />
+    <state width="1877" height="377" key="GridCell.Tab.0.left" timestamp="1606596439687">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="378" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
-    <state width="1877" height="378" key="GridCell.Tab.0.left/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606547902619" />
-    <state width="1877" height="378" key="GridCell.Tab.0.right" timestamp="1606547902619">
+    <state width="1877" height="377" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606596439687" />
+    <state width="1877" height="378" key="GridCell.Tab.0.left/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606591471453" />
+    <state width="1877" height="377" key="GridCell.Tab.0.right" timestamp="1606596439687">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="378" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
-    <state width="1877" height="378" key="GridCell.Tab.0.right/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606547902619" />
-    <state width="1877" height="378" key="GridCell.Tab.1.bottom" timestamp="1606547902619">
+    <state width="1877" height="377" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606596439687" />
+    <state width="1877" height="378" key="GridCell.Tab.0.right/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606591471453" />
+    <state width="1877" height="377" key="GridCell.Tab.1.bottom" timestamp="1606596439687">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="378" key="GridCell.Tab.1.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
-    <state width="1877" height="378" key="GridCell.Tab.1.bottom/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606547902619" />
-    <state width="1877" height="378" key="GridCell.Tab.1.center" timestamp="1606547902619">
+    <state width="1877" height="377" key="GridCell.Tab.1.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606596439687" />
+    <state width="1877" height="378" key="GridCell.Tab.1.bottom/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606591471453" />
+    <state width="1877" height="377" key="GridCell.Tab.1.center" timestamp="1606596439687">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="378" key="GridCell.Tab.1.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
-    <state width="1877" height="378" key="GridCell.Tab.1.center/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606547902619" />
-    <state width="1877" height="378" key="GridCell.Tab.1.left" timestamp="1606547902619">
+    <state width="1877" height="377" key="GridCell.Tab.1.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606596439687" />
+    <state width="1877" height="378" key="GridCell.Tab.1.center/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606591471453" />
+    <state width="1877" height="377" key="GridCell.Tab.1.left" timestamp="1606596439687">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="378" key="GridCell.Tab.1.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
-    <state width="1877" height="378" key="GridCell.Tab.1.left/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606547902619" />
-    <state width="1877" height="378" key="GridCell.Tab.1.right" timestamp="1606547902619">
+    <state width="1877" height="377" key="GridCell.Tab.1.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606596439687" />
+    <state width="1877" height="378" key="GridCell.Tab.1.left/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606591471453" />
+    <state width="1877" height="377" key="GridCell.Tab.1.right" timestamp="1606596439687">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="378" key="GridCell.Tab.1.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
-    <state width="1877" height="378" key="GridCell.Tab.1.right/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606547902619" />
-    <state width="1877" height="378" key="GridCell.Tab.2.bottom" timestamp="1606547902619">
+    <state width="1877" height="377" key="GridCell.Tab.1.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606596439687" />
+    <state width="1877" height="378" key="GridCell.Tab.1.right/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606591471453" />
+    <state width="1877" height="377" key="GridCell.Tab.2.bottom" timestamp="1606596439687">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="378" key="GridCell.Tab.2.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
-    <state width="1877" height="378" key="GridCell.Tab.2.bottom/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606547902619" />
-    <state width="1877" height="378" key="GridCell.Tab.2.center" timestamp="1606547902619">
+    <state width="1877" height="377" key="GridCell.Tab.2.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606596439687" />
+    <state width="1877" height="378" key="GridCell.Tab.2.bottom/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606591471453" />
+    <state width="1877" height="377" key="GridCell.Tab.2.center" timestamp="1606596439687">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="378" key="GridCell.Tab.2.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
-    <state width="1877" height="378" key="GridCell.Tab.2.center/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606547902619" />
-    <state width="1877" height="378" key="GridCell.Tab.2.left" timestamp="1606547902619">
+    <state width="1877" height="377" key="GridCell.Tab.2.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606596439687" />
+    <state width="1877" height="378" key="GridCell.Tab.2.center/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606591471453" />
+    <state width="1877" height="377" key="GridCell.Tab.2.left" timestamp="1606596439687">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="378" key="GridCell.Tab.2.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
-    <state width="1877" height="378" key="GridCell.Tab.2.left/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606547902619" />
-    <state width="1877" height="378" key="GridCell.Tab.2.right" timestamp="1606547902619">
+    <state width="1877" height="377" key="GridCell.Tab.2.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606596439687" />
+    <state width="1877" height="378" key="GridCell.Tab.2.left/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606591471453" />
+    <state width="1877" height="377" key="GridCell.Tab.2.right" timestamp="1606596439687">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="378" key="GridCell.Tab.2.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
-    <state width="1877" height="378" key="GridCell.Tab.2.right/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606547902619" />
-    <state width="1877" height="378" key="GridCell.Tab.3.bottom" timestamp="1606547902619">
+    <state width="1877" height="377" key="GridCell.Tab.2.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606596439687" />
+    <state width="1877" height="378" key="GridCell.Tab.2.right/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606591471453" />
+    <state width="1877" height="377" key="GridCell.Tab.3.bottom" timestamp="1606596439687">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="378" key="GridCell.Tab.3.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
-    <state width="1877" height="378" key="GridCell.Tab.3.bottom/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606547902619" />
-    <state width="1877" height="378" key="GridCell.Tab.3.center" timestamp="1606547902619">
+    <state width="1877" height="377" key="GridCell.Tab.3.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606596439687" />
+    <state width="1877" height="378" key="GridCell.Tab.3.bottom/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606591471453" />
+    <state width="1877" height="377" key="GridCell.Tab.3.center" timestamp="1606596439687">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="378" key="GridCell.Tab.3.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
-    <state width="1877" height="378" key="GridCell.Tab.3.center/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606547902619" />
-    <state width="1877" height="378" key="GridCell.Tab.3.left" timestamp="1606547902619">
+    <state width="1877" height="377" key="GridCell.Tab.3.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606596439687" />
+    <state width="1877" height="378" key="GridCell.Tab.3.center/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606591471453" />
+    <state width="1877" height="377" key="GridCell.Tab.3.left" timestamp="1606596439687">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="378" key="GridCell.Tab.3.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
-    <state width="1877" height="378" key="GridCell.Tab.3.left/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606547902619" />
-    <state width="1877" height="378" key="GridCell.Tab.3.right" timestamp="1606547902619">
+    <state width="1877" height="377" key="GridCell.Tab.3.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606596439687" />
+    <state width="1877" height="378" key="GridCell.Tab.3.left/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606591471453" />
+    <state width="1877" height="377" key="GridCell.Tab.3.right" timestamp="1606596439687">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="378" key="GridCell.Tab.3.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
-    <state width="1877" height="378" key="GridCell.Tab.3.right/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606547902619" />
-    <state width="1877" height="378" key="GridCell.Tab.4.bottom" timestamp="1606547902619">
+    <state width="1877" height="377" key="GridCell.Tab.3.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606596439687" />
+    <state width="1877" height="378" key="GridCell.Tab.3.right/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606591471453" />
+    <state width="1877" height="377" key="GridCell.Tab.4.bottom" timestamp="1606596439687">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="378" key="GridCell.Tab.4.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
-    <state width="1877" height="378" key="GridCell.Tab.4.bottom/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606547902619" />
-    <state width="1877" height="378" key="GridCell.Tab.4.center" timestamp="1606547902619">
+    <state width="1877" height="377" key="GridCell.Tab.4.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606596439687" />
+    <state width="1877" height="378" key="GridCell.Tab.4.bottom/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606591471453" />
+    <state width="1877" height="377" key="GridCell.Tab.4.center" timestamp="1606596439687">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="378" key="GridCell.Tab.4.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
-    <state width="1877" height="378" key="GridCell.Tab.4.center/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606547902619" />
-    <state width="1877" height="378" key="GridCell.Tab.4.left" timestamp="1606547902619">
+    <state width="1877" height="377" key="GridCell.Tab.4.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606596439687" />
+    <state width="1877" height="378" key="GridCell.Tab.4.center/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606591471453" />
+    <state width="1877" height="377" key="GridCell.Tab.4.left" timestamp="1606596439687">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="378" key="GridCell.Tab.4.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
-    <state width="1877" height="378" key="GridCell.Tab.4.left/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606547902619" />
-    <state width="1877" height="378" key="GridCell.Tab.4.right" timestamp="1606547902619">
+    <state width="1877" height="377" key="GridCell.Tab.4.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606596439687" />
+    <state width="1877" height="378" key="GridCell.Tab.4.left/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606591471453" />
+    <state width="1877" height="377" key="GridCell.Tab.4.right" timestamp="1606596439687">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="378" key="GridCell.Tab.4.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606505052921" />
-    <state width="1877" height="378" key="GridCell.Tab.4.right/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606547902619" />
+    <state width="1877" height="377" key="GridCell.Tab.4.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606596439687" />
+    <state width="1877" height="378" key="GridCell.Tab.4.right/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606591471453" />
     <state x="552" y="257" key="Rider.ProjectTemplateDialog.Size" timestamp="1606548671680">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -394,15 +733,15 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="169" key="SettingsEditor/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606519593532" />
-    <state x="921" y="161" width="734" height="622" key="find.popup" timestamp="1606530806822">
+    <state x="593" y="212" width="756" height="622" key="find.popup" timestamp="1606596845078">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="593" y="212" width="734" height="622" key="find.popup/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606504620816" />
+    <state x="593" y="212" width="756" height="622" key="find.popup/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606596845078" />
     <state x="921" y="161" width="734" height="622" key="find.popup/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606530806822" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1606546497036">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1606596443903">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606506284037" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606596443903" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606546497036" />
   </component>
   <component name="XDebuggerManager">
@@ -420,6 +759,32 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ClinicsApplication/ClinicsApplication.cs</url>
+          <line>204</line>
+          <properties documentPath="C:\Projects\github\jezzsantos\clinics\src\ClinicsApplication\ClinicsApplication.cs" initialLine="203">
+            <startOffsets>
+              <option value="7299" />
+            </startOffsets>
+            <endOffsets>
+              <option value="7379" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ClinicsApplication/ClinicsApplication.cs</url>
+          <line>165</line>
+          <properties documentPath="C:\Projects\github\jezzsantos\clinics\src\ClinicsApplication\ClinicsApplication.cs" initialLine="165">
+            <startOffsets>
+              <option value="5916" />
+            </startOffsets>
+            <endOffsets>
+              <option value="5956" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
