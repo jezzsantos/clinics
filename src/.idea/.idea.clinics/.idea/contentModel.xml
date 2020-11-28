@@ -62,6 +62,8 @@
           </e>
         </e>
         <e p="ServiceOperations" t="Include">
+          <e p="CreateAppointmentRequest.cs" t="Include" />
+          <e p="CreateAppointmentResponse.cs" t="Include" />
           <e p="CreateClinicRequest.cs" t="Include" />
           <e p="CreateClinicResponse.cs" t="Include" />
           <e p="CreatePersonRequest.cs" t="Include" />
@@ -105,6 +107,7 @@
           </e>
         </e>
         <e p="Resources" t="Include">
+          <e p="Appointment.cs" t="Include" />
           <e p="Clinic.cs" t="Include" />
           <e p="Doctor.cs" t="Include" />
           <e p="IIdentifiableResource.cs" t="Include" />
@@ -115,6 +118,7 @@
         <e p="ApplicationServices.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="DomainEventPublisherSubscriberPair.cs" t="Include" />
+        <e p="IClinicsService.cs" t="Include" />
         <e p="IDomainEventNotificationProducer.cs" t="Include" />
         <e p="IDomainEventPublisher.cs" t="Include" />
         <e p="IDomainEventPublisherSubscriberPair.cs" t="Include" />
@@ -143,6 +147,67 @@
           </e>
         </e>
       </e>
+      <e p="AppointmentsApplication" t="IncludeRecursive">
+        <e p="AppointmentsApplication.cs" t="Include" />
+        <e p="AppointmentsApplication.csproj" t="IncludeRecursive" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="IAppointmentsApplication.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="AppointmentsApplication.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="ReadModels" t="Include">
+          <e p="Appointment.cs" t="Include" />
+        </e>
+        <e p="Storage" t="Include">
+          <e p="IAppointmentStorage.cs" t="Include" />
+        </e>
+      </e>
+      <e p="AppointmentsApplication.UnitTests" t="IncludeRecursive">
+        <e p="AppointmentsApplication.UnitTests.csproj" t="IncludeRecursive" />
+        <e p="AppointmentsApplicationSpec.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="AppointmentsApplication.UnitTests.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="AppointmentsDomain" t="IncludeRecursive">
+        <e p="AppointmentDoctor.cs" t="Include" />
+        <e p="AppointmentEntity.cs" t="Include" />
+        <e p="AppointmentsDomain.csproj" t="IncludeRecursive" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Events.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="AppointmentsDomain.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Properties" t="Include">
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+        </e>
+      </e>
+      <e p="AppointmentsStorage" t="IncludeRecursive">
+        <e p="AppointmentsStorage.csproj" t="IncludeRecursive" />
+        <e p="AppointmentStorage.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="AppointmentsStorage.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
       <e p="clinics.sln" t="IncludeFlat" />
       <e p="ClinicsApi" t="IncludeRecursive">
         <e p="appsettings.Development.json" t="Include" />
@@ -164,6 +229,10 @@
         </e>
         <e p="ServiceHost.cs" t="Include" />
         <e p="Services" t="Include">
+          <e p="Appointments" t="Include">
+            <e p="AppointmentsService.cs" t="Include" />
+            <e p="CreateAppointmentRequestValidator.cs" t="Include" />
+          </e>
           <e p="clinics" t="Include">
             <e p="ClinicsService.cs" t="Include" />
             <e p="CreateClinicRequestValidator.cs" t="Include" />
@@ -201,6 +270,9 @@
           </e>
         </e>
         <e p="Services" t="Include">
+          <e p="Appointments" t="Include">
+            <e p="CreateClinicRequestValidatorSpec.cs" t="Include" />
+          </e>
           <e p="clinics" t="Include">
             <e p="CreateClinicRequestValidatorSpec.cs" t="Include" />
             <e p="OfflineDoctorRequestValidatorSpec.cs" t="Include" />
@@ -263,7 +335,6 @@
           <e p="Resources.Designer.cs" t="Include" />
           <e p="Resources.resx" t="Include" />
         </e>
-        <e p="TimeSlot.cs" t="Include" />
         <e p="Unavailabilities.cs" t="Include" />
         <e p="UnavailabilityCausedBy.cs" t="Include" />
         <e p="UnavailabilityEntity.cs" t="Include" />
@@ -283,7 +354,6 @@
           </e>
         </e>
         <e p="PracticeManagersSpec.cs" t="Include" />
-        <e p="TimeSlotSpec.cs" t="Include" />
       </e>
       <e p="ClinicsStorage" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
@@ -303,6 +373,35 @@
       <e p="Directory.Build.props" t="Include" />
       <e p="Domain" t="Include">
         <e p="Tests" t="Include" />
+      </e>
+      <e p="Domain.Common" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="DateTimeExtensions.cs" t="Include" />
+        <e p="Domain.Common.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.0" t="Include">
+              <e p="Domain.Common.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Properties" t="Include">
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+        </e>
+        <e p="TimeSlot.cs" t="Include" />
+      </e>
+      <e p="Domain.Common.UnitTests" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Domain.Common.UnitTests.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Domain.Common.UnitTests.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="TimeSlotSpec.cs" t="Include" />
       </e>
       <e p="Domain.Interfaces" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
@@ -408,6 +507,7 @@
       </e>
       <e p="InfrastructureServices" t="IncludeRecursive">
         <e p="ApplicationServices" t="Include">
+          <e p="ClinicsInProcessService.cs" t="Include" />
           <e p="PersonsServiceClient.cs" t="Include" />
         </e>
         <e p="bin" t="ExcludeRecursive" />

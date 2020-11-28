@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using ClinicsDomain.Properties;
+using Domain;
 using Domain.Interfaces;
 using Domain.Interfaces.Entities;
 using FluentAssertions;

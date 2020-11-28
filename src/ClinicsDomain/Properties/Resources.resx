@@ -27,9 +27,6 @@
     <data name="ClinicEntity_NotLocated" xml:space="preserve">
         <value>The location details for the clinic have not yet been defined</value>
     </data>
-    <data name="TimeSlot_FromDateBeforeToDate" xml:space="preserve">
-        <value>The To date must be after the From date</value>
-    </data>
     <data name="ClinicLicense_UnknownJurisdiction" xml:space="preserve">
         <value>The jurisdiction is not known</value>
     </data>

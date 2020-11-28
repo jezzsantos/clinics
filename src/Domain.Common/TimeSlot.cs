@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using ClinicsDomain.Properties;
 using Domain.Interfaces;
 using Domain.Interfaces.Entities;
+using Domain.Properties;
 using QueryAny.Primitives;
 
-namespace ClinicsDomain
+namespace Domain
 {
     public class TimeSlot : ValueObjectBase<TimeSlot>
     {

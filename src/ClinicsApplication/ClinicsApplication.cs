@@ -6,6 +6,7 @@ using Application.Resources;
 using ApplicationServices;
 using ClinicsApplication.Storage;
 using ClinicsDomain;
+using Domain;
 using Domain.Interfaces;
 using Domain.Interfaces.Entities;
 using Microsoft.Extensions.Logging;
@@ -109,6 +110,13 @@ namespace ClinicsApplication
 
             return searchOptions.ApplyWithMetadata(doctors
                 .ConvertAll(doc => WithGetOptions(doc.ToDoctor(), getOptions)));
+        }
+
+        public Doctor GetDoctor(ICurrentCaller caller, string doctorId)
+        {
+            caller.GuardAgainstNull(nameof(caller));
+
+            return this.storage.GetDoctor(doctorId.ToIdentifier()).ToDoctor();
         }
 
         public void UpdatePracticeManagerEmail(ICurrentCaller caller, string managerId, string email)

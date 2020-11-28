@@ -1,5 +1,6 @@
 ﻿using System;
 using ClinicsDomain.Properties;
+using Domain;
 using Domain.Interfaces;
 using Domain.Interfaces.Entities;
 using Microsoft.Extensions.Logging;

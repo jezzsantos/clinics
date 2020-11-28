@@ -1,4 +1,5 @@
 ﻿using System;
+using Domain;
 using Domain.Interfaces.Entities;
 using Microsoft.Extensions.Logging;
 using QueryAny;

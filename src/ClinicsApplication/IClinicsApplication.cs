@@ -16,5 +16,7 @@ namespace ClinicsApplication
         Clinic Register(ICurrentCaller caller, string id, string jurisdiction, string certificateNumber);
 
         void UpdatePracticeManagerEmail(ICurrentCaller caller, string managerId, string email);
+
+        Doctor GetDoctor(ICurrentCaller caller, string doctorId);
     }
 }

@@ -165,4 +165,10 @@
   <data name="SearchAvailableDoctorsRequestValidator_InvalidFrom" xml:space="preserve">
     <value>The From date must be a valid date and time</value>
   </data>
+  <data name="CreateAppointmentRequestValidator_StartNotFuture" xml:space="preserve">
+      <value>The StartUtc date cannot be in the past</value>
+  </data>
+  <data name="CreateAppointmentRequestValidator_EndBeforeStart" xml:space="preserve">
+      <value>The EndUtc cannot before the StartUtc</value>
+  </data>
 </root>

@@ -70,6 +70,24 @@ namespace ClinicsApi.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The EndUtc cannot before the StartUtc.
+        /// </summary>
+        internal static string CreateAppointmentRequestValidator_EndBeforeStart {
+            get {
+                return ResourceManager.GetString("CreateAppointmentRequestValidator_EndBeforeStart", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The StartUtc date cannot be in the past.
+        /// </summary>
+        internal static string CreateAppointmentRequestValidator_StartNotFuture {
+            get {
+                return ResourceManager.GetString("CreateAppointmentRequestValidator_StartNotFuture", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The City of the clinic can only be {0}.
         /// </summary>
         internal static string CreateClinicRequestValidator_InvalidCity {

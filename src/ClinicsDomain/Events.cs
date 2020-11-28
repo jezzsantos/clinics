@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Domain;
 using Domain.Interfaces.Entities;
 
 namespace ClinicsDomain

@@ -55,7 +55,7 @@ namespace PersonsApi
             static IRepository ResolveRepository(Container c)
             {
                 return repository ??=
-                    AzureCosmosSqlApiRepository.FromAppSettings(c.Resolve<IAppSettings>(), "Production");
+                    LocalMachineFileRepository.FromAppSettings(c.Resolve<IAppSettings>());
             }
 
             container.AddSingleton<ILogger>(c => new Logger<ServiceHost>(new NullLoggerFactory()));

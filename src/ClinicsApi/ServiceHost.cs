@@ -3,6 +3,10 @@ using System.Reflection;
 using Api.Common;
 using Api.Common.Validators;
 using ApplicationServices;
+using AppointmentsApplication;
+using AppointmentsApplication.Storage;
+using AppointmentsDomain;
+using AppointmentsStorage;
 using ClinicsApplication;
 using ClinicsApplication.Storage;
 using ClinicsDomain;
@@ -19,7 +23,6 @@ using ServiceStack;
 using ServiceStack.Configuration;
 using ServiceStack.Validation;
 using Storage;
-using Storage.Azure;
 using Storage.Interfaces;
 using Storage.ReadModels;
 using IRepository = Storage.IRepository;
@@ -55,7 +58,7 @@ namespace ClinicsApi
             static IRepository ResolveRepository(Container c)
             {
                 return repository ??=
-                    AzureCosmosSqlApiRepository.FromAppSettings(c.Resolve<IAppSettings>(), "Production");
+                    LocalMachineFileRepository.FromAppSettings(c.Resolve<IAppSettings>());
             }
 
             container.AddSingleton<ILogger>(c => new Logger<ServiceHost>(new NullLoggerFactory()));
@@ -74,6 +77,13 @@ namespace ClinicsApi
             container.AddSingleton<IClinicsApplication, ClinicsApplication.ClinicsApplication>();
             container.AddSingleton<IPersonsService>(c =>
                 new PersonsServiceClient(c.Resolve<IAppSettings>().GetString("PersonsApiBaseUrl")));
+            container.AddSingleton<IAppointmentStorage>(c =>
+                new AppointmentStorage(c.Resolve<ILogger>(), c.Resolve<IDomainFactory>(),
+                    c.Resolve<IEventStreamStorage<AppointmentEntity>>(), ResolveRepository(c)));
+            container.AddSingleton<IAppointmentsApplication, AppointmentsApplication.AppointmentsApplication>();
+            container.AddSingleton<IClinicsService>(c =>
+                new ClinicsInProcessService(c.Resolve<IClinicsApplication>()));
+
             container.AddSingleton<IReadModelProjectionSubscription>(c => new InProcessReadModelProjectionSubscription(
                 c.Resolve<ILogger>(),
                 new ReadModelProjector(c.Resolve<ILogger>(),

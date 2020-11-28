@@ -80,5 +80,10 @@ namespace ClinicsStorage
                 .Take(limit)
                 .ToList();
         }
+
+        public Doctor GetDoctor(Identifier doctorId)
+        {
+            return this.doctorQueryStorage.Get<Doctor>(doctorId);
+        }
     }
 }

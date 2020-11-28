@@ -14,5 +14,7 @@ namespace ClinicsApplication.Storage
         ClinicEntity Save(ClinicEntity clinic);
 
         List<Doctor> SearchAvailableDoctors(DateTime fromUtc, DateTime toUtc, SearchOptions options);
+
+        Doctor GetDoctor(Identifier doctorId);
     }
 }

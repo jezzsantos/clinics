@@ -1,9 +1,9 @@
 ﻿using System;
-using ClinicsDomain.Properties;
+using Domain.Properties;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace ClinicsDomain.UnitTests
+namespace Domain.UnitTests
 {
     [TestClass, TestCategory("Unit")]
     public class TimeSlotSpec

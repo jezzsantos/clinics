@@ -124,15 +124,6 @@ namespace ClinicsDomain.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The To date must be after the From date.
-        /// </summary>
-        internal static string TimeSlot_FromDateBeforeToDate {
-            get {
-                return ResourceManager.GetString("TimeSlot_FromDateBeforeToDate", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to The slot overlaps and existing slot with a different cause or reference.
         /// </summary>
         internal static string Unavailability_OverlappingSlot {

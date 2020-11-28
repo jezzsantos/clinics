@@ -2,8 +2,8 @@
 
     <PropertyGroup>
         <TargetFramework>netcoreapp3.1</TargetFramework>
+
         <IsPackable>false</IsPackable>
-        <RootNamespace>ClinicsApplication.UnitTests</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -16,8 +16,9 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\AppointmentsDomain\AppointmentsDomain.csproj" />
-      <ProjectReference Include="..\ClinicsApplication\ClinicsApplication.csproj" />
+      <ProjectReference Include="..\ApplicationServices\ApplicationServices.csproj" />
+      <ProjectReference Include="..\AppointmentsApplication\AppointmentsApplication.csproj" />
+      <ProjectReference Include="..\Domain.Interfaces\Domain.Interfaces.csproj" />
     </ItemGroup>
 
 </Project>
