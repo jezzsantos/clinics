@@ -93,7 +93,7 @@ namespace ClinicsApplication
 
             this.storage.Save(clinic);
 
-            this.logger.LogInformation("Doctor {Doctor} was added to clinic {Clinic}, by {Caller}", doctor.DoctorId, clinic.Id, caller.Id);
+            this.logger.LogInformation("Doctor {Doctor} was added to clinic {Clinic}, by {Caller}", doctor.Id, clinic.Id, caller.Id);
 
             return doctor.ToDoctor();
         }
@@ -192,9 +192,7 @@ namespace ClinicsApplication
 
         public static ClinicDoctor ToClinicDoctor(this Person person)
         {
-            var doctor = person.ConvertTo<ClinicDoctor>();
-
-            return doctor;
+            return new ClinicDoctor(person.Id);
         }
 
         public static Doctor ToDoctor(this ClinicDoctor doctor)

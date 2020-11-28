@@ -7,6 +7,8 @@ using FluentAssertions;
 using Microsoft.Extensions.Logging;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
+using System.Linq;
+using System.Collections.Generic;
 
 namespace ClinicsDomain.UnitTests
 {
@@ -57,6 +59,44 @@ namespace ClinicsDomain.UnitTests
             this.entity.Managers.Managers.Single().Should().Be("anownerid".ToIdentifier());
             this.entity.Events[1].Should().BeOfType<Events.Clinic.OwnershipChanged>();
         }
+
+        [TestMethod]
+        public void WhenAddDoctor_ThenAdded()
+        {
+            var doctor = new ClinicDoctor("adoctor");
+            this.entity.AddDoctor(doctor);
+
+            this.entity.Doctors.Doctors.Single().Should().Be("adoctor".ToIdentifier());
+            this.entity.Events[1].Should().BeOfType<Events.Clinic.DoctorChanged>();
+        }
+
+        [TestMethod]
+        public void WhenAddDuplicateDoctor_NotDuplicated()
+        {
+            var doctor1 = new ClinicDoctor("adoctor");
+            var doctor2 = new ClinicDoctor("adoctor");
+
+            this.entity.AddDoctor(doctor1);
+            this.entity.AddDoctor(doctor2);
+            this.entity.Doctors.Doctors.Count.Should().Be(1);
+
+            //this.entity.Invoking(x => { x.AddDoctor(doctor); x.AddDoctor(duplicateDoctor); })
+            //    .Should().Throw<RuleViolationException>()
+            //    .WithMessageLike(Resources.ClinicEntity_DuplicateDoctor);
+        }
+
+        [TestMethod]
+        public void WhenAddMultipleDoctor_DoctorsAdded()
+        {
+            var doctor1 = new ClinicDoctor("doctor1");
+            var doctor2 = new ClinicDoctor("doctor2");
+
+            this.entity.AddDoctor(doctor1);
+            this.entity.AddDoctor(doctor2);
+
+            this.entity.Doctors.Doctors.Count.Should().Be(2);
+        }
+
 
         [TestMethod]
         public void WhenRegistered_ThenRegistered()

@@ -4,6 +4,8 @@ using Domain.Interfaces;
 using Domain.Interfaces.Entities;
 using Microsoft.Extensions.Logging;
 using QueryAny;
+using System.Linq;
+using System.Collections.Generic;
 
 namespace ClinicsDomain
 {
@@ -26,6 +28,8 @@ namespace ClinicsDomain
         public ClinicOwner Owner { get; private set; }
 
         public PracticeManagers Managers { get; private set; }
+
+        public ClinicDoctors Doctors { get; private set; } = new ClinicDoctors();
 
         public ClinicLicense License { get; private set; }
 
@@ -50,6 +54,12 @@ namespace ClinicsDomain
                     Managers.Add(changed.Owner.ToIdentifier());
 
                     Logger.LogDebug("Clinic {Id} changed ownership to {Owner}", Id, Owner);
+                    break;
+
+                case Events.Clinic.DoctorChanged changed:
+                    Doctors.Add(changed.Doctor.ToIdentifier());
+
+                    Logger.LogDebug("Doctor {Id} added to clinic {Clinic}", changed.Doctor, Id);
                     break;
 
                 case Events.Clinic.RegistrationChanged changed:
@@ -91,7 +101,7 @@ namespace ClinicsDomain
 
         public void AddDoctor(ClinicDoctor doctor)
         {
-            throw new NotImplementedException();
+            RaiseChangeEvent(ClinicsDomain.Events.Clinic.DoctorChanged.Create(Id, doctor));
         }
 
         public void OfflineDoctor(TimeSlot slot)
@@ -127,6 +137,17 @@ namespace ClinicsDomain
                 {
                     throw new RuleViolationException(Resources.ClinicEntity_NotRegistered);
                 }
+            }
+
+            //if (Doctors.Doctors.GroupBy(d => d.ToString()).Any(g => g.Count() > 1))
+            //{
+            //    throw new RuleViolationException(Resources.ClinicEntity_DuplicateDoctor);
+            //}
+            var doctorsSet = new HashSet<Identifier>(Doctors.Doctors);
+
+            if (Doctors.Doctors.Count > doctorsSet.Count())
+            {
+                throw new RuleViolationException(Resources.ClinicEntity_DuplicateDoctor);
             }
 
             return isValid;

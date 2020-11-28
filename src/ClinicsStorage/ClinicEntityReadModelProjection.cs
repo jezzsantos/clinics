@@ -61,6 +61,10 @@ namespace ClinicsStorage
                     });
                     break;
 
+                case Events.Clinic.DoctorChanged e:
+                    // write doctor data to store
+                    break;
+
                 case Events.Clinic.DoctorUnavailabilitySlotAdded e:
                     this.unavailabilityStorage.Create(e.EntityId, dto =>
                     {

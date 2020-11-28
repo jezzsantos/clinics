@@ -86,6 +86,14 @@ namespace ClinicsDomain.Properties {
                 return ResourceManager.GetString("ClinicEntity_NotRegistered", resourceCulture);
             }
         }
+
+        internal static string ClinicEntity_DuplicateDoctor
+        {
+            get
+            {
+                return ResourceManager.GetString("ClinicEntity_DuplicateDoctor", resourceCulture);
+            }
+        }
         
         /// <summary>
         ///   Looks up a localized string similar to The jurisdiction is not known.

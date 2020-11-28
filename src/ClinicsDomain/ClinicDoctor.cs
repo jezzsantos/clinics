@@ -13,7 +13,7 @@ namespace ClinicsDomain
             Id.GuardAgainstNullOrEmpty(nameof(Id));
         }
 
-        public string DoctorId => Value;
+        public string Id => Value;
 
         protected override string ToValue(string value)
         {
