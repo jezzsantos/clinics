@@ -13,6 +13,7 @@ using QueryAny.Primitives;
 using ServiceStack;
 using ClinicLicense = ClinicsDomain.ClinicLicense;
 using ClinicOwner = Application.Resources.ClinicOwner;
+using Doctor = Application.Resources.Doctor;
 
 namespace ClinicsApplication
 {
@@ -60,7 +61,7 @@ namespace ClinicsApplication
             id.GuardAgainstNullOrEmpty(nameof(id));
 
             var clinic = this.storage.Load(id.ToIdentifier());
-            if (id == null)
+            if (clinic == null)
             {
                 throw new ResourceNotFoundException();
             }
@@ -73,6 +74,28 @@ namespace ClinicsApplication
                 caller.Id);
 
             return updated.ToClinic();
+        }
+
+        public Doctor AddDoctor(ICurrentCaller caller, string id, string firstName, string lastName)
+        {
+            caller.GuardAgainstNull(nameof(caller));
+            id.GuardAgainstNullOrEmpty(nameof(id));
+
+            var doctor = this.personsService.Create(firstName, lastName).ToClinicDoctor();
+
+            var clinic = this.storage.Load(id.ToIdentifier());
+            if (clinic == null)
+            {
+                throw new ResourceNotFoundException();
+            }
+
+            clinic.AddDoctor(doctor);
+
+            this.storage.Save(clinic);
+
+            this.logger.LogInformation("Doctor {Doctor} was added to clinic {Clinic}, by {Caller}", doctor.DoctorId, clinic.Id, caller.Id);
+
+            return doctor.ToDoctor();
         }
 
         public Clinic OfflineDoctor(ICurrentCaller caller, string id, DateTime fromUtc, DateTime toUtc)
@@ -165,6 +188,18 @@ namespace ClinicsApplication
             var owner = person.ConvertTo<ClinicOwner>();
 
             return owner;
+        }
+
+        public static ClinicDoctor ToClinicDoctor(this Person person)
+        {
+            var doctor = person.ConvertTo<ClinicDoctor>();
+
+            return doctor;
+        }
+
+        public static Doctor ToDoctor(this ClinicDoctor doctor)
+        {
+            return doctor.ConvertTo<Doctor>();
         }
     }
 }

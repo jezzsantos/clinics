@@ -1,5 +1,6 @@
 ﻿using System;
 using Application.Resources;
+using ClinicsDomain;
 using Domain.Interfaces;
 
 namespace ClinicsApplication
@@ -10,6 +11,8 @@ namespace ClinicsApplication
 
         SearchResults<Doctor> SearchAvailableDoctors(ICurrentCaller caller, DateTime fromUtc, DateTime toUtc,
             SearchOptions searchOptions, GetOptions getOptions);
+
+        Doctor AddDoctor(ICurrentCaller caller, string id, string firstName, string lastName);
 
         Clinic OfflineDoctor(ICurrentCaller caller, string id, DateTime fromUtc, DateTime toUtc);
 

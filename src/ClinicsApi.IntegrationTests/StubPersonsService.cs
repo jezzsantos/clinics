@@ -17,5 +17,17 @@ namespace ClinicsApi.IntegrationTests
                 }
             };
         }
+
+        public Person Create(string firstName, string lastName)
+        {
+            return new Person
+            {
+                Name = new PersonName
+                {
+                    FirstName = firstName,
+                    LastName = lastName
+                }
+            };
+        }
     }
 }

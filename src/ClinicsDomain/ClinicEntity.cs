@@ -89,6 +89,11 @@ namespace ClinicsDomain
             RaiseChangeEvent(ClinicsDomain.Events.Clinic.RegistrationChanged.Create(Id, plate));
         }
 
+        public void AddDoctor(ClinicDoctor doctor)
+        {
+            throw new NotImplementedException();
+        }
+
         public void OfflineDoctor(TimeSlot slot)
         {
             RaiseChangeEvent(ClinicsDomain.Events.Clinic.DoctorUnavailabilitySlotAdded.Create(Id, slot,

@@ -45,6 +45,16 @@ namespace ClinicsApi.Services.Clinics
             };
         }
 
+        public CreateDoctorResponse Post(CreateDoctorRequest request)
+        {
+            var doctor = this.clinicsApplication.AddDoctor(Request.ToCaller(), request.ClinicId, request.FirstName, request.LastName);
+
+            return new CreateDoctorResponse
+            {
+                Doctor = doctor
+            };
+        }
+
         public RegisterClinicResponse Put(RegisterClinicRequest request)
         {
             return new RegisterClinicResponse
