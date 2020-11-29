@@ -23,7 +23,7 @@ namespace PaymentsApplication
         {
             caller.GuardAgainstNull(nameof(caller));
 
-            //TODO: create the invoice
+            //TODO: create an invoice
         }
     }
 }

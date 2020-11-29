@@ -35,8 +35,8 @@ namespace ClinicsStorage
                 new GeneralQueryStorage<Unavailability>(logger, domainFactory, repository);
         }
 
-        public ClinicStorage(IQueryStorage<Doctor> doctorQueryStorage,
-            IEventStreamStorage<ClinicEntity> clinicEventStreamStorage,
+        public ClinicStorage(IEventStreamStorage<ClinicEntity> clinicEventStreamStorage,
+            IQueryStorage<Doctor> doctorQueryStorage,
             IQueryStorage<Unavailability> unavailabilitiesQueryStorage)
         {
             doctorQueryStorage.GuardAgainstNull(nameof(doctorQueryStorage));

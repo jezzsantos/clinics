@@ -20,7 +20,6 @@ using ServiceStack.Configuration;
 using ServiceStack.Validation;
 using Storage;
 using Storage.Interfaces;
-using Storage.ReadModels;
 using IRepository = Storage.IRepository;
 
 namespace PersonsApi
@@ -76,20 +75,18 @@ namespace PersonsApi
             container.AddSingleton<IEmailService, EmailService>();
 
             container.AddSingleton<IReadModelProjectionSubscription>(c => new InProcessReadModelProjectionSubscription(
-                c.Resolve<ILogger>(),
-                new ReadModelProjector(c.Resolve<ILogger>(),
-                    new ReadModelCheckpointStore(c.Resolve<ILogger>(), c.Resolve<IIdentifierFactory>(),
-                        c.Resolve<IDomainFactory>(),
-                        ResolveRepository(c)),
-                    c.Resolve<IChangeEventMigrator>(),
-                    new PersonEntityReadModelProjection(c.Resolve<ILogger>(), ResolveRepository(c))),
+                c.Resolve<ILogger>(), c.Resolve<IIdentifierFactory>(), c.Resolve<IChangeEventMigrator>(),
+                c.Resolve<IDomainFactory>(), ResolveRepository(c),
+                new[]
+                {
+                    new PersonEntityReadModelProjection(c.Resolve<ILogger>(), ResolveRepository(c))
+                },
                 c.Resolve<IEventStreamStorage<PersonEntity>>()));
 
             container.AddSingleton<IChangeEventNotificationSubscription>(c =>
                 new InProcessChangeEventNotificationSubscription(
-                    c.Resolve<ILogger>(),
-                    new DomainEventNotificationProducer(c.Resolve<ILogger>(), c.Resolve<IChangeEventMigrator>(),
-                        DomainEventPublisherSubscriberPair.None),
+                    c.Resolve<ILogger>(), c.Resolve<IChangeEventMigrator>(),
+                    DomainEventPublisherSubscriberPair.None,
                     c.Resolve<IEventStreamStorage<PersonEntity>>()));
         }
 

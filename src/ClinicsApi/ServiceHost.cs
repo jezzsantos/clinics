@@ -28,7 +28,6 @@ using ServiceStack.Configuration;
 using ServiceStack.Validation;
 using Storage;
 using Storage.Interfaces;
-using Storage.ReadModels;
 using IRepository = Storage.IRepository;
 
 namespace ClinicsApi
@@ -107,23 +106,24 @@ namespace ClinicsApi
             container.AddSingleton<IPaymentsApplication, PaymentsApplication.PaymentsApplication>();
 
             container.AddSingleton<IReadModelProjectionSubscription>(c => new InProcessReadModelProjectionSubscription(
-                c.Resolve<ILogger>(),
-                new ReadModelProjector(c.Resolve<ILogger>(),
-                    new ReadModelCheckpointStore(c.Resolve<ILogger>(), c.Resolve<IIdentifierFactory>(),
-                        c.Resolve<IDomainFactory>(),
-                        ResolveRepository(c)),
-                    c.Resolve<IChangeEventMigrator>(),
-                    new ClinicEntityReadModelProjection(c.Resolve<ILogger>(), ResolveRepository(c))),
+                c.Resolve<ILogger>(), c.Resolve<IIdentifierFactory>(), c.Resolve<IChangeEventMigrator>(),
+                c.Resolve<IDomainFactory>(), ResolveRepository(c),
+                new[]
+                {
+                    new ClinicEntityReadModelProjection(c.Resolve<ILogger>(), ResolveRepository(c))
+                },
                 c.Resolve<IEventStreamStorage<ClinicEntity>>()));
 
             container.AddSingleton<IChangeEventNotificationSubscription>(c =>
                 new InProcessChangeEventNotificationSubscription(
-                    c.Resolve<ILogger>(),
-                    new DomainEventNotificationProducer(c.Resolve<ILogger>(), c.Resolve<IChangeEventMigrator>(),
+                    c.Resolve<ILogger>(), c.Resolve<IChangeEventMigrator>(),
+                    new[]
+                    {
                         new DomainEventPublisherSubscriberPair(new PersonDomainEventPublisher(),
                             new ClinicManagerEventSubscriber(c.Resolve<IClinicsApplication>())),
                         new DomainEventPublisherSubscriberPair(new AppointmentDomainEventPublisher(),
-                            new PaymentManagerEventSubscriber(c.Resolve<IPaymentsApplication>()))),
+                            new PaymentManagerEventSubscriber(c.Resolve<IPaymentsApplication>()))
+                    },
                     c.Resolve<IEventStreamStorage<ClinicEntity>>(),
                     c.Resolve<IEventStreamStorage<AppointmentEntity>>()));
         }

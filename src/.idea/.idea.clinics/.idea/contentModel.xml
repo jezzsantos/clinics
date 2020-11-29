@@ -278,6 +278,7 @@
         </e>
         <e p="StubClinicsService.cs" t="Include" />
         <e p="StubPersonsService.cs" t="Include" />
+        <e p="TestStartup.cs" t="Include" />
       </e>
       <e p="ClinicsApi.UnitTests" t="IncludeRecursive">
         <e p="AllDomainTypesSpec.cs" t="Include" />
@@ -669,6 +670,7 @@
         </e>
         <e p="PersonsApi.IntegrationTests.csproj" t="IncludeRecursive" />
         <e p="PersonsApiSpec.cs" t="Include" />
+        <e p="TestStartup.cs" t="Include" />
       </e>
       <e p="PersonsApi.UnitTests" t="IncludeRecursive">
         <e p="AllDomainTypesSpec.cs" t="Include" />

@@ -14,6 +14,7 @@
       <ProjectReference Include="..\PersonsDomain\PersonsDomain.csproj" />
       <ProjectReference Include="..\Storage.Interfaces\Storage.Interfaces.csproj" />
       <ProjectReference Include="..\ClinicsApplication\ClinicsApplication.csproj" />
+        <ProjectReference Include="..\Storage.ReadModels\Storage.ReadModels.csproj"/>
     </ItemGroup>
 
     <ItemGroup>
