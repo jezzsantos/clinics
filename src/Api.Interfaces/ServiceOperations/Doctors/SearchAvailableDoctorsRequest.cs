@@ -1,7 +1,7 @@
 ﻿using System;
 using ServiceStack;
 
-namespace Api.Interfaces.ServiceOperations
+namespace Api.Interfaces.ServiceOperations.Doctors
 {
     [Route("/doctors/available", "GET")]
     public class SearchAvailableDoctorsRequest : SearchOperation<SearchAvailableDoctorsResponse>

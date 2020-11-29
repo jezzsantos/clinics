@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\PaymentsApplication\PaymentsApplication.csproj"/>
+        <ProjectReference Include="..\Storage.Interfaces\Storage.Interfaces.csproj"/>
+        <ProjectReference Include="..\Storage\Storage.csproj"/>
+    </ItemGroup>
+
+</Project>

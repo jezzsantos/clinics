@@ -1,10 +1,10 @@
 ﻿using System;
 using ServiceStack;
 
-namespace Api.Interfaces.ServiceOperations
+namespace Api.Interfaces.ServiceOperations.Doctors
 {
     [Route("/clinics/{Id}/offline", "PUT")]
-    public class OfflineDoctorRequest : IReturn<OfflineDoctorResponse>, IPut
+    public class OfflineDoctorRequest : PutOperation<OfflineDoctorResponse>
     {
         public string Id { get; set; }
 

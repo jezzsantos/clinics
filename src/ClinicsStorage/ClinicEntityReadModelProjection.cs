@@ -63,7 +63,7 @@ namespace ClinicsStorage
                     });
                     break;
 
-                case Events.Clinic.DoctorAddedToClinic e:
+                case Events.Clinic.DoctorRegisteredToClinic e:
                     this.doctorStorage.Create(e.EntityId, dto =>
                     {
                         dto.Id = e.DoctorId;

@@ -1,6 +1,6 @@
 ﻿using System;
 using Api.Common.Validators;
-using Api.Interfaces.ServiceOperations;
+using Api.Interfaces.ServiceOperations.Doctors;
 using ClinicsApi.Properties;
 using QueryAny.Primitives;
 using ServiceStack.FluentValidation;

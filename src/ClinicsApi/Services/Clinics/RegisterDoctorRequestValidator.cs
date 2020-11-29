@@ -1,5 +1,5 @@
 ﻿using Api.Common.Validators;
-using Api.Interfaces.ServiceOperations;
+using Api.Interfaces.ServiceOperations.Doctors;
 using ClinicsApi.Properties;
 using ClinicsDomain;
 using Domain.Interfaces.Entities;
@@ -7,9 +7,9 @@ using ServiceStack.FluentValidation;
 
 namespace ClinicsApi.Services.Clinics
 {
-    internal class CreateDoctorRequestValidator : AbstractValidator<CreateDoctorRequest>
+    internal class RegisterDoctorRequestValidator : AbstractValidator<RegisterDoctorRequest>
     {
-        public CreateDoctorRequestValidator(IIdentifierFactory identifierFactory)
+        public RegisterDoctorRequestValidator(IIdentifierFactory identifierFactory)
         {
             RuleFor(dto => dto.ClinicId)
                 .IsEntityId(identifierFactory)

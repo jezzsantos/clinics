@@ -33,9 +33,12 @@ namespace Storage
             this.domainFactory = domainFactory;
             this.migrator = migrator;
             this.containerName = typeof(TAggregateRoot).GetEntityNameSafe();
+            InstanceId = Guid.NewGuid().ToString("N").Substring(0, 5);
         }
 
         public event EventStreamStateChanged OnEventStreamStateChanged;
+
+        public string InstanceId { get; }
 
         public void DestroyAll()
         {
@@ -93,7 +96,7 @@ namespace Storage
                     .ToList();
                 try
                 {
-                    OnEventStreamStateChanged.Invoke(this, new EventStreamStateChangedArgs(changes));
+                    OnEventStreamStateChanged(this, new EventStreamStateChangedArgs(changes));
                 }
                 catch (Exception ex)
                 {

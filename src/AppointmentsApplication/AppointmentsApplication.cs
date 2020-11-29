@@ -42,13 +42,32 @@ namespace AppointmentsApplication
 
             var clinic = new AppointmentEntity(this.logger, this.idFactory);
             var slot = new TimeSlot(startUtc, endUtc);
-            clinic.SetDetails(doctor, slot);
+            clinic.Schedule(doctor, slot);
 
             var created = this.storage.Save(clinic);
 
             this.logger.LogInformation("Appointment {Id} was created by {Caller}", created.Id, caller.Id);
 
             return created.ToAppointment();
+        }
+
+        public Appointment End(ICurrentCaller caller, string id)
+        {
+            caller.GuardAgainstNull(nameof(caller));
+
+            var appointment = this.storage.Load(id.ToIdentifier());
+            if (appointment == null)
+            {
+                throw new ResourceNotFoundException();
+            }
+
+            appointment.End();
+
+            this.storage.Save(appointment);
+
+            this.logger.LogInformation("Appointment {Id} was ended by {Caller}", id, caller.Id);
+
+            return appointment.ToAppointment();
         }
     }
 

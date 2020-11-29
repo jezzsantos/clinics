@@ -1,6 +1,6 @@
 ﻿using System;
 using Api.Common.Validators;
-using Api.Interfaces.ServiceOperations;
+using Api.Interfaces.ServiceOperations.Appointments;
 using ClinicsApi.Properties;
 using Domain.Interfaces.Entities;
 using ServiceStack.FluentValidation;

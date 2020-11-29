@@ -112,7 +112,7 @@ namespace ClinicsApplication
                 .ConvertAll(doc => WithGetOptions(doc.ToDoctor(), getOptions)));
         }
 
-        public Doctor AddDoctor(ICurrentCaller caller, string id, string firstName, string lastName)
+        public Doctor RegisterDoctor(ICurrentCaller caller, string id, string firstName, string lastName)
         {
             caller.GuardAgainstNull(nameof(caller));
             id.GuardAgainstNullOrEmpty(nameof(id));
@@ -126,11 +126,11 @@ namespace ClinicsApplication
                 throw new ResourceNotFoundException();
             }
 
-            clinic.AddDoctor(doctor);
+            clinic.RegisterDoctor(doctor);
 
             this.storage.Save(clinic);
 
-            this.logger.LogInformation("Doctor {Doctor} was added to clinic {Clinic}, by {Caller}", doctor.Id,
+            this.logger.LogInformation("Doctor {Doctor} was registered to clinic {Clinic}, by {Caller}", doctor.Id,
                 clinic.Id, caller.Id);
 
             return doctor.ToDoctor();
@@ -140,7 +140,13 @@ namespace ClinicsApplication
         {
             caller.GuardAgainstNull(nameof(caller));
 
-            return this.storage.GetDoctor(doctorId.ToIdentifier()).ToDoctor();
+            var doctor = this.storage.GetDoctor(doctorId.ToIdentifier());
+            if (doctor == null)
+            {
+                throw new ResourceNotFoundException();
+            }
+
+            return doctor.ToDoctor();
         }
 
         public void UpdatePracticeManagerEmail(ICurrentCaller caller, string managerId, string email)
@@ -207,7 +213,14 @@ namespace ClinicsApplication
 
         public static Doctor ToDoctor(this ClinicDoctor doctor)
         {
-            return doctor.ConvertTo<Doctor>();
+            var dto = doctor.ConvertTo<Doctor>();
+            dto.Name = new PersonName
+            {
+                FirstName = doctor.FirstName,
+                LastName = doctor.LastName
+            };
+
+            return dto;
         }
     }
 }

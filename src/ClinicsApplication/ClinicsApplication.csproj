@@ -12,6 +12,7 @@
       <ProjectReference Include="..\AppointmentsDomain\AppointmentsDomain.csproj" />
       <ProjectReference Include="..\ClinicsDomain\ClinicsDomain.csproj" />
       <ProjectReference Include="..\Domain.Interfaces\Domain.Interfaces.csproj" />
+      <ProjectReference Include="..\PaymentsDomain\PaymentsDomain.csproj"/>
       <ProjectReference Include="..\Storage.Interfaces\Storage.Interfaces.csproj" />
     </ItemGroup>
 

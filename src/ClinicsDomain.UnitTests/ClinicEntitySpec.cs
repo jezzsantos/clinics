@@ -63,10 +63,10 @@ namespace ClinicsDomain.UnitTests
         public void WhenAddDoctor_ThenDoctorAdded()
         {
             var doctor = new ClinicDoctor("adoctorid", "afirstname", "alastname");
-            this.entity.AddDoctor(doctor);
+            this.entity.RegisterDoctor(doctor);
 
             this.entity.Doctors.Doctors.Single().Should().Be("adoctorid".ToIdentifier());
-            this.entity.Events[1].Should().BeOfType<Events.Clinic.DoctorAddedToClinic>();
+            this.entity.Events[1].Should().BeOfType<Events.Clinic.DoctorRegisteredToClinic>();
         }
 
         [TestMethod]

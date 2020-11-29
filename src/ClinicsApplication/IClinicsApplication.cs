@@ -11,7 +11,7 @@ namespace ClinicsApplication
         SearchResults<Doctor> SearchAvailableDoctors(ICurrentCaller caller, DateTime fromUtc, DateTime toUtc,
             SearchOptions searchOptions, GetOptions getOptions);
 
-        Doctor AddDoctor(ICurrentCaller caller, string id, string firstName, string lastName);
+        Doctor RegisterDoctor(ICurrentCaller caller, string id, string firstName, string lastName);
 
         Clinic OfflineDoctor(ICurrentCaller caller, string id, DateTime fromUtc, DateTime toUtc);
 

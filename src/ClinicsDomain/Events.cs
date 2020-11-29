@@ -72,7 +72,7 @@ namespace ClinicsDomain
                 }
             }
 
-            public class DoctorAddedToClinic : IChangeEvent
+            public class DoctorRegisteredToClinic : IChangeEvent
             {
                 public string DoctorId { get; set; }
 
@@ -84,9 +84,9 @@ namespace ClinicsDomain
 
                 public DateTime ModifiedUtc { get; set; }
 
-                public static DoctorAddedToClinic Create(Identifier id, ClinicDoctor doctor)
+                public static DoctorRegisteredToClinic Create(Identifier id, ClinicDoctor doctor)
                 {
-                    return new DoctorAddedToClinic
+                    return new DoctorRegisteredToClinic
                     {
                         EntityId = id,
                         DoctorId = doctor.Id,

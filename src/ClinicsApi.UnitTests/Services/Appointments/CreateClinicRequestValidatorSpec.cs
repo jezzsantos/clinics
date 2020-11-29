@@ -1,5 +1,5 @@
 ﻿using System;
-using Api.Interfaces.ServiceOperations;
+using Api.Interfaces.ServiceOperations.Appointments;
 using ClinicsApi.Properties;
 using ClinicsApi.Services.Appointments;
 using Domain.Interfaces.Entities;

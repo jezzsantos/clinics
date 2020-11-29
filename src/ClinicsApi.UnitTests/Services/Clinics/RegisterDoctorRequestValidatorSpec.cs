@@ -1,4 +1,4 @@
-﻿using Api.Interfaces.ServiceOperations;
+﻿using Api.Interfaces.ServiceOperations.Doctors;
 using ClinicsApi.Properties;
 using ClinicsApi.Services.Clinics;
 using Domain.Interfaces.Entities;
@@ -10,19 +10,19 @@ using ServiceStack.FluentValidation;
 namespace ClinicsApi.UnitTests.Services.Clinics
 {
     [TestClass, TestCategory("Unit")]
-    public class CreateDoctorRequestValidatorSpec
+    public class RegisterDoctorRequestValidatorSpec
     {
-        private CreateDoctorRequest dto;
+        private RegisterDoctorRequest dto;
         private Mock<IIdentifierFactory> identifierFactory;
-        private CreateDoctorRequestValidator validator;
+        private RegisterDoctorRequestValidator validator;
 
         [TestInitialize]
         public void Initialize()
         {
             this.identifierFactory = new Mock<IIdentifierFactory>();
             this.identifierFactory.Setup(f => f.IsValid(It.IsAny<Identifier>())).Returns(true);
-            this.validator = new CreateDoctorRequestValidator(this.identifierFactory.Object);
-            this.dto = new CreateDoctorRequest
+            this.validator = new RegisterDoctorRequestValidator(this.identifierFactory.Object);
+            this.dto = new RegisterDoctorRequest
             {
                 ClinicId = "aclinicid",
                 FirstName = "afirstname",

@@ -22,7 +22,10 @@ namespace InfrastructureServices.Eventing
             this.logger = logger;
             this.eventingStorages = eventingStorages;
             ProcessingErrors = new List<EventProcessingError>();
+            InstanceId = Guid.NewGuid().ToString("N").Substring(0, 5);
         }
+
+        public string InstanceId { get; }
 
         internal List<EventProcessingError> ProcessingErrors { get; }
 

@@ -1,4 +1,4 @@
-﻿using Api.Interfaces.ServiceOperations;
+﻿using Api.Interfaces.ServiceOperations.Persons;
 using PersonsApi.Properties;
 using PersonsDomain;
 using QueryAny.Primitives;

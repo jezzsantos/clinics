@@ -1,6 +1,6 @@
 ﻿using Application.Resources;
 
-namespace Api.Interfaces.ServiceOperations
+namespace Api.Interfaces.ServiceOperations.Appointments
 {
     public class CreateAppointmentResponse
     {

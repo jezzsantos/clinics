@@ -1,8 +1,8 @@
 ﻿using Application.Resources;
 
-namespace Api.Interfaces.ServiceOperations
+namespace Api.Interfaces.ServiceOperations.Doctors
 {
-    public class CreateClinicResponse
+    public class OfflineDoctorResponse
     {
         public Clinic Clinic { get; set; }
     }

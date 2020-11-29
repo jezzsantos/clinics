@@ -1,4 +1,4 @@
-﻿using Api.Interfaces.ServiceOperations;
+﻿using Api.Interfaces.ServiceOperations.Clinics;
 using ClinicsApi.Properties;
 using ClinicsDomain;
 using QueryAny.Primitives;

@@ -1,9 +1,9 @@
 ﻿using ServiceStack;
 
-namespace Api.Interfaces.ServiceOperations
+namespace Api.Interfaces.ServiceOperations.Clinics
 {
     [Route("/clinics", "POST")]
-    public class CreateClinicRequest : IReturn<CreateClinicResponse>, IPost
+    public class CreateClinicRequest : PostOperation<CreateClinicResponse>
     {
         public int Country { get; set; }
 

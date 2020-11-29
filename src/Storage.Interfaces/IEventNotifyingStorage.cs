@@ -5,6 +5,8 @@ namespace Storage.Interfaces
 {
     public interface IEventNotifyingStorage
     {
+        string InstanceId { get; }
+
         event EventStreamStateChanged OnEventStreamStateChanged;
     }
 

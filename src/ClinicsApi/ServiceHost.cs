@@ -19,6 +19,10 @@ using InfrastructureServices.Eventing.Notifications;
 using InfrastructureServices.Eventing.ReadModels;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Abstractions;
+using PaymentsApplication;
+using PaymentsApplication.Storage;
+using PaymentsDomain;
+using PaymentsStorage;
 using ServiceStack;
 using ServiceStack.Configuration;
 using ServiceStack.Validation;
@@ -36,12 +40,14 @@ namespace ClinicsApi
         {
             typeof(EntityEvent).Assembly,
             typeof(ClinicEntity).Assembly,
-            typeof(AppointmentEntity).Assembly
+            typeof(AppointmentEntity).Assembly,
+            typeof(PaymentEntity).Assembly
         };
         private static IRepository repository;
+        private IChangeEventNotificationSubscription changeEventNotificationSubscription;
         private IReadModelProjectionSubscription readModelProjectionSubscription;
 
-        public ServiceHost() : base("MyClinicsApi", AssembliesContainingServicesAndDependencies)
+        public ServiceHost() : base("Clinics", AssembliesContainingServicesAndDependencies)
         {
         }
 
@@ -91,6 +97,15 @@ namespace ClinicsApi
             container.AddSingleton<IClinicsService>(c =>
                 new ClinicsInProcessService(c.Resolve<IClinicsApplication>()));
 
+            container.AddSingleton<IEventStreamStorage<PaymentEntity>>(c =>
+                new GeneralEventStreamStorage<PaymentEntity>(c.Resolve<ILogger>(), c.Resolve<IDomainFactory>(),
+                    c.Resolve<IChangeEventMigrator>(),
+                    ResolveRepository(c)));
+            container.AddSingleton<IPaymentStorage>(c =>
+                new PaymentStorage(c.Resolve<ILogger>(), c.Resolve<IDomainFactory>(),
+                    c.Resolve<IEventStreamStorage<PaymentEntity>>(), ResolveRepository(c)));
+            container.AddSingleton<IPaymentsApplication, PaymentsApplication.PaymentsApplication>();
+
             container.AddSingleton<IReadModelProjectionSubscription>(c => new InProcessReadModelProjectionSubscription(
                 c.Resolve<ILogger>(),
                 new ReadModelProjector(c.Resolve<ILogger>(),
@@ -99,15 +114,18 @@ namespace ClinicsApi
                         ResolveRepository(c)),
                     c.Resolve<IChangeEventMigrator>(),
                     new ClinicEntityReadModelProjection(c.Resolve<ILogger>(), ResolveRepository(c))),
-                c.Resolve<IEventStreamStorage<ClinicEntity>>(), c.Resolve<IEventStreamStorage<AppointmentEntity>>()));
+                c.Resolve<IEventStreamStorage<ClinicEntity>>()));
 
             container.AddSingleton<IChangeEventNotificationSubscription>(c =>
                 new InProcessChangeEventNotificationSubscription(
                     c.Resolve<ILogger>(),
                     new DomainEventNotificationProducer(c.Resolve<ILogger>(), c.Resolve<IChangeEventMigrator>(),
                         new DomainEventPublisherSubscriberPair(new PersonDomainEventPublisher(),
-                            new ClinicManagerEventSubscriber(c.Resolve<IClinicsApplication>()))),
-                    c.Resolve<IEventStreamStorage<ClinicEntity>>()));
+                            new ClinicManagerEventSubscriber(c.Resolve<IClinicsApplication>())),
+                        new DomainEventPublisherSubscriberPair(new AppointmentDomainEventPublisher(),
+                            new PaymentManagerEventSubscriber(c.Resolve<IPaymentsApplication>()))),
+                    c.Resolve<IEventStreamStorage<ClinicEntity>>(),
+                    c.Resolve<IEventStreamStorage<AppointmentEntity>>()));
         }
 
         private void RegisterValidators(Container container)
@@ -124,12 +142,15 @@ namespace ClinicsApi
 
             this.readModelProjectionSubscription = Container.Resolve<IReadModelProjectionSubscription>();
             this.readModelProjectionSubscription.Start();
+            this.changeEventNotificationSubscription = Container.Resolve<IChangeEventNotificationSubscription>();
+            this.changeEventNotificationSubscription.Start();
         }
 
         protected override void Dispose(bool disposing)
         {
             base.Dispose(disposing);
             (this.readModelProjectionSubscription as IDisposable)?.Dispose();
+            (this.changeEventNotificationSubscription as IDisposable)?.Dispose();
         }
     }
 }

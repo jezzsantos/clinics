@@ -1,7 +1,8 @@
 ﻿using System;
 using Api.Common;
 using Api.Interfaces;
-using Api.Interfaces.ServiceOperations;
+using Api.Interfaces.ServiceOperations.Clinics;
+using Api.Interfaces.ServiceOperations.Doctors;
 using Application.Resources;
 using ClinicsApplication;
 using QueryAny.Primitives;
@@ -45,12 +46,12 @@ namespace ClinicsApi.Services.Clinics
             };
         }
 
-        public CreateDoctorResponse Post(CreateDoctorRequest request)
+        public RegisterDoctorResponse Post(RegisterDoctorRequest request)
         {
-            var doctor = this.clinicsApplication.AddDoctor(Request.ToCaller(), request.ClinicId, request.FirstName,
+            var doctor = this.clinicsApplication.RegisterDoctor(Request.ToCaller(), request.ClinicId, request.FirstName,
                 request.LastName);
 
-            return new CreateDoctorResponse
+            return new RegisterDoctorResponse
             {
                 Doctor = doctor
             };

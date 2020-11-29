@@ -1,5 +1,5 @@
 ﻿using Api.Common;
-using Api.Interfaces.ServiceOperations;
+using Api.Interfaces.ServiceOperations.Appointments;
 using AppointmentsApplication;
 using QueryAny.Primitives;
 using ServiceStack;
@@ -24,6 +24,17 @@ namespace ClinicsApi.Services.Appointments
                     request.DoctorId);
             Response.SetLocation(appointment);
             return new CreateAppointmentResponse
+            {
+                Appointment = appointment
+            };
+        }
+
+        public EndAppointmentResponse Patch(EndAppointmentRequest request)
+        {
+            var appointment =
+                this.appointmentsApplication.End(Request.ToCaller(), request.Id);
+
+            return new EndAppointmentResponse
             {
                 Appointment = appointment
             };

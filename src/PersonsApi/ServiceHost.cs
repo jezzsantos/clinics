@@ -36,7 +36,7 @@ namespace PersonsApi
         private static IRepository repository;
         private IReadModelProjectionSubscription readModelProjectionSubscription;
 
-        public ServiceHost() : base("MyPersonsApi", AssembliesContainingServicesAndDependencies)
+        public ServiceHost() : base("Persons", AssembliesContainingServicesAndDependencies)
         {
         }
 
@@ -69,7 +69,8 @@ namespace PersonsApi
                     c.Resolve<IChangeEventMigrator>(),
                     ResolveRepository(c)));
             container.AddSingleton<IPersonStorage>(c =>
-                new PersonStorage(c.Resolve<ILogger>(), c.Resolve<IDomainFactory>(), c.Resolve<IChangeEventMigrator>(),
+                new PersonStorage(c.Resolve<ILogger>(), c.Resolve<IDomainFactory>(),
+                    c.Resolve<IEventStreamStorage<PersonEntity>>(),
                     ResolveRepository(c)));
             container.AddSingleton<IPersonsApplication, PersonsApplication.PersonsApplication>();
             container.AddSingleton<IEmailService, EmailService>();

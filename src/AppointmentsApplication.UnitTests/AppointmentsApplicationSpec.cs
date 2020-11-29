@@ -40,7 +40,7 @@ namespace AppointmentsApplication.UnitTests
         }
 
         [TestMethod]
-        public void WhenCreate_ThenReturnsClinic()
+        public void WhenCreate_ThenReturnsAppointment()
         {
             var start = DateTime.UtcNow.AddDays(1);
             var end = start.AddDays(1);
@@ -59,6 +59,11 @@ namespace AppointmentsApplication.UnitTests
                     e.StartUtc == start
                     && e.EndUtc == end
                     && e.DoctorId == null)));
+        }
+
+        [TestMethod]
+        public void WhenSchedule_ThenRESULT()
+        {
         }
     }
 }

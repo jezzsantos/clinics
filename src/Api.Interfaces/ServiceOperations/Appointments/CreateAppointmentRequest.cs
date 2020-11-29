@@ -1,10 +1,10 @@
 ﻿using System;
 using ServiceStack;
 
-namespace Api.Interfaces.ServiceOperations
+namespace Api.Interfaces.ServiceOperations.Appointments
 {
     [Route("/appointments", "POST")]
-    public class CreateAppointmentRequest : IReturn<CreateAppointmentResponse>, IPost
+    public class CreateAppointmentRequest : PostOperation<CreateAppointmentResponse>
     {
         public string DoctorId { get; set; }
 

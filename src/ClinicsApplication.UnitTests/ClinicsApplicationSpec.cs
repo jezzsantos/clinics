@@ -92,7 +92,7 @@ namespace ClinicsApplication.UnitTests
         }
 
         [TestMethod]
-        public void WhenOffline_ThenOfflinesClinic()
+        public void WhenOffline_ThenDoctorOffline()
         {
             var fromUtc = DateTime.UtcNow.AddMinutes(1);
             var toUtc = fromUtc.AddMinutes(1);
@@ -115,7 +115,7 @@ namespace ClinicsApplication.UnitTests
         {
             var doctor = new ClinicDoctor("adoctorid", "afirstname", "alastname");
             var entity = new ClinicEntity(this.logger.Object, this.idFactory.Object);
-            entity.AddDoctor(doctor);
+            entity.RegisterDoctor(doctor);
 
             this.personService.Setup(ps => ps.Create(It.IsAny<string>(), It.IsAny<string>()))
                 .Returns(new Person
@@ -125,7 +125,8 @@ namespace ClinicsApplication.UnitTests
             this.storage.Setup(s => s.Save(It.Is<ClinicEntity>(e => e.Unavailabilities.Count == 1)))
                 .Returns(entity);
 
-            var result = this.clinicsApplication.AddDoctor(this.caller.Object, "aclinicid", "afirstname", "alastname");
+            var result =
+                this.clinicsApplication.RegisterDoctor(this.caller.Object, "aclinicid", "afirstname", "alastname");
 
             result.Should().NotBeNull();
             this.personService.Verify(ps => ps.Create("afirstname", "alastname"));
@@ -144,6 +145,17 @@ namespace ClinicsApplication.UnitTests
                     new SearchOptions(), new GetOptions());
 
             result.Results.Count.Should().Be(1);
+        }
+
+        [TestMethod]
+        public void WhenGetDoctorForUnknownDoctor_ThenThrows()
+        {
+            this.storage.Setup(s => s.GetDoctor(It.IsAny<Identifier>()))
+                .Returns((Doctor) null);
+
+            this.clinicsApplication
+                .Invoking(x => x.GetDoctor(this.caller.Object, "adoctorid"))
+                .Should().Throw<ResourceNotFoundException>();
         }
     }
 }

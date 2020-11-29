@@ -62,22 +62,37 @@
           </e>
         </e>
         <e p="ServiceOperations" t="Include">
-          <e p="CreateAppointmentRequest.cs" t="Include" />
-          <e p="CreateAppointmentResponse.cs" t="Include" />
-          <e p="CreateClinicRequest.cs" t="Include" />
-          <e p="CreateClinicResponse.cs" t="Include" />
-          <e p="CreateDoctorRequest.cs" t="Include" />
-          <e p="CreateDoctorResponse.cs" t="Include" />
-          <e p="CreatePersonRequest.cs" t="Include" />
-          <e p="CreatePersonResponse.cs" t="Include" />
+          <e p="Appointments" t="Include">
+            <e p="CreateAppointmentRequest.cs" t="Include" />
+            <e p="CreateAppointmentResponse.cs" t="Include" />
+            <e p="EndAppointmentRequest.cs" t="Include" />
+            <e p="EndAppointmentResponse.cs" t="Include" />
+          </e>
+          <e p="clinics" t="Include">
+            <e p="CreateClinicRequest.cs" t="Include" />
+            <e p="CreateClinicResponse.cs" t="Include" />
+            <e p="RegisterClinicRequest.cs" t="Include" />
+            <e p="RegisterClinicResponse.cs" t="Include" />
+          </e>
+          <e p="DeleteOperation.cs" t="Include" />
+          <e p="Doctors" t="Include">
+            <e p="OfflineDoctorRequest.cs" t="Include" />
+            <e p="OfflineDoctorResponse.cs" t="Include" />
+            <e p="RegisterDoctorRequest.cs" t="Include" />
+            <e p="RegisterDoctorResponse.cs" t="Include" />
+            <e p="SearchAvailableDoctorsRequest.cs" t="Include" />
+            <e p="SearchAvailableDoctorsResponse.cs" t="Include" />
+          </e>
           <e p="GetOperation.cs" t="Include" />
-          <e p="GetPersonRequest.cs" t="Include" />
-          <e p="OfflineDoctorRequest.cs" t="Include" />
-          <e p="OfflineDoctorResponse.cs" t="Include" />
-          <e p="RegisterClinicRequest.cs" t="Include" />
-          <e p="RegisterClinicResponse.cs" t="Include" />
-          <e p="SearchAvailableDoctorsRequest.cs" t="Include" />
-          <e p="SearchAvailableDoctorsResponse.cs" t="Include" />
+          <e p="PatchOperation.cs" t="Include" />
+          <e p="Persons" t="Include">
+            <e p="CreatePersonRequest.cs" t="Include" />
+            <e p="CreatePersonResponse.cs" t="Include" />
+            <e p="GetPersonRequest.cs" t="Include" />
+            <e p="GetPersonResponse.cs" t="Include" />
+          </e>
+          <e p="PostOperation.cs" t="Include" />
+          <e p="PutOperation.cs" t="Include" />
           <e p="SearchOperation.cs" t="Include" />
         </e>
       </e>
@@ -184,6 +199,7 @@
         <e p="AppointmentDoctor.cs" t="Include" />
         <e p="AppointmentEntity.cs" t="Include" />
         <e p="AppointmentsDomain.csproj" t="IncludeRecursive" />
+        <e p="AppointmentState.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Events.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
@@ -234,13 +250,14 @@
           <e p="Appointments" t="Include">
             <e p="AppointmentsService.cs" t="Include" />
             <e p="CreateAppointmentRequestValidator.cs" t="Include" />
+            <e p="EndAppointmentRequestValidator.cs" t="Include" />
           </e>
           <e p="clinics" t="Include">
             <e p="ClinicsService.cs" t="Include" />
             <e p="CreateClinicRequestValidator.cs" t="Include" />
-            <e p="CreateDoctorRequestValidator.cs" t="Include" />
             <e p="OfflineDoctorRequestValidator.cs" t="Include" />
             <e p="RegisterClinicRequestValidator.cs" t="Include" />
+            <e p="RegisterDoctorRequestValidator.cs" t="Include" />
             <e p="SearchAvailableDoctorsRequestValidator.cs" t="Include" />
           </e>
         </e>
@@ -259,6 +276,7 @@
             </e>
           </e>
         </e>
+        <e p="StubClinicsService.cs" t="Include" />
         <e p="StubPersonsService.cs" t="Include" />
       </e>
       <e p="ClinicsApi.UnitTests" t="IncludeRecursive">
@@ -275,12 +293,13 @@
         <e p="Services" t="Include">
           <e p="Appointments" t="Include">
             <e p="CreateClinicRequestValidatorSpec.cs" t="Include" />
+            <e p="EndAppointmentRequestValidatorSpec.cs" t="Include" />
           </e>
           <e p="clinics" t="Include">
             <e p="CreateClinicRequestValidatorSpec.cs" t="Include" />
-            <e p="CreateDoctorRequestValidatorSpec.cs" t="Include" />
             <e p="OfflineDoctorRequestValidatorSpec.cs" t="Include" />
             <e p="RegisterClinicRequestValidatorSpec.cs" t="Include" />
+            <e p="RegisterDoctorRequestValidatorSpec.cs" t="Include" />
             <e p="SearchAvailableDoctorsRequestValidatorSpec.cs" t="Include" />
           </e>
         </e>
@@ -523,10 +542,12 @@
           <e p="EventStreamExtensions.cs" t="Include" />
           <e p="EventStreamHandlerBase.cs" t="Include" />
           <e p="Notifications" t="Include">
+            <e p="AppointmentDomainEventPublisher.cs" t="Include" />
             <e p="ClinicManagerEventSubscriber.cs" t="Include" />
             <e p="DomainEventNotificationProducer.cs" t="Include" />
             <e p="IChangeEventNotificationSubscription.cs" t="Include" />
             <e p="InProcessChangeEventNotificationSubscription.cs" t="Include" />
+            <e p="PaymentManagerEventSubscriber.cs" t="Include" />
             <e p="PersonDomainEventPublisher.cs" t="Include" />
           </e>
           <e p="ReadModels" t="Include">
@@ -566,6 +587,47 @@
         <e p="TestChangeEvent.cs" t="Include" />
       </e>
       <e p="packages" t="ExcludeRecursive" />
+      <e p="PaymentsApplication" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="IPaymentsApplication.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="PaymentsApplication.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="PaymentsApplication.cs" t="Include" />
+        <e p="PaymentsApplication.csproj" t="IncludeRecursive" />
+        <e p="Storage" t="Include">
+          <e p="IPaymentStorage.cs" t="Include" />
+        </e>
+      </e>
+      <e p="PaymentsDomain" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Events.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.0" t="Include">
+              <e p="PaymentsDomain.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="PaymentEntity.cs" t="Include" />
+        <e p="PaymentsDomain.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="PaymentsStorage" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="PaymentsStorage.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="PaymentsStorage.csproj" t="IncludeRecursive" />
+        <e p="PaymentStorage.cs" t="Include" />
+      </e>
       <e p="PersonsApi" t="IncludeRecursive">
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />

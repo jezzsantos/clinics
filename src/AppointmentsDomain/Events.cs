@@ -48,6 +48,44 @@ namespace AppointmentsDomain
                     };
                 }
             }
+
+            public class AppointmentStarted : IChangeEvent
+            {
+                public string EntityId { get; set; }
+
+                public DateTime ModifiedUtc { get; set; }
+
+                public static Created Create(Identifier id)
+                {
+                    return new Created
+                    {
+                        EntityId = id,
+                        ModifiedUtc = DateTime.UtcNow
+                    };
+                }
+            }
+
+            public class AppointmentEnded : IChangeEvent
+            {
+                public decimal CostAmount { get; set; }
+
+                public string CostCurrency { get; set; }
+
+                public string EntityId { get; set; }
+
+                public DateTime ModifiedUtc { get; set; }
+
+                public static AppointmentEnded Create(Identifier id, decimal amount, string currency)
+                {
+                    return new AppointmentEnded
+                    {
+                        EntityId = id,
+                        CostAmount = amount,
+                        CostCurrency = currency,
+                        ModifiedUtc = DateTime.UtcNow
+                    };
+                }
+            }
         }
     }
 }

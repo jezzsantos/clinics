@@ -10,6 +10,7 @@
       <ProjectReference Include="..\Api.Interfaces\Api.Interfaces.csproj" />
       <ProjectReference Include="..\ApplicationServices\ApplicationServices.csproj" />
       <ProjectReference Include="..\ClinicsApplication\ClinicsApplication.csproj" />
+      <ProjectReference Include="..\PaymentsApplication\PaymentsApplication.csproj"/>
       <ProjectReference Include="..\PersonsDomain\PersonsDomain.csproj" />
       <ProjectReference Include="..\Storage.Interfaces\Storage.Interfaces.csproj" />
       <ProjectReference Include="..\ClinicsApplication\ClinicsApplication.csproj" />

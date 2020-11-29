@@ -13,15 +13,22 @@
         <value>1.3</value>
     </resheader>
     <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
     </resheader>
     <data name="AppointmentEntity_StartIsNotFuture" xml:space="preserve">
         <value>The Start of the appointment is in the past</value>
     </data>
     <data name="AppointmentEntity_EndBeforeStart" xml:space="preserve">
-        <value>The End of the appointment is is before the Start</value>
+        <value>The End of the appointment is before the Start</value>
+    </data>
+    <data name="AppointmentEntity_CannotStartOrEndBeforeScheduled" xml:space="preserve">
+        <value>The appointment cannot be started or ended before being scheduled</value>
     </data>
 </root>

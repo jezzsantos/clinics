@@ -1,8 +1,8 @@
 ﻿using Application.Resources;
 
-namespace Api.Interfaces.ServiceOperations
+namespace Api.Interfaces.ServiceOperations.Clinics
 {
-    public class RegisterClinicResponse
+    public class CreateClinicResponse
     {
         public Clinic Clinic { get; set; }
     }

@@ -72,10 +72,10 @@ namespace ClinicsDomain
                         added.To);
                     break;
 
-                case Events.Clinic.DoctorAddedToClinic added:
+                case Events.Clinic.DoctorRegisteredToClinic added:
                     Doctors.Add(added.DoctorId.ToIdentifier());
 
-                    Logger.LogDebug("Doctor {Id} had been added to clinic {Clinic}", added.DoctorId, Id);
+                    Logger.LogDebug("Doctor {Id} had been registered to clinic {Clinic}", added.DoctorId, Id);
                     break;
 
                 default:
@@ -98,9 +98,9 @@ namespace ClinicsDomain
             RaiseChangeEvent(ClinicsDomain.Events.Clinic.RegistrationChanged.Create(Id, plate));
         }
 
-        public void AddDoctor(ClinicDoctor doctor)
+        public void RegisterDoctor(ClinicDoctor doctor)
         {
-            RaiseChangeEvent(ClinicsDomain.Events.Clinic.DoctorAddedToClinic.Create(Id, doctor));
+            RaiseChangeEvent(ClinicsDomain.Events.Clinic.DoctorRegisteredToClinic.Create(Id, doctor));
         }
 
         public void OfflineDoctor(TimeSlot slot)

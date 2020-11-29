@@ -61,7 +61,16 @@ namespace AppointmentsDomain.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The End of the appointment is is before the Start.
+        ///   Looks up a localized string similar to The appointment cannot be started or ended before being scheduled.
+        /// </summary>
+        internal static string AppointmentEntity_CannotStartOrEndBeforeScheduled {
+            get {
+                return ResourceManager.GetString("AppointmentEntity_CannotStartOrEndBeforeScheduled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The End of the appointment is before the Start.
         /// </summary>
         internal static string AppointmentEntity_EndBeforeStart {
             get {

@@ -1,4 +1,4 @@
-using Api.Interfaces.ServiceOperations;
+using Api.Interfaces.ServiceOperations.Persons;
 using Domain.Interfaces.Entities;
 using FluentAssertions;
 using InfrastructureServices.Eventing.ReadModels;
