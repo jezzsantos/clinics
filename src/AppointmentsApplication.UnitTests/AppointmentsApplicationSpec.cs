@@ -3,6 +3,7 @@ using Application.Resources;
 using ApplicationServices;
 using AppointmentsApplication.Storage;
 using AppointmentsDomain;
+using Domain;
 using Domain.Interfaces;
 using Domain.Interfaces.Entities;
 using FluentAssertions;
@@ -62,8 +63,20 @@ namespace AppointmentsApplication.UnitTests
         }
 
         [TestMethod]
-        public void WhenSchedule_ThenRESULT()
+        public void WhenEndAfterScheduled_ThenEnds()
         {
+            var entity = new AppointmentEntity(this.logger.Object, this.idFactory.Object);
+            entity.Schedule(new AppointmentDoctor("adoctorid"),
+                new TimeSlot(DateTime.UtcNow.AddHours(1), DateTime.UtcNow.AddHours(2)));
+            this.storage.Setup(s => s.Load(It.Is<Identifier>(i => i == "anid")))
+                .Returns(entity);
+
+            var result = this.appointmentsApplication.End(this.caller.Object, "anid");
+
+            result.Id.Should().Be("anid");
+            this.storage.Verify(s =>
+                s.Save(It.Is<AppointmentEntity>(e =>
+                    e.State == AppointmentState.Ended)));
         }
     }
 }

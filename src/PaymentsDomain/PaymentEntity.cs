@@ -18,6 +18,8 @@ namespace PaymentsDomain
         {
         }
 
+        public AppointmentPayment AppointmentInvoice { get; private set; }
+
         protected override void OnStateChanged(IChangeEvent @event)
         {
             switch (@event)
@@ -25,9 +27,21 @@ namespace PaymentsDomain
                 case Events.Payment.Created _:
                     break;
 
+                case Events.Payment.AppointmentPaymentInvoiced added:
+                    AppointmentInvoice = new AppointmentPayment(added.AppointmentId.ToIdentifier(), added.Amount,
+                        added.Currency);
+                    Logger.LogDebug("Payment {Id} added invoice for appointment {Appointment}", Id,
+                        added.AppointmentId);
+                    break;
+
                 default:
                     throw new InvalidOperationException($"Unknown event {@event.GetType()}");
             }
+        }
+
+        public void CreateInvoice(AppointmentPayment appointmentPayment)
+        {
+            RaiseChangeEvent(PaymentsDomain.Events.Payment.AppointmentPaymentInvoiced.Create(Id, appointmentPayment));
         }
 
         protected override bool EnsureValidState()
@@ -43,7 +57,7 @@ namespace PaymentsDomain
         {
             return (identifier, container, rehydratingProperties) => new PaymentEntity(
                 container.Resolve<ILogger>(),
-                container.Resolve<IIdentifierFactory>());
+                container.Resolve<IIdentifierFactory>(), identifier);
         }
     }
 }

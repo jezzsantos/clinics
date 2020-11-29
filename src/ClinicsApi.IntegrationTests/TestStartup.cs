@@ -20,8 +20,10 @@ using PaymentsApplication.Storage;
 using PaymentsDomain;
 using PaymentsStorage;
 using ServiceStack;
+using ServiceStack.Configuration;
 using Storage;
 using Storage.Interfaces;
+using Storage.Interfaces.ReadModels;
 
 namespace ClinicsApi.IntegrationTests
 {
@@ -38,9 +40,17 @@ namespace ClinicsApi.IntegrationTests
                 app.UseDeveloperExceptionPage();
             }
 
+            var appSettings = new NetCoreAppSettings(Configuration);
             app.UseServiceStack(new ServiceHost
             {
-                AppSettings = new NetCoreAppSettings(Configuration),
+                BeforeConfigure =
+                {
+                    host =>
+                    {
+                        var container = host.GetContainer();
+                        container.AddSingleton<IAppSettings>(appSettings);
+                    }
+                },
                 AfterConfigure =
                 {
                     host =>
@@ -88,11 +98,14 @@ namespace ClinicsApi.IntegrationTests
                                 c.Resolve<ILogger>(), c.Resolve<IIdentifierFactory>(),
                                 c.Resolve<IChangeEventMigrator>(),
                                 c.Resolve<IDomainFactory>(), repository,
-                                new[]
+                                new IReadModelProjection[]
                                 {
-                                    new ClinicEntityReadModelProjection(c.Resolve<ILogger>(), repository)
+                                    new ClinicEntityReadModelProjection(c.Resolve<ILogger>(), repository),
+                                    new PaymentEntityReadModelProjection(c.Resolve<ILogger>(), repository)
                                 },
-                                c.Resolve<IEventStreamStorage<ClinicEntity>>()));
+                                c.Resolve<IEventStreamStorage<ClinicEntity>>(),
+                                c.Resolve<IEventStreamStorage<PaymentEntity>>()
+                            ));
 
                         container.AddSingleton<IChangeEventNotificationSubscription>(c =>
                             new InProcessChangeEventNotificationSubscription(

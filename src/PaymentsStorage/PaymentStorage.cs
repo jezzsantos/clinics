@@ -30,6 +30,11 @@ namespace PaymentsStorage
             this.eventingStorage = eventingStorage;
         }
 
+        public PaymentEntity Load(Identifier id)
+        {
+            return this.eventingStorage.Load(id);
+        }
+
         public PaymentEntity Save(PaymentEntity person)
         {
             this.eventingStorage.Save(person);

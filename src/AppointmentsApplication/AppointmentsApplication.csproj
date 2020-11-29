@@ -11,11 +11,16 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Application.Common\Application.Common.csproj" />
-      <ProjectReference Include="..\ApplicationServices\ApplicationServices.csproj" />
-      <ProjectReference Include="..\AppointmentsDomain\AppointmentsDomain.csproj" />
-      <ProjectReference Include="..\Domain.Common\Domain.Common.csproj" />
-      <ProjectReference Include="..\Storage.Interfaces\Storage.Interfaces.csproj" />
+        <ProjectReference Include="..\Application.Common\Application.Common.csproj"/>
+        <ProjectReference Include="..\ApplicationServices\ApplicationServices.csproj"/>
+        <ProjectReference Include="..\AppointmentsDomain\AppointmentsDomain.csproj"/>
+        <ProjectReference Include="..\Domain.Common\Domain.Common.csproj"/>
+        <ProjectReference Include="..\Storage.Interfaces\Storage.Interfaces.csproj"/>
     </ItemGroup>
 
+    <ItemGroup>
+        <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+            <_Parameter1>$(AssemblyName).UnitTests</_Parameter1>
+        </AssemblyAttribute>
+    </ItemGroup>
 </Project>

@@ -124,6 +124,8 @@
     }</s:String>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B55A54749EB18F45ADC493B4E28A3C42/@KeyIndexDefined">True</s:Boolean>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B55A54749EB18F45ADC493B4E28A3C42/Field/=name/@KeyIndexDefined">False</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B55A54749EB18F45ADC493B4E28A3C42/Field/=parameter/@KeyIndexDefined">False</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B55A54749EB18F45ADC493B4E28A3C42/Field/=Parameter/@KeyIndexDefined">False</s:Boolean>
 	
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B55A54749EB18F45ADC493B4E28A3C42/Field/=parameter/Expression/@EntryValue"></s:String>
 	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B55A54749EB18F45ADC493B4E28A3C42/Field/=parameter/Order/@EntryValue">2</s:Int64>
@@ -131,30 +133,23 @@
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B55A54749EB18F45ADC493B4E28A3C42/Text/@EntryValue">[EntityName("$Name$")]
     public class $Name$Entity : AggregateRootBase
     {
-        public $Name$Entity(ILogger logger, IIdentifierFactory idFactory, string $parameter$) : base(logger, idFactory, YourDomain.Events.Name.Created.Create)
+        public $Name$Entity(ILogger logger, IIdentifierFactory idFactory) : base(logger, idFactory,
+            $Name$sDomain.Events.$Name$.Created.Create)
         {
-            $parameter$.GuardAgainstNullOrEmpty(nameof($parameter$));
-
-            $Parameter$ = $parameter$;
-
-            RaiseCreateEvent(YourDomain.Events.$Name$.Created.Create(Id, Parameter));
         }
-                        
-        private $Name$Entity(ILogger logger, IIdentifierFactory idFactory, Identifier identifier, string $parameter$) 
+
+        private $Name$Entity(ILogger logger, IIdentifierFactory idFactory, Identifier identifier)
             : base(logger, idFactory, identifier)
         {
-            $parameter$.GuardAgainstNullOrEmpty(nameof($parameter$));
-
-            $Parameter$ = $parameter$;
         }
 
-        public string $Parameter$ { get; private set; }
+        public AppointmentPayment AppointmentInvoice { get; private set; }
 
         protected override void OnStateChanged(IChangeEvent @event)
         {
             switch (@event)
             {
-                case YourDomain.Events.Something.Created _:
+                case Events.$Name$.Created _:
                     break;
 
                 default:
@@ -171,26 +166,11 @@
             return isValid;
         }
 
-        public override Dictionary&lt;string, object&gt; Dehydrate()
-        {
-            var properties = base.Dehydrate();
-            properties.Add(nameof($Parameter$), $Parameter$);
-
-            return properties;
-        }
-
-        public override void Rehydrate(IReadOnlyDictionary&lt;string, object&gt; properties)
-        {
-            base.Rehydrate(properties);
-            $Parameter$ = properties.GetValueOrDefault&lt;string&gt;(nameof($Parameter$));
-        }
-
-        public static EntityFactory&lt;$Name$Entity&gt; Instantiate()
+        public static AggregateRootFactory&lt;$Name$Entity&gt; Instantiate()
         {
             return (identifier, container, rehydratingProperties) =&gt; new $Name$Entity(
                 container.Resolve&lt;ILogger&gt;(),
-                container.Resolve&lt;IIdentifierFactory&gt;(),
-                identifier, rehydratingProperties.GetValueOrDefault&lt;string&gt;(nameof($Parameter$)));
+                container.Resolve&lt;IIdentifierFactory&gt;(), identifier);
         }
     }</s:String>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B5B67AA54D94E24BB2DE70741925D27A/@KeyIndexDefined">True</s:Boolean>

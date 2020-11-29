@@ -600,11 +600,27 @@
         </e>
         <e p="PaymentsApplication.cs" t="Include" />
         <e p="PaymentsApplication.csproj" t="IncludeRecursive" />
+        <e p="ReadModels" t="Include">
+          <e p="Payment.cs" t="Include" />
+        </e>
         <e p="Storage" t="Include">
           <e p="IPaymentStorage.cs" t="Include" />
         </e>
       </e>
+      <e p="PaymentsApplication.UnitTests" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="PaymentsApplication.UnitTests.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="PaymentsApplication.UnitTests.csproj" t="IncludeRecursive" />
+        <e p="PaymentsApplicationSpec.cs" t="Include" />
+      </e>
       <e p="PaymentsDomain" t="IncludeRecursive">
+        <e p="AppointmentPayment.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Events.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
@@ -626,6 +642,7 @@
             </e>
           </e>
         </e>
+        <e p="PaymentEntityReadModelProjection.cs" t="Include" />
         <e p="PaymentsStorage.csproj" t="IncludeRecursive" />
         <e p="PaymentStorage.cs" t="Include" />
       </e>

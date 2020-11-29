@@ -28,6 +28,7 @@ using ServiceStack.Configuration;
 using ServiceStack.Validation;
 using Storage;
 using Storage.Interfaces;
+using Storage.Interfaces.ReadModels;
 using IRepository = Storage.IRepository;
 
 namespace ClinicsApi
@@ -108,11 +109,13 @@ namespace ClinicsApi
             container.AddSingleton<IReadModelProjectionSubscription>(c => new InProcessReadModelProjectionSubscription(
                 c.Resolve<ILogger>(), c.Resolve<IIdentifierFactory>(), c.Resolve<IChangeEventMigrator>(),
                 c.Resolve<IDomainFactory>(), ResolveRepository(c),
-                new[]
+                new IReadModelProjection[]
                 {
-                    new ClinicEntityReadModelProjection(c.Resolve<ILogger>(), ResolveRepository(c))
+                    new ClinicEntityReadModelProjection(c.Resolve<ILogger>(), ResolveRepository(c)),
+                    new PaymentEntityReadModelProjection(c.Resolve<ILogger>(), ResolveRepository(c))
                 },
-                c.Resolve<IEventStreamStorage<ClinicEntity>>()));
+                c.Resolve<IEventStreamStorage<ClinicEntity>>(),
+                c.Resolve<IEventStreamStorage<PaymentEntity>>()));
 
             container.AddSingleton<IChangeEventNotificationSubscription>(c =>
                 new InProcessChangeEventNotificationSubscription(

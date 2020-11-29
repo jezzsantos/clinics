@@ -10,6 +10,7 @@ using PersonsApplication.Storage;
 using PersonsDomain;
 using PersonsStorage;
 using ServiceStack;
+using ServiceStack.Configuration;
 using Storage;
 using Storage.Interfaces;
 
@@ -28,9 +29,17 @@ namespace PersonsApi.IntegrationTests
                 app.UseDeveloperExceptionPage();
             }
 
+            var appSettings = new NetCoreAppSettings(Configuration);
             app.UseServiceStack(new ServiceHost
             {
-                AppSettings = new NetCoreAppSettings(Configuration),
+                BeforeConfigure =
+                {
+                    host =>
+                    {
+                        var container = host.GetContainer();
+                        container.AddSingleton<IAppSettings>(appSettings);
+                    }
+                },
                 AfterConfigure =
                 {
                     host =>

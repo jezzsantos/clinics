@@ -9,6 +9,7 @@
     <ItemGroup>
         <ProjectReference Include="..\Application.Common\Application.Common.csproj"/>
         <ProjectReference Include="..\PaymentsDomain\PaymentsDomain.csproj"/>
+        <ProjectReference Include="..\Storage.Interfaces\Storage.Interfaces.csproj"/>
     </ItemGroup>
 
 </Project>
