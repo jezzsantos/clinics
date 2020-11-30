@@ -18,7 +18,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb4eb635-542b-4676-970d-9407f66c71dc" name="Default Changelist" comment="" />
+    <list default="true" id="eb4eb635-542b-4676-970d-9407f66c71dc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Storage.Azure/AzureTableStorageRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Storage.Azure/AzureTableStorageRepository.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,9 +52,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ClinicsApi/Services/Clinics/ClinicsService.cs" />
-        <option value="$PROJECT_DIR$/ClinicsDomain/ClinicEntity.cs" />
-        <option value="$PROJECT_DIR$/ClinicsApplication/ClinicsApplication.cs" />
         <option value="$PROJECT_DIR$/AppointmentsApplication/AppointmentsApplication.cs" />
         <option value="$PROJECT_DIR$/AppointmentsApplication/ClinicIdentifierFactory.cs" />
         <option value="$PROJECT_DIR$/AppointmentsDomain/Events.cs" />
@@ -101,6 +100,9 @@
         <option value="$PROJECT_DIR$/PaymentsDomain/Events.cs" />
         <option value="$PROJECT_DIR$/PaymentsDomain/PaymentEntity.cs" />
         <option value="$PROJECT_DIR$/ClinicsApi.IntegrationTests/TestStartup.cs" />
+        <option value="$PROJECT_DIR$/PersonsApi/PersonsApi.csproj" />
+        <option value="$PROJECT_DIR$/ClinicsApi/ClinicsApi.csproj" />
+        <option value="$PROJECT_DIR$/Storage.Azure/AzureTableStorageRepository.cs" />
       </list>
     </option>
   </component>
@@ -232,6 +234,9 @@
       <workItem from="1606591564970" duration="22184000" />
       <workItem from="1606635265720" duration="4758000" />
       <workItem from="1606675310584" duration="8699000" />
+      <workItem from="1606688918265" duration="602000" />
+      <workItem from="1606719798825" duration="175000" />
+      <workItem from="1606720003997" duration="418000" />
     </task>
     <task id="LOCAL-00001" summary="Added Sql files">
       <created>1606522230245</created>
@@ -296,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606688490098</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Updated target framework in all library projects">
+      <created>1606720316779</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1606720316779</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -654,7 +666,8 @@
     <MESSAGE value="Added Appointments" />
     <MESSAGE value="fixed integration testing pattern" />
     <MESSAGE value="Added payment service handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added payment service handling" />
+    <MESSAGE value="Updated target framework in all library projects" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated target framework in all library projects" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -870,10 +883,10 @@
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="1920" y="0" width="1595" height="1036" key="dock-window-3/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606624927054" />
-    <state x="474" y="168" width="734" height="538" key="find.popup" timestamp="1606675347251">
+    <state x="348" y="35" width="734" height="648" key="find.popup" timestamp="1606719957908">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="474" y="168" width="734" height="538" key="find.popup/0.0.1536.834@0.0.1536.834" timestamp="1606675347251" />
+    <state x="348" y="35" width="734" height="648" key="find.popup/0.0.1536.834@0.0.1536.834" timestamp="1606719957908" />
     <state x="593" y="212" width="756" height="622" key="find.popup/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1606640052340" />
     <state x="921" y="161" width="734" height="622" key="find.popup/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606530806822" />
     <state x="498" y="180" width="672" height="539" key="search.everywhere.popup" timestamp="1606676097162">

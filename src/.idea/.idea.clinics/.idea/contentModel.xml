@@ -9,7 +9,7 @@
         <e p="FuncDependencyContainer.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
+            <e p="netstandard2.1" t="Include">
               <e p="Api.Common.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
@@ -56,7 +56,7 @@
         <e p="IHasSearchOptions.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
+            <e p="netstandard2.1" t="Include">
               <e p="Api.Interfaces.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
@@ -118,7 +118,7 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
+            <e p="netstandard2.1" t="Include">
               <e p="Application.Common.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
@@ -143,7 +143,7 @@
         <e p="IPersonsService.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
+            <e p="netstandard2.1" t="Include">
               <e p="ApplicationServices.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
@@ -171,7 +171,7 @@
         <e p="IAppointmentsApplication.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
+            <e p="netstandard2.1" t="Include">
               <e p="AppointmentsApplication.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
@@ -204,7 +204,7 @@
         <e p="Events.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
+            <e p="netstandard2.1" t="Include">
               <e p="AppointmentsDomain.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
@@ -220,7 +220,7 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
+            <e p="netstandard2.1" t="Include">
               <e p="AppointmentsStorage.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
@@ -313,7 +313,7 @@
         <e p="IClinicsApplication.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
+            <e p="netstandard2.1" t="Include">
               <e p="ClinicsApplication.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
@@ -351,7 +351,7 @@
         <e p="Location.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netstandard2.0" t="Include">
+            <e p="netstandard2.1" t="Include">
               <e p="ClinicsDomain.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
@@ -390,7 +390,7 @@
         <e p="ClinicStorage.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
+            <e p="netstandard2.1" t="Include">
               <e p="ClinicsStorage.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
@@ -408,7 +408,7 @@
         <e p="Domain.Common.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netstandard2.0" t="Include">
+            <e p="netstandard2.1" t="Include">
               <e p="Domain.Common.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
@@ -469,7 +469,7 @@
         <e p="MethodNotAllowedException.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netstandard2.0" t="Include">
+            <e p="netstandard2.1" t="Include">
               <e p="Domain.Interfaces.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
@@ -518,7 +518,7 @@
         <e p="IEmailService.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
+            <e p="netstandard2.1" t="Include">
               <e p="DomainServices.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
@@ -562,7 +562,7 @@
         <e p="InfrastructureServices.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
+            <e p="netstandard2.1" t="Include">
               <e p="InfrastructureServices.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
@@ -593,7 +593,7 @@
         <e p="IPaymentsApplication.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
+            <e p="netstandard2.1" t="Include">
               <e p="PaymentsApplication.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
@@ -625,7 +625,7 @@
         <e p="Events.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netstandard2.0" t="Include">
+            <e p="netstandard2.1" t="Include">
               <e p="PaymentsDomain.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
@@ -637,7 +637,7 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
+            <e p="netstandard2.1" t="Include">
               <e p="PaymentsStorage.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
@@ -713,7 +713,7 @@
         <e p="IPersonsApplication.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
+            <e p="netstandard2.1" t="Include">
               <e p="PersonsApplication.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
@@ -747,7 +747,7 @@
         <e p="Events.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
+            <e p="netstandard2.1" t="Include">
               <e p="PersonsDomain.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
@@ -779,7 +779,7 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
+            <e p="netstandard2.1" t="Include">
               <e p="PersonsStorage.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
@@ -803,7 +803,7 @@
         <e p="LocalMachineFileRepository.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netstandard2.0" t="Include">
+            <e p="netstandard2.1" t="Include">
               <e p="Storage.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
@@ -828,7 +828,7 @@
         <e p="CosmosJsonDotNetSerializer.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netstandard2.0" t="Include">
+            <e p="netstandard2.1" t="Include">
               <e p="Storage.Azure.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
@@ -881,7 +881,7 @@
         <e p="IQueryStorage.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netstandard2.0" t="Include">
+            <e p="netstandard2.1" t="Include">
               <e p="Storage.Interfaces.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
@@ -901,7 +901,7 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
+            <e p="netstandard2.1" t="Include">
               <e p="Storage.ReadModels.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
@@ -918,7 +918,7 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
+            <e p="netstandard2.1" t="Include">
               <e p="Storage.Redis.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
@@ -930,7 +930,7 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
+            <e p="netstandard2.1" t="Include">
               <e p="Storage.Sql.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
