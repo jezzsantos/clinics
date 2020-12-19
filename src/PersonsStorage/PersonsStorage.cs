@@ -11,20 +11,20 @@ using Storage.Interfaces;
 
 namespace PersonsStorage
 {
-    public class PersonStorage : IPersonStorage
+    public class PersonsStorage : IPersonsStorage
     {
-        private readonly IEventStreamStorage<PersonEntity> eventingStorage;
+        private readonly IEventStreamStorage<PersonAggregate> eventingStorage;
         private readonly IQueryStorage<Person> queryStorage;
 
-        public PersonStorage(ILogger logger, IDomainFactory domainFactory,
-            IEventStreamStorage<PersonEntity> eventStreamStorage,
+        public PersonsStorage(ILogger logger, IDomainFactory domainFactory,
+            IEventStreamStorage<PersonAggregate> eventStreamStorage,
             IRepository repository)
         {
             this.queryStorage = new GeneralQueryStorage<Person>(logger, domainFactory, repository);
             this.eventingStorage = eventStreamStorage;
         }
 
-        public PersonStorage(IEventStreamStorage<PersonEntity> eventingStorage, IQueryStorage<Person> queryStorage)
+        public PersonsStorage(IEventStreamStorage<PersonAggregate> eventingStorage, IQueryStorage<Person> queryStorage)
         {
             queryStorage.GuardAgainstNull(nameof(queryStorage));
             eventingStorage.GuardAgainstNull(nameof(eventingStorage));
@@ -32,12 +32,12 @@ namespace PersonsStorage
             this.eventingStorage = eventingStorage;
         }
 
-        public PersonEntity Load(Identifier id)
+        public PersonAggregate Load(Identifier id)
         {
             return this.eventingStorage.Load(id);
         }
 
-        public PersonEntity Save(PersonEntity person)
+        public PersonAggregate Save(PersonAggregate person)
         {
             this.eventingStorage.Save(person);
             return person;

@@ -9,12 +9,12 @@ using Storage.Interfaces.ReadModels;
 
 namespace PersonsStorage
 {
-    public class PersonEntityReadModelProjection : IReadModelProjection
+    public class PersonAggregateReadModelProjection : IReadModelProjection
     {
         private readonly ILogger logger;
         private readonly IReadModelStorage<Person> personStorage;
 
-        public PersonEntityReadModelProjection(ILogger logger, IRepository repository)
+        public PersonAggregateReadModelProjection(ILogger logger, IRepository repository)
         {
             logger.GuardAgainstNull(nameof(logger));
             repository.GuardAgainstNull(nameof(repository));
@@ -23,7 +23,7 @@ namespace PersonsStorage
             this.personStorage = new GeneralReadModelStorage<Person>(logger, repository);
         }
 
-        public Type EntityType => typeof(PersonEntity);
+        public Type EntityType => typeof(PersonAggregate);
 
         public bool Project(IChangeEvent originalEvent)
         {

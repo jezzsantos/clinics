@@ -16,7 +16,7 @@ namespace PersonsApi.IntegrationTests
     {
         private const string ServiceUrl = "http://localhost:2000/";
         private static IWebHost webHost;
-        private static IEventStreamStorage<PersonEntity> personEventingStorage;
+        private static IEventStreamStorage<PersonAggregate> personEventingStorage;
         private static IQueryStorage<Person> personQueryStorage;
 
         [ClassInitialize]
@@ -32,7 +32,7 @@ namespace PersonsApi.IntegrationTests
 
             var container = HostContext.Container;
             personQueryStorage = container.Resolve<IQueryStorage<Person>>();
-            personEventingStorage = container.Resolve<IEventStreamStorage<PersonEntity>>();
+            personEventingStorage = container.Resolve<IEventStreamStorage<PersonAggregate>>();
         }
 
         [ClassCleanup]

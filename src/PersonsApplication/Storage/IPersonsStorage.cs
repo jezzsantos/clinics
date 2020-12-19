@@ -4,11 +4,11 @@ using PersonsDomain;
 
 namespace PersonsApplication.Storage
 {
-    public interface IPersonStorage
+    public interface IPersonsStorage
     {
-        PersonEntity Load(Identifier id);
+        PersonAggregate Load(Identifier id);
 
-        PersonEntity Save(PersonEntity person);
+        PersonAggregate Save(PersonAggregate person);
 
         Person FindByEmailAddress(string emailAddress);
 

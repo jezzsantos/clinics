@@ -6,9 +6,9 @@ namespace PersonsApplication
 {
     public class EmailService : IEmailService
     {
-        private readonly IPersonStorage storage;
+        private readonly IPersonsStorage storage;
 
-        public EmailService(IPersonStorage storage)
+        public EmailService(IPersonsStorage storage)
         {
             storage.GuardAgainstNull(nameof(storage));
             this.storage = storage;

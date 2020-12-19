@@ -52,13 +52,13 @@ namespace PersonsApi.IntegrationTests
                         container.AddSingleton<IQueryStorage<Person>>(new GeneralQueryStorage<Person>(
                             container.Resolve<ILogger>(),
                             container.Resolve<IDomainFactory>(), repository));
-                        container.AddSingleton<IEventStreamStorage<PersonEntity>>(
-                            new GeneralEventStreamStorage<PersonEntity>(
+                        container.AddSingleton<IEventStreamStorage<PersonAggregate>>(
+                            new GeneralEventStreamStorage<PersonAggregate>(
                                 container.Resolve<ILogger>(),
                                 container.Resolve<IDomainFactory>(),
                                 container.Resolve<IChangeEventMigrator>(), repository));
-                        container.AddSingleton<IPersonStorage>(c =>
-                            new PersonStorage(c.Resolve<IEventStreamStorage<PersonEntity>>(),
+                        container.AddSingleton<IPersonsStorage>(c =>
+                            new PersonsStorage.PersonsStorage(c.Resolve<IEventStreamStorage<PersonAggregate>>(),
                                 c.Resolve<IQueryStorage<Person>>()));
 
                         container.AddSingleton<IReadModelProjectionSubscription>(c =>
@@ -68,9 +68,9 @@ namespace PersonsApi.IntegrationTests
                                 c.Resolve<IDomainFactory>(), repository,
                                 new[]
                                 {
-                                    new PersonEntityReadModelProjection(c.Resolve<ILogger>(), repository)
+                                    new PersonAggregateReadModelProjection(c.Resolve<ILogger>(), repository)
                                 },
-                                c.Resolve<IEventStreamStorage<PersonEntity>>()));
+                                c.Resolve<IEventStreamStorage<PersonAggregate>>()));
                     }
                 }
             });

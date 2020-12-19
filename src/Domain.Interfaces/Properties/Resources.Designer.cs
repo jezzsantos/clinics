@@ -79,15 +79,6 @@ namespace Domain.Interfaces.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The hydrating properties do not contain an Identifier property with a non null value.
-        /// </summary>
-        internal static string HydrationIdentifierFactory_InvalidId {
-            get {
-                return ResourceManager.GetString("HydrationIdentifierFactory_InvalidId", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to The requested action cannot be performed on the resource at this time.
         /// </summary>
         internal static string MethodNotAllowedException_Message {

@@ -29,7 +29,7 @@ namespace ClinicsApi.IntegrationTests
             var idFactory = new PersonIdentifierFactory();
             return new Person
             {
-                Id = idFactory.Create(new PersonEntity(NullLogger.Instance, idFactory, new FakeEmailService())),
+                Id = idFactory.Create(new PersonAggregate(NullLogger.Instance, idFactory, new FakeEmailService())),
                 Name = new PersonName
                 {
                     FirstName = firstName,

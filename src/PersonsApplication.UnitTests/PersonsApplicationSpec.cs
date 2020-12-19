@@ -18,7 +18,7 @@ namespace PersonsApplication.UnitTests
         private Mock<IIdentifierFactory> idFactory;
         private Mock<ILogger> logger;
         private PersonsApplication personsApplication;
-        private Mock<IPersonStorage> storage;
+        private Mock<IPersonsStorage> storage;
         private Mock<IEmailService> uniqueEmailService;
 
         [TestInitialize]
@@ -28,7 +28,7 @@ namespace PersonsApplication.UnitTests
             this.idFactory = new Mock<IIdentifierFactory>();
             this.idFactory.Setup(idf => idf.Create(It.IsAny<IIdentifiableEntity>()))
                 .Returns("anid".ToIdentifier());
-            this.storage = new Mock<IPersonStorage>();
+            this.storage = new Mock<IPersonsStorage>();
             this.uniqueEmailService = new Mock<IEmailService>();
             this.uniqueEmailService.Setup(ues => ues.EnsureEmailIsUnique(It.IsAny<string>(), It.IsAny<string>()))
                 .Returns(true);
@@ -42,16 +42,16 @@ namespace PersonsApplication.UnitTests
         [TestMethod]
         public void WhenCreate_ThenReturnsPerson()
         {
-            var entity = new PersonEntity(this.logger.Object, this.idFactory.Object, this.uniqueEmailService.Object);
+            var entity = new PersonAggregate(this.logger.Object, this.idFactory.Object, this.uniqueEmailService.Object);
             this.storage.Setup(s =>
-                    s.Save(It.IsAny<PersonEntity>()))
+                    s.Save(It.IsAny<PersonAggregate>()))
                 .Returns(entity);
 
             var result = this.personsApplication.Create(this.caller.Object, "afirstname", "alastname");
 
             result.Id.Should().Be("anid");
             this.storage.Verify(s =>
-                s.Save(It.Is<PersonEntity>(e =>
+                s.Save(It.Is<PersonAggregate>(e =>
                     e.Name == new PersonName("afirstname", "alastname")
                     && e.DisplayName == new PersonDisplayName("afirstname")
                 )));

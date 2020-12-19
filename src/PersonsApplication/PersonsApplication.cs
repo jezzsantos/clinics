@@ -17,9 +17,9 @@ namespace PersonsApplication
         private readonly IEmailService emailService;
         private readonly IIdentifierFactory idFactory;
         private readonly ILogger logger;
-        private readonly IPersonStorage storage;
+        private readonly IPersonsStorage storage;
 
-        public PersonsApplication(ILogger logger, IIdentifierFactory idFactory, IPersonStorage storage,
+        public PersonsApplication(ILogger logger, IIdentifierFactory idFactory, IPersonsStorage storage,
             IEmailService emailService)
         {
             logger.GuardAgainstNull(nameof(logger));
@@ -36,7 +36,7 @@ namespace PersonsApplication
         {
             caller.GuardAgainstNull(nameof(caller));
 
-            var person = new PersonEntity(this.logger, this.idFactory, this.emailService);
+            var person = new PersonAggregate(this.logger, this.idFactory, this.emailService);
             person.SetName(new PersonName(firstName, lastName));
 
             var created = this.storage.Save(person);
@@ -76,11 +76,11 @@ namespace PersonsApplication
             return dto;
         }
 
-        public static Person ToPerson(this PersonEntity entity)
+        public static Person ToPerson(this PersonAggregate aggregate)
         {
-            var dto = entity.ConvertTo<Person>();
-            dto.Id = entity.Id;
-            dto.DisplayName = entity.DisplayName?.DisplayName;
+            var dto = aggregate.ConvertTo<Person>();
+            dto.Id = aggregate.Id;
+            dto.DisplayName = aggregate.DisplayName?.DisplayName;
             return dto;
         }
     }

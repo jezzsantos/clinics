@@ -30,7 +30,7 @@ namespace PersonsApi
         public static readonly Assembly[] AssembliesContainingDomainEntities =
         {
             typeof(EntityEvent).Assembly,
-            typeof(PersonEntity).Assembly
+            typeof(PersonAggregate).Assembly
         };
         private static IRepository repository;
         private IReadModelProjectionSubscription readModelProjectionSubscription;
@@ -63,13 +63,13 @@ namespace PersonsApi
             container.AddSingleton<IDomainFactory>(c =>
                 DomainFactory.CreateRegistered(c.Resolve<IDependencyContainer>(), AssembliesContainingDomainEntities));
 
-            container.AddSingleton<IEventStreamStorage<PersonEntity>>(c =>
-                new GeneralEventStreamStorage<PersonEntity>(c.Resolve<ILogger>(), c.Resolve<IDomainFactory>(),
+            container.AddSingleton<IEventStreamStorage<PersonAggregate>>(c =>
+                new GeneralEventStreamStorage<PersonAggregate>(c.Resolve<ILogger>(), c.Resolve<IDomainFactory>(),
                     c.Resolve<IChangeEventMigrator>(),
                     ResolveRepository(c)));
-            container.AddSingleton<IPersonStorage>(c =>
-                new PersonStorage(c.Resolve<ILogger>(), c.Resolve<IDomainFactory>(),
-                    c.Resolve<IEventStreamStorage<PersonEntity>>(),
+            container.AddSingleton<IPersonsStorage>(c =>
+                new PersonsStorage.PersonsStorage(c.Resolve<ILogger>(), c.Resolve<IDomainFactory>(),
+                    c.Resolve<IEventStreamStorage<PersonAggregate>>(),
                     ResolveRepository(c)));
             container.AddSingleton<IPersonsApplication, PersonsApplication.PersonsApplication>();
             container.AddSingleton<IEmailService, EmailService>();
@@ -79,15 +79,15 @@ namespace PersonsApi
                 c.Resolve<IDomainFactory>(), ResolveRepository(c),
                 new[]
                 {
-                    new PersonEntityReadModelProjection(c.Resolve<ILogger>(), ResolveRepository(c))
+                    new PersonAggregateReadModelProjection(c.Resolve<ILogger>(), ResolveRepository(c))
                 },
-                c.Resolve<IEventStreamStorage<PersonEntity>>()));
+                c.Resolve<IEventStreamStorage<PersonAggregate>>()));
 
             container.AddSingleton<IChangeEventNotificationSubscription>(c =>
                 new InProcessChangeEventNotificationSubscription(
                     c.Resolve<ILogger>(), c.Resolve<IChangeEventMigrator>(),
                     DomainEventPublisherSubscriberPair.None,
-                    c.Resolve<IEventStreamStorage<PersonEntity>>()));
+                    c.Resolve<IEventStreamStorage<PersonAggregate>>()));
         }
 
         private void RegisterValidators(Container container)

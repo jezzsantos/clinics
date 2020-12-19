@@ -10,18 +10,18 @@ using QueryAny.Primitives;
 namespace PersonsDomain
 {
     [EntityName("Person")]
-    public class PersonEntity : AggregateRootBase
+    public class PersonAggregate : AggregateRootBase
     {
         private readonly IEmailService emailService;
 
-        public PersonEntity(ILogger logger, IIdentifierFactory idFactory, IEmailService emailService) : base(logger,
+        public PersonAggregate(ILogger logger, IIdentifierFactory idFactory, IEmailService emailService) : base(logger,
             idFactory, PersonsDomain.Events.Person.Created.Create)
         {
             emailService.GuardAgainstNull(nameof(emailService));
             this.emailService = emailService;
         }
 
-        private PersonEntity(ILogger logger, IIdentifierFactory idFactory, IEmailService emailService,
+        private PersonAggregate(ILogger logger, IIdentifierFactory idFactory, IEmailService emailService,
             Identifier identifier) : base(logger,
             idFactory, identifier)
         {
@@ -105,10 +105,10 @@ namespace PersonsDomain
             return isValid;
         }
 
-        public static AggregateRootFactory<PersonEntity> Instantiate()
+        public static AggregateRootFactory<PersonAggregate> Instantiate()
         {
             return (identifier, container, rehydratingProperties) =>
-                new PersonEntity(container.Resolve<ILogger>(), container.Resolve<IIdentifierFactory>(),
+                new PersonAggregate(container.Resolve<ILogger>(), container.Resolve<IIdentifierFactory>(),
                     container.Resolve<IEmailService>(), identifier);
         }
     }

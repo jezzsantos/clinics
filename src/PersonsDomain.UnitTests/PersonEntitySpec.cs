@@ -12,7 +12,7 @@ namespace PersonsDomain.UnitTests
     [TestClass, TestCategory("Unit")]
     public class PersonEntitySpec
     {
-        private PersonEntity entity;
+        private PersonAggregate aggregate;
         private Mock<IIdentifierFactory> identifierFactory;
         private Mock<ILogger> logger;
         private Mock<IEmailService> uniqueEmailService;
@@ -27,36 +27,36 @@ namespace PersonsDomain.UnitTests
             this.uniqueEmailService = new Mock<IEmailService>();
             this.uniqueEmailService.Setup(ues => ues.EnsureEmailIsUnique(It.IsAny<string>(), It.IsAny<string>()))
                 .Returns(true);
-            this.entity = new PersonEntity(this.logger.Object, this.identifierFactory.Object,
+            this.aggregate = new PersonAggregate(this.logger.Object, this.identifierFactory.Object,
                 this.uniqueEmailService.Object);
         }
 
         [TestMethod]
         public void WhenSetName_ThenNameAndDisplayNameAssigned()
         {
-            this.entity.SetName(new PersonName("afirstname", "alastname"));
+            this.aggregate.SetName(new PersonName("afirstname", "alastname"));
 
-            this.entity.Name.Should().Be(new PersonName("afirstname", "alastname"));
-            this.entity.DisplayName.Should().Be(new PersonDisplayName("afirstname"));
-            this.entity.Events[1].Should().BeOfType<Events.Person.NameChanged>();
+            this.aggregate.Name.Should().Be(new PersonName("afirstname", "alastname"));
+            this.aggregate.DisplayName.Should().Be(new PersonDisplayName("afirstname"));
+            this.aggregate.Events[1].Should().BeOfType<Events.Person.NameChanged>();
         }
 
         [TestMethod]
         public void WhenSetDisplayName_ThenEmailAssigned()
         {
-            this.entity.SetDisplayName(new PersonDisplayName("adisplayname"));
+            this.aggregate.SetDisplayName(new PersonDisplayName("adisplayname"));
 
-            this.entity.DisplayName.Should().Be(new PersonDisplayName("adisplayname"));
-            this.entity.Events[1].Should().BeOfType<Events.Person.DisplayNameChanged>();
+            this.aggregate.DisplayName.Should().Be(new PersonDisplayName("adisplayname"));
+            this.aggregate.Events[1].Should().BeOfType<Events.Person.DisplayNameChanged>();
         }
 
         [TestMethod]
         public void WhenSetEmail_ThenEmailAssigned()
         {
-            this.entity.SetEmail(new Email("anemail@company.com"));
+            this.aggregate.SetEmail(new Email("anemail@company.com"));
 
-            this.entity.Email.Should().Be(new Email("anemail@company.com"));
-            this.entity.Events[1].Should().BeOfType<Events.Person.EmailChanged>();
+            this.aggregate.Email.Should().Be(new Email("anemail@company.com"));
+            this.aggregate.Events[1].Should().BeOfType<Events.Person.EmailChanged>();
         }
 
         [TestMethod]
@@ -65,7 +65,7 @@ namespace PersonsDomain.UnitTests
             this.uniqueEmailService.Setup(ues => ues.EnsureEmailIsUnique(It.IsAny<string>(), It.IsAny<string>()))
                 .Returns(false);
 
-            this.entity
+            this.aggregate
                 .Invoking(x =>
                     x.SetEmail(new Email("anemail@company.com")))
                 .Should().Throw<RuleViolationException>(Resources.PersonEntity_EmailNotUnique);
@@ -74,10 +74,10 @@ namespace PersonsDomain.UnitTests
         [TestMethod]
         public void WhenSetPhoneNumber_ThenEmailAssigned()
         {
-            this.entity.SetPhoneNumber(new PhoneNumber("+64277888111"));
+            this.aggregate.SetPhoneNumber(new PhoneNumber("+64277888111"));
 
-            this.entity.Phone.Should().Be(new PhoneNumber("+64277888111"));
-            this.entity.Events[1].Should().BeOfType<Events.Person.PhoneNumberChanged>();
+            this.aggregate.Phone.Should().Be(new PhoneNumber("+64277888111"));
+            this.aggregate.Events[1].Should().BeOfType<Events.Person.PhoneNumberChanged>();
         }
     }
 }

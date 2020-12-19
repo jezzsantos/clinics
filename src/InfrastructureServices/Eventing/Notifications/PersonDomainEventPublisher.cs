@@ -7,7 +7,7 @@ namespace InfrastructureServices.Eventing.Notifications
 {
     public class PersonDomainEventPublisher : IDomainEventPublisher
     {
-        public Type EntityType => typeof(PersonEntity);
+        public Type EntityType => typeof(PersonAggregate);
 
         public IChangeEvent Publish(IChangeEvent originalEvent)
         {

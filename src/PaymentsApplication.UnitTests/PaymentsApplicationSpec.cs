@@ -8,7 +8,7 @@ using PaymentsDomain;
 
 namespace PaymentsApplication.UnitTests
 {
-    [TestClass]
+    [TestClass, TestCategory("Unit")]
     public class PaymentsApplicationSpec
     {
         private Mock<ICurrentCaller> caller;

@@ -11,7 +11,7 @@ namespace PersonsApplication
         public PersonIdentifierFactory() : base(new Dictionary<Type, string>
         {
             {typeof(Checkpoint), "ckp"},
-            {typeof(PersonEntity), "per"}
+            {typeof(PersonAggregate), "per"}
         })
         {
         }

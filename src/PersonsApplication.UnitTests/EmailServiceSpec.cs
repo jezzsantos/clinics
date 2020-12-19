@@ -12,12 +12,12 @@ namespace PersonsApplication.UnitTests
     public class EmailServiceSpec
     {
         private EmailService service;
-        private Mock<IPersonStorage> storage;
+        private Mock<IPersonsStorage> storage;
 
         [TestInitialize]
         public void Initialize()
         {
-            this.storage = new Mock<IPersonStorage>();
+            this.storage = new Mock<IPersonsStorage>();
             this.service = new EmailService(this.storage.Object);
         }
 
