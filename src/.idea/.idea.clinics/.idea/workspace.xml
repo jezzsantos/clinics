@@ -17,30 +17,27 @@
   <component name="ChangeListManager">
     <list default="true" id="422bdbe3-a34d-431d-aa44-ed3e90d6fd18" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.clinics/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.clinics/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.clinics/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.clinics/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.clinics/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.clinics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.clinics/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClinicsApi.IntegrationTests/ClinicsApi.IntegrationTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApi.IntegrationTests/ClinicsApi.IntegrationTests.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ClinicsApi.IntegrationTests/StubPersonsService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApi.IntegrationTests/StubPersonsService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InfrastructureServices/Eventing/Notifications/PersonDomainEventPublisher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InfrastructureServices/Eventing/Notifications/PersonDomainEventPublisher.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PaymentsApplication.UnitTests/PaymentsApplicationSpec.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentsApplication.UnitTests/PaymentsApplicationSpec.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonsApi.IntegrationTests/PersonsApiSpec.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PersonsApi.IntegrationTests/PersonsApiSpec.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonsApi.IntegrationTests/TestStartup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PersonsApi.IntegrationTests/TestStartup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClinicsApi/ClinicsApi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApi/ClinicsApi.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClinicsApi/ServiceHost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApi/ServiceHost.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClinicsApplication/ClinicIdentifierFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApi/ClinicsIdentifierFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClinicsApplication/ClinicsApplication.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ClinicsApplication/ClinicsApplication.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InfrastructureServices/Eventing/Notifications/PaymentManagerEventSubscriber.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InfrastructureServices/Eventing/Notifications/PaymentManagerEventSubscriber.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InfrastructureServices/InfrastructureServices.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/InfrastructureServices/InfrastructureServices.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PersonsApi/ServiceHost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PersonsApi/ServiceHost.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonsApplication.UnitTests/EmailServiceSpec.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PersonsApplication.UnitTests/EmailServiceSpec.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonsApplication.UnitTests/PersonsApplicationSpec.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PersonsApplication.UnitTests/PersonsApplicationSpec.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonsApplication/EmailService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PersonsApplication/EmailService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonsApplication/PersonIdentifierFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PersonsApplication/PersonIdentifierFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonsApplication/PersonsApplication.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PersonsApplication/PersonsApplication.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonsApplication/Storage/IPersonStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PersonsApplication/Storage/IPersonsStorage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonsDomain.UnitTests/PersonEntitySpec.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PersonsDomain.UnitTests/PersonEntitySpec.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonsDomain/PersonEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PersonsDomain/PersonAggregate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonsStorage/PersonEntityReadModelProjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PersonsStorage/PersonAggregateReadModelProjection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonsStorage/PersonStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PersonsStorage/PersonsStorage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonsApplication/PersonIdentifierFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PersonsApi/PersonsIdentifierFactory.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -49,6 +46,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6DA31905-7BDA-4426-9718-8B227D1459ED/4b/cc283933/MethodInfoExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/23418434-66E7-4C79-A801-8E57F29CB2A9/73/ServiceStackHost.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Projects/github/jezzsantos/clinics/src/ClinicsApi/ServiceHost.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/23418434-66E7-4C79-A801-8E57F29CB2A9/19/AppHostBase.NetCore.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1EECF971-EF7B-44F5-AF0D-470444405E36/28/861228df/Executor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/23418434-66E7-4C79-A801-8E57F29CB2A9/55/ModularStartup.cs" root0="SKIP_HIGHLIGHTING" />
@@ -67,10 +65,21 @@
       <option value="$PROJECT_DIR$/PersonsDomain/PersonAggregate.cs" />
       <option value="$PROJECT_DIR$/PersonsApplication/Storage/IPersonsStorage.cs" />
       <option value="$PROJECT_DIR$/PersonsStorage/PersonAggregateReadModelProjection.cs" />
+      <option value="$PROJECT_DIR$/Domain.Interfaces/Properties/Resources.resx" />
+      <option value="$PROJECT_DIR$/Api.Common/ClinicIdentifierFactory.cs" />
+      <option value="$PROJECT_DIR$/ClinicsApplication/ClinicsApplication.csproj" />
+      <option value="$PROJECT_DIR$/InfrastructureServices/Eventing/Notifications/PaymentManagerEventSubscriber.cs" />
+      <option value="$PROJECT_DIR$/ClinicsApi/ClinicIdentifierFactory.cs" />
+      <option value="$PROJECT_DIR$/InfrastructureServices/Eventing/Notifications/AppointmentDomainEventPublisher.cs" />
+      <option value="$PROJECT_DIR$/ClinicsApi/ClinicsIdentifierFactory.cs" />
+      <option value="$PROJECT_DIR$/PersonsApi/PersonIdentifierFactory.cs" />
+      <option value="$PROJECT_DIR$/PersonsApi/PersonsIdentifierFactory.cs" />
+      <option value="$PROJECT_DIR$/ClinicsApi.IntegrationTests/StubPersonsService.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1l1bYrpHLDwmR0b8YKcWCle27Xq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -100,8 +109,18 @@
       <workItem from="1608164494909" duration="2979000" />
       <workItem from="1608326094525" duration="626000" />
       <workItem from="1608362357891" duration="13000" />
-      <workItem from="1608362965170" duration="4179000" />
+      <workItem from="1608362965170" duration="4328000" />
+      <workItem from="1608417900108" duration="110000" />
+      <workItem from="1608434437699" duration="629000" />
     </task>
+    <task id="LOCAL-00001" summary="Renamed types">
+      <created>1608367642558</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608367642558</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -474,5 +493,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Renamed types" />
+    <option name="LAST_COMMIT_MESSAGE" value="Renamed types" />
   </component>
 </project>

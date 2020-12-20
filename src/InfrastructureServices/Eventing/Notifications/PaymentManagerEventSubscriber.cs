@@ -1,5 +1,4 @@
 ﻿using ApplicationServices;
-using AppointmentsDomain;
 using Domain.Interfaces.Entities;
 using InfrastructureServices.Identity;
 using PaymentsApplication;
@@ -21,7 +20,7 @@ namespace InfrastructureServices.Eventing.Notifications
         {
             switch (originalEvent)
             {
-                case Events.Appointment.AppointmentEnded e:
+                case AppointmentsDomain.Events.Appointment.AppointmentEnded e:
                     this.paymentsApplication.CreateInvoice(new AnonymousCaller(), e.EntityId, e.CostAmount,
                         e.CostCurrency);
                     return true;

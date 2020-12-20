@@ -6,13 +6,11 @@ using Domain.Interfaces.Entities;
 using PaymentsDomain;
 using Storage.Interfaces.ReadModels;
 
-namespace ClinicsApplication
+namespace ClinicsApi
 {
-    public class ClinicIdentifierFactory : EntityPrefixIdentifierFactory
+    public class ClinicsIdentifierFactory : EntityPrefixIdentifierFactory
     {
-        //HACK: Can only have one instance of the IIdentifierFactory in the DI container at a time.
-        //HACK: need a better way of providing a shared IIdentifierFactory across domains that share the same Infrastructure
-        public ClinicIdentifierFactory() : base(new Dictionary<Type, string>
+        public ClinicsIdentifierFactory() : base(new Dictionary<Type, string>
         {
             {typeof(Checkpoint), "ckp"},
             {typeof(ClinicEntity), "cin"},

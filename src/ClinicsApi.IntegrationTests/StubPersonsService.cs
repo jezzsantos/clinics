@@ -3,6 +3,7 @@ using Application.Resources;
 using ApplicationServices;
 using DomainServices;
 using Microsoft.Extensions.Logging.Abstractions;
+using PersonsApi;
 using PersonsApplication;
 using PersonsDomain;
 using PersonName = Application.Resources.PersonName;
@@ -26,7 +27,7 @@ namespace ClinicsApi.IntegrationTests
 
         public Person Create(string firstName, string lastName)
         {
-            var idFactory = new PersonIdentifierFactory();
+            var idFactory = new PersonsIdentifierFactory();
             return new Person
             {
                 Id = idFactory.Create(new PersonAggregate(NullLogger.Instance, idFactory, new FakeEmailService())),

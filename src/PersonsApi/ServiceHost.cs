@@ -58,7 +58,7 @@ namespace PersonsApi
 
             container.AddSingleton<ILogger>(c => new Logger<ServiceHost>(new NullLoggerFactory()));
             container.AddSingleton<IDependencyContainer>(new FuncDependencyContainer(container));
-            container.AddSingleton<IIdentifierFactory, PersonIdentifierFactory>();
+            container.AddSingleton<IIdentifierFactory, PersonsIdentifierFactory>();
             container.AddSingleton<IChangeEventMigrator>(c => new ChangeEventTypeMigrator());
             container.AddSingleton<IDomainFactory>(c =>
                 DomainFactory.CreateRegistered(c.Resolve<IDependencyContainer>(), AssembliesContainingDomainEntities));

@@ -4,11 +4,11 @@ using Domain.Interfaces.Entities;
 using PersonsDomain;
 using Storage.Interfaces.ReadModels;
 
-namespace PersonsApplication
+namespace PersonsApi
 {
-    public class PersonIdentifierFactory : EntityPrefixIdentifierFactory
+    public class PersonsIdentifierFactory : EntityPrefixIdentifierFactory
     {
-        public PersonIdentifierFactory() : base(new Dictionary<Type, string>
+        public PersonsIdentifierFactory() : base(new Dictionary<Type, string>
         {
             {typeof(Checkpoint), "ckp"},
             {typeof(PersonAggregate), "per"}

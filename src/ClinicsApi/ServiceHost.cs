@@ -70,7 +70,7 @@ namespace ClinicsApi
 
             container.AddSingleton<ILogger>(c => new Logger<ServiceHost>(new NullLoggerFactory()));
             container.AddSingleton<IDependencyContainer>(new FuncDependencyContainer(container));
-            container.AddSingleton<IIdentifierFactory, ClinicIdentifierFactory>();
+            container.AddSingleton<IIdentifierFactory, ClinicsIdentifierFactory>();
             container.AddSingleton<IChangeEventMigrator>(c => new ChangeEventTypeMigrator());
             container.AddSingleton<IDomainFactory>(c => DomainFactory.CreateRegistered(
                 c.Resolve<IDependencyContainer>(), AssembliesContainingDomainEntities));

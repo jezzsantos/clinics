@@ -232,6 +232,7 @@
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="ClinicsApi.csproj" t="IncludeRecursive" />
+        <e p="ClinicsIdentifierFactory.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
@@ -307,7 +308,6 @@
       </e>
       <e p="ClinicsApplication" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="ClinicIdentifierFactory.cs" t="Include" />
         <e p="ClinicsApplication.cs" t="Include" />
         <e p="ClinicsApplication.csproj" t="IncludeRecursive" />
         <e p="IClinicsApplication.cs" t="Include" />
@@ -658,6 +658,7 @@
           </e>
         </e>
         <e p="PersonsApi.csproj" t="IncludeRecursive" />
+        <e p="PersonsIdentifierFactory.cs" t="Include" />
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
@@ -718,7 +719,6 @@
             </e>
           </e>
         </e>
-        <e p="PersonIdentifierFactory.cs" t="Include" />
         <e p="PersonsApplication.cs" t="Include" />
         <e p="PersonsApplication.csproj" t="IncludeRecursive" />
         <e p="ReadModels" t="Include">
